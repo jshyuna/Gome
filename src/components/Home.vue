@@ -3,6 +3,7 @@
         <div class="container">
             <component :is="name"></component>
         </div>
+        <!-- 底部 -->
         <div class="foot">
             <div class="page" @click="btn('page')">
                 <div v-if="name=='page'">
@@ -31,7 +32,7 @@
                 </div>
                 <p :class="{active:name=='message'}">消息</p>
             </div>
-            <div class="cart" @click="btn('cart')">
+            <div class="cart" @click="btn('page')">
                 <div v-if="name=='cart'">
                     <img src="../images/chart1.png" />
                 </div>
@@ -88,6 +89,7 @@ export default {
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #f8f8f8;
 }
 
 .container {
@@ -105,11 +107,6 @@ export default {
     flex-grow: 1;
     border: 1px solid #EEE;
 }
-
-/* .suning {
-    width: 100%;
-    background-color: yellow;
-} */
 
 .inp1 {
     width: 100%;
