@@ -32,7 +32,7 @@
                 </div>
                 <p :class="{active:name=='message'}">消息</p>
             </div>
-            <div class="cart" @click="btn('page')">
+            <div class="cart" @click="btn('cart')">
                 <div v-if="name=='cart'">
                     <img src="../images/chart1.png" />
                 </div>
