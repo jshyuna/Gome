@@ -1,27 +1,24 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
+    <div id="app">
+        <router-view></router-view>
+    </div>
 </template>
+
+<script>
+export default {};
+</script>
 
 <style>
 * {
-  margin: 0;
-  padding: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
-html,
+#app,
 body,
-#app {
-  height: 100%;
-  width: 100%;
-}
-
-li{
-  list-style: none;
+html {
+    height: 100%;
+    width: 100%;
 }
 </style>
