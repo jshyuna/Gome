@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="header">
-            <div class="h-left">
+            <div class="h-left" @click="btnback('page')">
                 <img src="../images/back.png" alt />
             </div>
             <div class="h-center">
@@ -12,43 +12,89 @@
             </div>
         </div>
         <div class="center">
-            <div class="userInfor">
-                <a href class="userHead">
-                    <img
-                        src="//js.gomein.net.cn/plus/plus-public//images/public/shopdefault.jpg"
-                        alt
-                        class="toux"
-                    />
-                </a>
-                <div>
-                    <p>
-                        <a href class="login">登录/注册</a>
-                    </p>
-                </div>
-                <a href class="gift">
-                    <span class="giftbtn"></span>
-                </a>
-                <a href class="msgbtn"></a>
+            <div>
+                <img src="../images/shopdefault.jpg" alt class="toux" />
+            </div>
+            <a href>登录/注册</a>
+            <div class="right">
+                <img src="../images/re-03.gif" alt class="gift" />
+                <img src="../images/re-04.png" alt class="qipao" />
+            </div>
+        </div>
+        <div class="main">
+            <div class="first-box">
+                <ul>
+                    <li>
+                        <img src="../images/daifukuai.png" alt />
+                        <p>待付款</p>
+                    </li>
+                    <li>
+                        <img src="../images/daishouhuo.png" alt />
+                        <p>待收货</p>
+                    </li>
+                    <li>
+                        <img src="../images/daipingjia.png" alt />
+                        <p>待评价</p>
+                    </li>
+                    <li>
+                        <img src="../images/tuihou.png" alt />
+                        <p>退款/售后</p>
+                    </li>
+                    <li class="special">
+                        <img src="../images/dingdan.png" alt />
+                        <p>全部订单</p>
+                        <p style="transform: scale(0.8); color: #999999;">查看电子发票</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="first-box second">
+                <ul>
+                    <li>
+                        <img src="../images/gmb.png" alt />
+                        <p>国美币余额</p>
+                    </li>
+                    <li>
+                        <img src="../images/youhuiquan.png" alt />
+                        <p>优惠券</p>
+                    </li>
+                    <li>
+                        <img src="../images/meidou.png" alt />
+                        <p>美豆</p>
+                    </li>
+                    <li>
+                        <img src="../images/meitongka.png" alt />
+                        <p>美通卡</p>
+                    </li>
+                    <li class="special">
+                        <img src="../images/qianbao.png" alt />
+                        <p>我的钱包</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 猜你喜欢 -->
+        <div class="maylike">
+            <div class="maylike-title">
+                <img src="../images/arrow-up.png" alt="" class="arrow">
+                <span class="text1">你可能喜欢</span>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-export default {};
+
+export default {}
+
 </script>
 
 <style scoped>
-/* .me {
-    background-color: #f2f2f2 !important;
-    position: relative;
-} */
 .header {
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 8%;
+    height: 50px;
     align-items: center;
     background-color: #fff;
 }
@@ -64,7 +110,7 @@ export default {};
     top: 0;
     transform: translateX(-50%);
     font-weight: normal;
-    margin: 6px auto;
+    margin: 14px auto;
 }
 .h-left {
     width: 10%;
@@ -77,50 +123,98 @@ export default {};
     width: 10%;
 }
 .center {
-    padding: 0.57rem 1.8rem 0.57rem 0.5rem;
-    background: url("../images/mebg.png");
-    background-size: 100%;
-}
-.uerInfor {
-   width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    -webkit-box-align: center;
-    -webkit-box-pack: start;
+    width: 100%;
+    padding: 4.57rem 1.8rem 0.57rem 0.5rem;
+    background: url("../images/mebg.png");
+    /* background-repeat: no-repeat; */
 }
 .toux {
-    display: block;
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 4.1rem;
+    height: 4.1rem;
     border: 0.03rem solid #fff;
-    border-radius: 1.2rem;
+    border-radius: 4.2rem;
+    margin-left: 18px;
+    margin-top: -50px;
 }
-.login {
-    margin-left: 0.4rem;
+.center a {
+    margin-left: -70px;
+    margin-top: -64px;
     text-align: left;
-    font-size: 0.36rem;
     font-weight: 700;
+    font-size: 20px;
     color: #fff;
+    text-decoration: none;
+}
+.right {
+    margin-top: -126px;
 }
 .gift {
-    top: 0.07rem;
-    right: 0.98rem;
+    height: 40px;
+    width: 45px;
 }
-.giftbtn {
-    display: inline-block;
-    width: 0.7rem;
-    height: 0.57rem;
-    background: url("../images/gift.gif") no-repeat;
-    background-size: contain;
+.qipao {
+    height: 25px;
+    width: 25px;
 }
-.msgbtn {
-    display: inline-block;
-    right: 0.3rem;
-    top: 0.25rem;
-    width: 0.41rem;
-    height: 0.38rem;
-    background: url("../images/qipao.png") center no-repeat;
-    background-size: contain;
+.main {
+    background-color: #f2f2f2;
+}
+.first-box {
+    width: 100%;
+    height: 110px;
+}
+.first-box ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+.first-box ul li {
+    width: 20%;
+    background-color: #fff;
+    text-align: center;
+}
+.first-box ul li img {
+    width: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.first-box ul li p {
+    color: #666666;
+    font-size: 12px;
+}
+.first-box ul .special {
+    background-color: #fcfcfc;
+    border-left: 1px solid #eeeeee;
+}
+.second{
+    margin-top: 15px;
+}
+.maylike-title{
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow{
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.text1{
+    color: #999;
+    font-size: 13px;
+    margin-top:3px;
+}
+.text1::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid red;
+    margin-top: -.14rem;
 }
 </style>
