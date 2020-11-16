@@ -64,6 +64,7 @@
             <div class="fcjj-cons">
                 <a href>
                     <img src="//gfs9.gomein.net.cn/T12RJeBmJT1RCvBVdK.gif" alt />
+                   
                 </a>
             </div>
         </div>
@@ -480,6 +481,7 @@
 </template>
 
 <script>
+
 // import list from "../../public/data/page.json";
 export default {
     name: "carrousel",
@@ -580,27 +582,6 @@ export default {
     computed: {
         swiper() {
             return this.$refs.mySwiper.$swiper;
-        },
-        listSwiper() {
-            return this.$store.state.listSwiper;
-        },
-        fchhList1() {
-            return this.$store.state.fchhList1;
-        },
-        fchhList2() {
-            return this.$store.state.fchhList2;
-        },
-        fchhList3() {
-            return this.$store.state.fchhList3;
-        },
-        lazyTopList() {
-            return this.$store.state.lazyTopList;
-        },
-        lazyLeftList() {
-            return this.$store.state.lazyLeftList;
-        },
-        lazyLeftRight() {
-            return this.$store.state.lazyLeftRight;
         },
     },
     mounted() {
