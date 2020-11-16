@@ -48,7 +48,11 @@
                 </div>
                 <p :class="{active:name=='page'}">首页</p>
             </div>
+<<<<<<< HEAD
             <div class="tail-item" @click="btn2('mall')">
+=======
+            <div class="tail-item" @click="btn('mall')">
+>>>>>>> 3f01950716fb72e67ffc3661c29dbc74335653e8
                 <div v-if="name=='mall'">
                     <img src="../images/mall1.png" />
                 </div>
@@ -57,7 +61,11 @@
                 </div>
                 <p :class="{active:name=='mall'}">门店</p>
             </div>
+<<<<<<< HEAD
             <div class="tail-item" @click="btn3('message')">
+=======
+            <div class="tail-item" @click="btn('message')">
+>>>>>>> 3f01950716fb72e67ffc3661c29dbc74335653e8
                 <div v-if="name=='message'">
                     <img src="../images/message.png" />
                 </div>
@@ -66,7 +74,11 @@
                 </div>
                 <p :class="{active:name=='message'}">消息</p>
             </div>
+<<<<<<< HEAD
             <div class="tail-item" @click="btn4('cart')">
+=======
+            <div class="tail-item" @click="btn('cart')">
+>>>>>>> 3f01950716fb72e67ffc3661c29dbc74335653e8
                 <div v-if="name=='cart'">
                     <img src="../images/chart1.png" />
                 </div>
@@ -75,7 +87,11 @@
                 </div>
                 <p :class="{active:name=='cart'}">购物车</p>
             </div>
+<<<<<<< HEAD
             <div class="tail-item" @click="btn5('me')">
+=======
+            <div class="tail-item" @click="btn('me')">
+>>>>>>> 3f01950716fb72e67ffc3661c29dbc74335653e8
                 <div v-if="name=='me'">
                     <img src="../images/me.png" />
                 </div>
@@ -116,6 +132,7 @@ export default {
         btnClick(ade) {
             this.ade = false;
         },
+<<<<<<< HEAD
          btn2(a) {
             this.$router.push({
                 path:'https://m.gome.com.cn/store.html'
@@ -136,6 +153,8 @@ export default {
                 path:"/me"
             })
         }
+=======
+>>>>>>> 3f01950716fb72e67ffc3661c29dbc74335653e8
     },
 };
 </script>

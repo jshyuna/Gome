@@ -1,6 +1,7 @@
 <template>
     <div>
         <div class="header">
+<<<<<<< HEAD
             <div class="h-left" @click="btnback('page')">
                 <img src="../images/back.png" alt />
             </div>
@@ -78,6 +79,9 @@
                 <img src="../images/arrow-up.png" alt="" class="arrow">
                 <span class="text1">你可能喜欢</span>
             </div>
+=======
+            我的国美
+>>>>>>> 3f01950716fb72e67ffc3661c29dbc74335653e8
         </div>
     </div>
 </template>
@@ -89,6 +93,7 @@ export default {}
 </script>
 
 <style scoped>
+<<<<<<< HEAD
 .header {
     position: relative;
     display: flex;
@@ -217,4 +222,7 @@ export default {}
     border-bottom: 1px solid red;
     margin-top: -.14rem;
 }
+=======
+
+>>>>>>> 3f01950716fb72e67ffc3661c29dbc74335653e8
 </style>
