@@ -15,10 +15,24 @@ export default {};
     box-sizing: border-box;
 }
 
-#app,
+html, 
 body,
-html {
+#app{
     height: 100%;
     width: 100%;
+}
+#app{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+a{
+    text-decoration: none;
+}
+.middle-auto{
+    overflow: auto;
+}
+i{
+   font-style: normal; 
 }
 </style>
