@@ -7,6 +7,7 @@ import Cart from "../components/Cart.vue"
 import Mall from "../components/Mall.vue"
 import Me from "../components/Me.vue"
 import Message from "../components/Message.vue"
+import Register from "../components/Register.vue"
 
 
 const routes = [
@@ -30,7 +31,14 @@ const routes = [
   {
     path:'/message',
     component:Message
-  }
+  },
+  {
+    path:'/register',
+    component:Register
+  },
+  // {
+  //   path:'https://m.gome.com.cn/store.html'
+  // }
 ]
 
 const router = new VueRouter({

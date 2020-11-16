@@ -469,6 +469,20 @@
                 </div>
             </div>
         </div>
+        <!-- 底部文字 -->
+        <div class=" other">
+            <div class="other-img">
+
+            </div>
+        <p>互联网药品信息服务资格证编号（沪）-经营性-2019-0006</p>
+        <p>营业执照 经营证照 增值电信业务经营许可证 出版物经营许可证</p>
+        <p>网络文化经营许可证沪网文[2017]5537-436号 京B2-20191290</p>
+        <p><img src="../images/gwab-icon.png" alt=""> 京公网安备11010502038379号 沪B2-20120004号</p>
+        <p>沪ICP备11009419号/京ICP备19011786号</p>
+        <p>网络食品销售第三方平台提供者备案：沪网食备A0015号</p>
+        <p>copyright © 2000-2019 gome.com.cn</p>
+        <p>客服热线: 4008-113-333</p>
+    </div>
     </div>
 </template>
 
@@ -1108,12 +1122,19 @@ export default {
     color: #666;
 
 }
-
-
-
-
-
-
-
-
+.other{
+    text-align: center;
+    margin-bottom:10px;
+}
+.other p {
+  line-height: 2;
+  font-size: 12px;
+  color: #7a7f85;
+}
+.other-img{
+    width: 100%;
+    height: 15px;
+    background:url(../images/other.png) no-repeat 50%;
+    background-size:285px 15px;
+}
 </style>

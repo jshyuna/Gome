@@ -57,7 +57,7 @@
                 </div>
                 <p :class="{active:name=='mall'}">门店</p>
             </div>
-            <div class="tail-item" @click="btn('message')">
+            <div class="tail-item" @click="btn3('message')">
                 <div v-if="name=='message'">
                     <img src="../images/message.png" />
                 </div>
@@ -66,7 +66,7 @@
                 </div>
                 <p :class="{active:name=='message'}">消息</p>
             </div>
-            <div class="tail-item" @click="btn('cart')">
+            <div class="tail-item" @click="btn4('cart')">
                 <div v-if="name=='cart'">
                     <img src="../images/chart1.png" />
                 </div>
@@ -75,7 +75,7 @@
                 </div>
                 <p :class="{active:name=='cart'}">购物车</p>
             </div>
-            <div class="tail-item" @click="btn('me')">
+            <div class="tail-item" @click="btn5('me')">
                 <div v-if="name=='me'">
                     <img src="../images/me.png" />
                 </div>
@@ -116,6 +116,21 @@ export default {
         btnClick(ade) {
             this.ade = false;
         },
+         btn3(a) {
+            this.$router.push({
+                path:"/register"
+            })
+        },
+        btn4(a) {
+            this.$router.push({
+                path:"/cart"
+            })
+        },
+        btn5(a) {
+            this.$router.push({
+                path:"/me"
+            })
+        }
     },
 };
 </script>
