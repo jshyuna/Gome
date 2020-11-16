@@ -166,6 +166,46 @@
          "txt": "樱雪CXW-268-H1813(B) 触摸式 油烟机 黑",
          "otherPrice": "24期免息",
          "price": "2199"
+      },
+      {
+         "id": "0005",
+         "imgUrl": "//gfs17.gomein.net.cn/T1U3W7BsET1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+         "siteName": "驰郑海尔专卖店",
+         "tag": "",
+         "txt": "海尔电热水器150L/200升3000W速热恒温家用商用电热水器中央储水全屋落地竖立式(200升 ES200F-LC)",
+         "otherPrice": "",
+         "price": "3199"
+      },
+      {
+         "id": "0006",
+         "imgUrl": "//gfs17.gomein.net.cn/T1ktKCBXZT1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+         "siteName": "国美网店",
+         "tag": "自营",
+         "txt": "微软（Microsoft）Surface Pro 7 二合一平板电脑笔记本 12.3英寸 i3-1005G1 4GB 128GB",
+         "otherPrice": "国美分期",
+         "price": "5388"
+      },
+      {
+         "id": "0007",
+         "imgUrl": "//gfs17.gomein.net.cn/T1jjd5ByWv1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+         "siteName": "国美网店",
+         "tag": "自营",
+         "txt": "荣耀平板6 10.1英寸影音娱乐游戏学习办公平板电脑(华为海思麒麟710A 4+64GB 全网通版)星空灰 演示样机",
+         "otherPrice": "国美分期",
+         "price": "1699"
+      },
+      {
+         "id": "0008",
+         "imgUrl": "//gfs17.gomein.net.cn/T1geZ5BTdT1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+         "siteName": "国美网店",
+         "tag": "自营",
+         "txt": "碧云泉G5智能净水机JST-R302E金反渗透过滤台式免安装",
+         "otherPrice": "24期免息",
+         "price": "2499"
       }
    ],
    "lazyLeftRight": [
@@ -208,6 +248,47 @@
          "txt": "美的(Midea) JSQ22-HWA 12升 燃气热水器(天然气) 宽频恒温 6年质保 安防管理",
          "otherPrice": "24期免息",
          "price": "749"
+      },
+      {
+         "id": "0005",
+         "imgUrl": "//gfs17.gomein.net.cn/T1YRxyBsL_1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs16.gomein.net.cn/T1opx4Bsh_1RCvBVdK.jpg",
+         "siteName": "嘉和电脑专营店",
+         "tag": "",
+         "txt": "戴尔DELL 灵越5000 5593系列 15.6英寸高性能空间站轻薄窄边框笔记本电脑可选十代i5/i7处理(1749s.十代i7/4G独显)",
+         "otherPrice": "",
+         "price": "5388"
+      },
+      {
+         "id": "0006",
+         "imgUrl": "//gfs17.gomein.net.cn/T155W4BQ_T1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+         "siteName": "大中体验店（北京大中团结湖店）",
+         "tag": "自营",
+         "txt": "OPPO Find X2 Pr o 感官新旗舰 3K分辨率+1 20Hz超感屏 10亿色显示 视频插帧 12GB+256GB 双模5G手机 缎黑",
+         "otherPrice": "国美分期",
+         "price": "5999"
+      },
+      {
+         "id": "0007",
+         "imgUrl": "//gfs17.gomein.net.cn/T1LDd5BTJT1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+         "siteName": "国美网店",
+         "tag": "自营",
+         "txt": "利仁（Liven）智能无油空气炸锅家用煎炸锅可视薯条机10L大容量空气锅炸鸡电炸锅KZ-D1002",
+         "otherPrice": "国美分期",
+         "price": "599"
+      },
+      {
+         "id": "0008",
+         "imgUrl": "//gfs17.gomein.net.cn/T1w3bXBXb_1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs17.gomein.net.cn/T14CDvBjbv1RCvBVdK.jpg",
+         "siteName": "世纪协鹏电脑专营店",
+         "tag": "",
+         "txt": "美的(Midea) JSQ22-HWA 12升 燃气热水器(天然气) 宽频恒温 6年质保 安防管理",
+         "otherPrice": "",
+         "price": "6299"
       }
+
    ]
 }

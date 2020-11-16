@@ -1,27 +1,18 @@
 <template>
     <div>
-        <!-- 头部 -->
-        <!-- <div class="header">
-            <div class="head-site">
-                <img src="../images/dingwei.png" alt />
-                北京市
-            </div>
-            <div class="head-inp">
-                <img src="../images/search.png" alt />
-                <span>平板电视</span>
-            </div>
-            <div class="head-login">登录</div>
-        </div>-->
         <!-- 目录 -->
         <div class="classify">
             <div class="classify-left">
-                <div class="classify-item">
+                <div class="classify-item" :class="[stateName=='page-jx'?'active':'']"
+                        @click="stateName='page'">
                     <p>精选</p>
                 </div>
-                <div class="classify-item">
+                <div class="classify-item" :class="[stateName=='page-cs'?'active':'']"
+                        @click="stateName='page-cs'">
                     <p>国美超市</p>
                 </div>
-                <div class="classify-item">
+                <div class="classify-item" :class="[stateName=='page-gj'?'active':'']"
+                        @click="stateName='page-gj'">
                     <p>国美管家</p>
                 </div>
                 <div class="classify-item">
@@ -50,6 +41,7 @@
                 <div class="classify-right-fl">分类</div>
             </div>
         </div>
+        <component :is="stateName"></component>
         <!-- 轮播图 -->
         <div class="swiper">
             <swiper ref="mySwiper" class="swiper-item" :options="swiperOptions">
@@ -481,12 +473,18 @@
 </template>
 
 <script>
+import PageJx from "./PageJx.vue";
+import PageCs from "./PageCs.vue";
+import PageGj from "./PageGj.vue";
+
 
 // import list from "../../public/data/page.json";
 export default {
     name: "carrousel",
     data() {
         return {
+            stateName: "page-jx",
+
              // 轮播图
             listSwiper:[],
              // 返场好货 1
@@ -522,7 +520,7 @@ export default {
         xhr.send();
         xhr.onload = function () {
             that.listSwiper=JSON.parse(xhr.response).listSwiper;
-            console.log(that.listSwiper); 
+            // console.log(that.listSwiper); 
         };
         // 返场好货 1
         var that = this;
@@ -531,7 +529,7 @@ export default {
         xhr1.send();
         xhr1.onload = function () {
             that.fchhList1=JSON.parse(xhr1.response).fchhList1;
-            console.log(that.fchhList1); 
+            // console.log(that.fchhList1); 
         };
         // 返场好货 2
         var that = this;
@@ -540,7 +538,7 @@ export default {
         xhr2.send();
         xhr2.onload = function () {
             that.fchhList2=JSON.parse(xhr2.response).fchhList2;
-            console.log(that.fchhList2); 
+            // console.log(that.fchhList2); 
         };
         // 返场好货 3
         var that = this;
@@ -549,7 +547,7 @@ export default {
         xhr3.send();
         xhr3.onload = function () {
             that.fchhList3=JSON.parse(xhr3.response).fchhList3;
-            console.log(that.fchhList3); 
+            // console.log(that.fchhList3); 
         };
         // 懒加载 头部分
         var that = this;
@@ -558,7 +556,7 @@ export default {
         xhr4.send();
         xhr4.onload = function () {
             that.lazyTopList=JSON.parse(xhr4.response).lazyTopList;
-            console.log(that.lazyTopList); 
+            // console.log(that.lazyTopList); 
         };
         // 懒加载 底 左部分
         var that = this;
@@ -567,7 +565,7 @@ export default {
         xhr5.send();
         xhr5.onload = function () {
             that.lazyLeftList=JSON.parse(xhr5.response).lazyLeftList;
-            console.log(that.lazyLeftList); 
+            // console.log(that.lazyLeftList); 
         };
         // 懒加载 底 右部分
         var that = this;
@@ -576,8 +574,13 @@ export default {
         xhr6.send();
         xhr6.onload = function () {
             that.lazyLeftRight=JSON.parse(xhr6.response).lazyLeftRight;
-            console.log(that.lazyLeftRight); 
+            // console.log(that.lazyLeftRight); 
         };
+    },
+    components:{
+         "page-jx":PageJx,
+         "page-cs":PageCs,
+         "page-gj":PageGj,
     },
     computed: {
         swiper() {
@@ -592,60 +595,6 @@ export default {
 </script>
 
 <style scoped>
-/* 头部 */
-/* .header {
-    height: 6%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 0;
-    flex-shrink: 0;
-    justify-content: space-between;
-    background-color: #f20c59;
-}
-
-.head-site,
-.head-inp,
-.head-login {
-    height: 80%;
-    color: #fff;
-}
-.head-site,
-.head-login {
-    width: 15%;
-    font-size: 12px;
-    justify-content: center;
-}
-.head-login {
-    display: flex;
-    align-items: center;
-}
-.head-site {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.head-site img {
-    width: 12px;
-    height: 12px;
-}
-.head-inp {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    border-radius: 24px;
-    background-color: #fff;
-}
-.head-inp img {
-    width: 16px;
-    height: 16px;
-    margin-left: 10px;
-}
-.head-inp span {
-    font-size: 12px;
-    color: #999;
-    margin-left: 10px;
-} */
 
 /* 目录  */
 .classify {
