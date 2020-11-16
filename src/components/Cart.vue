@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="gouwuche">
         <div class="header">
             <div class="h-left">
                 <img src="../images/back.png" alt />
@@ -42,6 +42,9 @@ export default {};
 </script>
 
 <style scoped>
+.gouwuche{
+  background-color:rgb(243, 245, 247);
+}
 .header {
     position: relative;
     display: flex;
