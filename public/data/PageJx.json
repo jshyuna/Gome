@@ -1,0 +1,294 @@
+{
+   "code": 20,
+   "status": "成功",
+   "listSwiper": [
+      {
+         "id": "001",
+         "imgUrl": "//gfs5.gomein.net.cn/wireless/T1gib7BmET1RCvBVdK_1065_390.jpg"
+      },
+      {
+         "id": "002",
+         "imgUrl": "//gfs5.gomein.net.cn/wireless/T1zYD7BCx_1RCvBVdK_1065_390.jpg"
+      },
+      {
+         "id": "003",
+         "imgUrl": "//gfs7.gomein.net.cn/wireless/T1RtDeBb_T1RCvBVdK_1065_390.jpg"
+      },
+      {
+         "id": "004",
+         "imgUrl": "//gfs8.gomein.net.cn/wireless/T1Jbb7BgYv1RCvBVdK_1065_390.jpg"
+      },
+      {
+         "id": "005",
+         "imgUrl": "//gfs7.gomein.net.cn/wireless/T1CYZ7B7__1RCvBVdK_1065_390.jpg"
+      },
+      {
+         "id": "006",
+         "imgUrl": "//gfs7.gomein.net.cn/wireless/T1fWK7BjDv1RCvBVdK_1065_390.jpg"
+      },
+      {
+         "id": "007",
+         "imgUrl": "//gfs5.gomein.net.cn/wireless/T1BtdeBbDT1RCvBVdK_1065_390.jpg"
+      },
+      {
+         "id": "008",
+         "imgUrl": "//gfs7.gomein.net.cn/wireless/T1EWC7BQWv1RCvBVdK_1065_390.jpg"
+      }
+   ],
+   "fchhList1": [
+      {
+         "id": "0001",
+         "img": "//gfs7.gomein.net.cn/wireless/T14WV7BKhT1RCvBVdK_281_375.png"
+      },
+      {
+         "id": "0002",
+         "img": "//gfs7.gomein.net.cn/wireless/T1rsd7BQ__1RCvBVdK_281_375.png"
+      },
+      {
+         "id": "0003",
+         "img": "//gfs6.gomein.net.cn/wireless/T1GsA7Bjhv1RCvBVdK_281_375.png"
+      },
+      {
+         "id": "0004",
+         "img": "//gfs6.gomein.net.cn/wireless/T123W7Bv_v1RCvBVdK_281_375.png"
+      }
+   ],
+   "fchhList2": [
+      {
+         "id": "0005",
+         "img": "//gfs8.gomein.net.cn/wireless/T19xD7BKET1RCvBVdK_281_375.png"
+      },
+      {
+         "id": "0006",
+         "img": "//gfs6.gomein.net.cn/wireless/T1.Wh7ByCv1RCvBVdK_281_375.png"
+      },
+      {
+         "id": "0007",
+         "img": "//gfs9.gomein.net.cn/wireless/T1XWd7BvdT1RCvBVdK_281_375.png"
+      },
+      {
+         "id": "0008",
+         "img": "//gfs9.gomein.net.cn/wireless/T1ZqK7BmZ_1RCvBVdK_281_375.png"
+      }
+   ],
+   "fchhList3": [
+      {
+         "id": "0009",
+         "img": "//gfs8.gomein.net.cn/wireless/T10Wh7BXdv1RCvBVdK_281_375.png"
+      },
+      {
+         "id": "0010",
+         "img": "//gfs9.gomein.net.cn/wireless/T11sd7B_b_1RCvBVdK_281_375.png"
+      },
+      {
+         "id": "0011",
+         "img": "//gfs8.gomein.net.cn/wireless/T1PqD7BTV_1RCvBVdK_281_375.png"
+      },
+      {
+         "id": "0012",
+         "img": "//gfs9.gomein.net.cn/wireless/T1qq_7B4D_1RCvBVdK_281_375.png"
+      }
+   ],
+   "lazyTopList": [
+      {
+         "id": "001",
+         "title": "全部",
+         "subtitle": "猜你喜欢"
+      },
+      {
+         "id": "002",
+         "title": "大牌手机",
+         "subtitle": "畅享5G"
+      },
+      {
+         "id": "003",
+         "title": "国美超市",
+         "subtitle": "低价好物"
+      },
+      {
+         "id": "004",
+         "title": "爆款大家电",
+         "subtitle": "真选推荐"
+      },
+      {
+         "id": "005",
+         "title": "精品小家电",
+         "subtitle": "发现好物"
+      },
+      {
+         "id": "006",
+         "title": "智能数码",
+         "subtitle": "惊喜抢购"
+      },
+      {
+         "id": "007",
+         "title": "影音盛宴",
+         "subtitle": "崭新视界"
+      }
+   ],
+   "lazyLeftList": [
+      {
+         "id": "0001",
+         "imgUrl": "//gfs17.gomein.net.cn/T1E7DgB7Jv1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+         "siteName": "大中体验店（北京大中团结湖店）",
+         "tag": "自营",
+         "txt": "美的(Midea) 电压力锅 准确控压 简约大屏 4.8L双胆高压锅 MY-YL50Easy203",
+         "otherPrice": "国美分期",
+         "price": "339"
+      },
+      {
+         "id": "0002",
+         "imgUrl": "//gfs17.gomein.net.cn/T1OCC_BjLv1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+         "siteName": "国美网店",
+         "tag": "自营",
+         "txt": "vivoY97 4+128GB 梦幻粉 全网通4G 双卡水滴屏全面屏手机 AI智慧双摄",
+         "otherPrice": "国美分期",
+         "price": "1398"
+      },
+      {
+         "id": "0003",
+         "imgUrl": "//gfs17.gomein.net.cn/T1jvETBvxv1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+         "siteName": "国美网店",
+         "tag": "自营",
+         "txt": "樱雪抽油烟机CXW-218-H1516(G)",
+         "otherPrice": "节能补贴",
+         "price": "1699"
+      },
+      {
+         "id": "0004",
+         "imgUrl": "//gfs17.gomein.net.cn/T1KTEgBQJv1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+         "siteName": "国美网店",
+         "tag": "自营",
+         "txt": "樱雪CXW-268-H1813(B) 触摸式 油烟机 黑",
+         "otherPrice": "24期免息",
+         "price": "2199"
+      },
+      {
+         "id": "0005",
+         "imgUrl": "//gfs17.gomein.net.cn/T1U3W7BsET1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs14.gomein.net.cn/T1.ZYsBjdT1RCvBVdK.jpg",
+         "siteName": "驰郑海尔专卖店",
+         "tag": "",
+         "txt": "海尔电热水器150L/200升3000W速热恒温家用商用电热水器中央储水全屋落地竖立式(200升 ES200F-LC)",
+         "otherPrice": "",
+         "price": "3199"
+      },
+      {
+         "id": "0006",
+         "imgUrl": "//gfs17.gomein.net.cn/T1ktKCBXZT1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+         "siteName": "国美网店",
+         "tag": "自营",
+         "txt": "微软（Microsoft）Surface Pro 7 二合一平板电脑笔记本 12.3英寸 i3-1005G1 4GB 128GB",
+         "otherPrice": "国美分期",
+         "price": "5388"
+      },
+      {
+         "id": "0007",
+         "imgUrl": "//gfs17.gomein.net.cn/T1jjd5ByWv1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+         "siteName": "国美网店",
+         "tag": "自营",
+         "txt": "荣耀平板6 10.1英寸影音娱乐游戏学习办公平板电脑(华为海思麒麟710A 4+64GB 全网通版)星空灰 演示样机",
+         "otherPrice": "国美分期",
+         "price": "1699"
+      },
+      {
+         "id": "0008",
+         "imgUrl": "//gfs17.gomein.net.cn/T1geZ5BTdT1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+         "siteName": "国美网店",
+         "tag": "自营",
+         "txt": "碧云泉G5智能净水机JST-R302E金反渗透过滤台式免安装",
+         "otherPrice": "24期免息",
+         "price": "2499"
+      }
+   ],
+   "lazyLeftRight": [
+      {
+         "id": "0001",
+         "imgUrl": "//gfs17.gomein.net.cn/T1qBE4BsKT1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+         "siteName": "大中体验店（北京大中团结湖店）",
+         "tag": "自营",
+         "txt": "美的(Midea)智能电压力锅微电脑版智能预约5升双胆高压锅高压电饭锅MY-YL50Simple105",
+         "otherPrice": "国美分期",
+         "price": "259"
+      },
+      {
+         "id": "0002",
+         "imgUrl": "//gfs17.gomein.net.cn/T155W4BQ_T1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+         "siteName": "大中体验店（北京大中团结湖店）",
+         "tag": "自营",
+         "txt": "OPPO Find X2 Pr o 感官新旗舰 3K分辨率+1 20Hz超感屏 10亿色显示 视频插帧 12GB+256GB 双模5G手机 缎黑",
+         "otherPrice": "国美分期",
+         "price": "5999"
+      },
+      {
+         "id": "0003",
+         "imgUrl": "//gfs17.gomein.net.cn/T1jGJTBQCT1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+         "siteName": "国美网店",
+         "tag": "自营",
+         "txt": "方太（FOTILE）CXW-200-EM05欧式T型机 抽油烟机",
+         "otherPrice": "节能补贴",
+         "price": "350"
+      },
+      {
+         "id": "0004",
+         "imgUrl": "//gfs17.gomein.net.cn/T1M0AbB_Z_1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+         "siteName": "大中体验店（北京大中团结湖店）",
+         "tag": "自营",
+         "txt": "美的(Midea) JSQ22-HWA 12升 燃气热水器(天然气) 宽频恒温 6年质保 安防管理",
+         "otherPrice": "24期免息",
+         "price": "749"
+      },
+      {
+         "id": "0005",
+         "imgUrl": "//gfs17.gomein.net.cn/T1YRxyBsL_1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs16.gomein.net.cn/T1opx4Bsh_1RCvBVdK.jpg",
+         "siteName": "嘉和电脑专营店",
+         "tag": "",
+         "txt": "戴尔DELL 灵越5000 5593系列 15.6英寸高性能空间站轻薄窄边框笔记本电脑可选十代i5/i7处理(1749s.十代i7/4G独显)",
+         "otherPrice": "",
+         "price": "5388"
+      },
+      {
+         "id": "0006",
+         "imgUrl": "//gfs17.gomein.net.cn/T155W4BQ_T1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T124E4BTCv1RCvBVdK.png",
+         "siteName": "大中体验店（北京大中团结湖店）",
+         "tag": "自营",
+         "txt": "OPPO Find X2 Pr o 感官新旗舰 3K分辨率+1 20Hz超感屏 10亿色显示 视频插帧 12GB+256GB 双模5G手机 缎黑",
+         "otherPrice": "国美分期",
+         "price": "5999"
+      },
+      {
+         "id": "0007",
+         "imgUrl": "//gfs17.gomein.net.cn/T1LDd5BTJT1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png",
+         "siteName": "国美网店",
+         "tag": "自营",
+         "txt": "利仁（Liven）智能无油空气炸锅家用煎炸锅可视薯条机10L大容量空气锅炸鸡电炸锅KZ-D1002",
+         "otherPrice": "国美分期",
+         "price": "599"
+      },
+      {
+         "id": "0008",
+         "imgUrl": "//gfs17.gomein.net.cn/T1w3bXBXb_1RCvBVdK_400.jpg",
+         "LogoImgUrl": "//gfs17.gomein.net.cn/T14CDvBjbv1RCvBVdK.jpg",
+         "siteName": "世纪协鹏电脑专营店",
+         "tag": "",
+         "txt": "美的(Midea) JSQ22-HWA 12升 燃气热水器(天然气) 宽频恒温 6年质保 安防管理",
+         "otherPrice": "",
+         "price": "6299"
+      }
+
+   ]
+}
