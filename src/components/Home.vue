@@ -29,7 +29,7 @@
                 <img src="../images/search.png" alt />
                 <span>电视</span>
             </div>
-            <div class="head-login">
+            <div class="head-login" @click="btnlogin('register')">
                 登录
             </div>
         </div>
@@ -48,6 +48,7 @@
                 </div>
                 <p :class="{active:name=='page'}">首页</p>
             </div>
+           
             <div class="tail-item" @click="btn('mall')">
                 <div v-if="name=='mall'">
                     <img src="../images/mall1.png" />
@@ -55,8 +56,9 @@
                 <div v-else>
                     <img src="../images/mall2.png" />
                 </div>
-                <p :class="{active:name=='mall'}">门店</p>
+                <a href="https://m.gome.com.cn/store.html" :class="{active:name=='mall'}">门店</a>
             </div>
+            
             <div class="tail-item" @click="btn3('message')">
                 <div v-if="name=='message'">
                     <img src="../images/message.png" />
@@ -94,6 +96,7 @@ import Mall from "./Mall.vue";
 import Message from "./Message.vue";
 import Me from "./Me.vue";
 import Page from "./Page.vue";
+import Register from "./Register.vue";
 
 export default {
     data() {
@@ -108,6 +111,7 @@ export default {
         message: Message,
         me: Me,
         page: Page,
+        register: Register
     },
     methods: {
         btn(a) {
@@ -129,6 +133,11 @@ export default {
         btn5(a) {
             this.$router.push({
                 path:"/me"
+            })
+        },
+        btnlogin(a) {
+            this.$router.push({
+                path:"/register"
             })
         }
     },
@@ -289,6 +298,11 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.tail-item a {
+    font-size: 12px;
+    text-align: center;
+    color:#000000;
 }
 
 </style>

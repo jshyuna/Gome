@@ -74,7 +74,7 @@
                     alt
                 />
                 <!-- </div> -->
-                <span class="classify-right-fl">分类</span>
+                <span class="classify-right-fl" @click="btnclass('class')">分类</span>
             </div>
         </div>
         <component :is="stateName"></component>
@@ -106,6 +106,7 @@ import PageJd from "./PageJd.vue";
 import PageSsj from "./PageSsj.vue";
 import PageBh from "./PageBh.vue";
 import PageJz from "./PageJz.vue";
+import Class from "./Class.vue"
 
 export default {
     data() {
@@ -123,6 +124,7 @@ export default {
         "page-ssj": PageSsj,
         "page-bh": PageBh,
         "page-jz": PageJz,
+        "class":Class
     },
      methods:{
           btnclass(a) {
