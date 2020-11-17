@@ -27,7 +27,7 @@
             </div>
             <div class="head-inp">
                 <img src="../images/search.png" alt />
-                <span>平板电视</span>
+                <span>电视</span>
             </div>
             <div class="head-login">
                 登录
