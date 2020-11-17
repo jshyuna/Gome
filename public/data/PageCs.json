@@ -4,55 +4,83 @@
    "listSwiper": [
       {
          "id": "001",
-         "imgUrl": "//gfs6.gomein.net.cn/wireless/T1iqK7B7h_1RCvBVdK_1065_390.jpg"
+         "imgUrl": "//gfs6.gomein.net.cn/wireless/T1SXDeBCDT1RCvBVdK_710_260.jpg"
       },
       {
          "id": "002",
-         "imgUrl": "//gfs8.gomein.net.cn/wireless/T133A7BsYv1RCvBVdK_1065_390.png"
+         "imgUrl": "//gfs9.gomein.net.cn/wireless/T13rD7Bj_v1RCvBVdK_710_260.jpg"
       },
       {
          "id": "003",
-         "imgUrl": "//gfs6.gomein.net.cn/wireless/T1sBW7BK_v1RCvBVdK_1065_390.jpg"
+         "imgUrl": "//gfs6.gomein.net.cn/wireless/T1cnd7Bg_v1RCvBVdK_710_260.jpg"
       },
       {
          "id": "004",
-         "imgUrl": "//gfs7.gomein.net.cn/wireless/T1Eqx7BXJg1RCvBVdK_1065_390.jpg"
+         "imgUrl": "//gfs9.gomein.net.cn/wireless/T1q9h7BXZ_1RCvBVdK_710_260.jpg"
       },
       {
          "id": "005",
-         "imgUrl": "//gfs7.gomein.net.cn/wireless/T1fsY7BTZ_1RCvBVdK_1065_390.jpg"
-      },
-      {
-         "id": "006",
-         "imgUrl": "//gfs6.gomein.net.cn/wireless/T1yqL7BTJv1RCvBVdK_1065_390.jpg"
-      },
-      {
-         "id": "007",
-         "imgUrl": "//gfs5.gomein.net.cn/wireless/T1ssZ7B7__1RCvBVdK_1065_390.jpg"
-      },
-      {
-         "id": "008",
-         "imgUrl": "//gfs5.gomein.net.cn/wireless/T1gib7BmET1RCvBVdK_1065_390.jpg"
+         "imgUrl": "//gfs6.gomein.net.cn/wireless/T1tXKKBCZv1RCvBVdK_710_260.jpg"
       }
    ],
-   "fchhList1": [
+   "pzflList": [
       {
          "id": "0001",
-         "img": "//gfs7.gomein.net.cn/wireless/T14WV7BKhT1RCvBVdK_281_375.png"
+         "img": "//gfs8.gomein.net.cn/wireless/T1zBV7Byd_1RCvBVdK_160_160.jpg",
+         "txt":"生鲜水果"
       },
       {
          "id": "0002",
-         "img": "//gfs7.gomein.net.cn/wireless/T1rsd7BQ__1RCvBVdK_281_375.png"
+         "img": "//gfs7.gomein.net.cn/wireless/T15qb7Bbhv1RCvBVdK_160_160.jpg",
+         "txt":"食品特产"
       },
       {
          "id": "0003",
-         "img": "//gfs6.gomein.net.cn/wireless/T1GsA7Bjhv1RCvBVdK_281_375.png"
+         "img": "//gfs7.gomein.net.cn/wireless/T19Wb7ByZT1RCvBVdK_160_160.jpg",
+         "txt":"家居家纺"
       },
       {
          "id": "0004",
-         "img": "//gfs6.gomein.net.cn/wireless/T123W7Bv_v1RCvBVdK_281_375.png"
+         "img": "//gfs8.gomein.net.cn/wireless/T1ebx7Byxv1RCvBVdK_160_160.jpg",
+         "txt":"个人护理"
+      },
+      {
+         "id": "0005",
+         "img": "//gfs6.gomein.net.cn/wireless/T1wxJ7BmAv1RCvBVdK_160_160.jpg",
+         "txt":"酒水饮料"
+      },
+      {
+         "id": "0006",
+         "img": "//gfs8.gomein.net.cn/wireless/T1MbC7BmKT1RCvBVdK_160_160.jpg",
+         "txt":"家庭清洁"
+      },
+      {
+         "id": "0007",
+         "img": "//gfs7.gomein.net.cn/wireless/T1wWd7BQ_T1RCvBVdK_160_160.jpg",
+         "txt":"美妆护肤"
+      },
+      {
+         "id": "0008",
+         "img": "//gfs9.gomein.net.cn/wireless/T1V3A7BsAv1RCvBVdK_160_160.jpg",
+         "txt":"母婴玩具"
       }
    ],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    "fchhList2": [
       {
          "id": "0005",

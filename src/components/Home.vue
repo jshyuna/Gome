@@ -260,7 +260,8 @@ export default {
     display: flex;
     align-items: center;
     text-align: center;
-    border: 1px solid #EEE;
+    border-top: 1px solid #EEE;
+     background-color: #f8f8f8;
 }
 
 /* 底部item */
@@ -282,7 +283,6 @@ export default {
 
 .tail-item img {
     width: 25px;
-    /* height: 25px; */
 }
 
 .tail-item div {
@@ -291,8 +291,4 @@ export default {
     justify-content: center;
 }
 
-/* .active {
-    color: #f20c59;
-    font-weight: bold;
-} */
 </style>
