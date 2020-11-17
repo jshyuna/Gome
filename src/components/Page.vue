@@ -15,7 +15,8 @@
                         @click="stateName='page-gj'">
                     <p>国美管家</p>
                 </div>
-                <div class="classify-item">
+                <div class="classify-item" :class="[stateName=='page-dn'?'active':'']"
+                        @click="stateName='page-dn'">
                     <p>手机电脑</p>
                 </div>
                 <div class="classify-item">
@@ -490,6 +491,8 @@
 import PageJx from "./PageJx.vue";
 import PageCs from "./PageCs.vue";
 import PageGj from "./PageGj.vue";
+import PageDn from "./PageDn.vue";
+
 
 
 // import list from "../../public/data/page.json";
@@ -595,6 +598,8 @@ export default {
          "page-jx":PageJx,
          "page-cs":PageCs,
          "page-gj":PageGj,
+         "page-dn":PageDn,
+
     },
     computed: {
         swiper() {
@@ -609,7 +614,9 @@ export default {
 </script>
 
 <style scoped>
-
+   .swiper >>> .swiper-pagination-bullet-active{
+       background-color: #fff;
+    }
 /* 目录  */
 .classify {
     display: flex;
