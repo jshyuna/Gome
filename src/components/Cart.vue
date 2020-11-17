@@ -1,7 +1,7 @@
 <template>
     <div class="gouwuche">
         <div class="header">
-            <div class="h-left">
+            <div class="h-left" @click="btnback('page')">
                 <img src="../images/back.png" alt />
             </div>
             <div class="h-center">
@@ -38,7 +38,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods:{
+          btnback(a) {
+            this.$router.push({
+                path:"/"
+            })
+        }
+     }
+};
 </script>
 
 <style scoped>

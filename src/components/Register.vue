@@ -1,6 +1,9 @@
 <template>
   <div>
       <div class="section">
+          <div class="close" @click="btnback('page')"> 
+              <img src="../images/close.png" alt="">
+          </div>
         <div class="bgi">
 
         </div>
@@ -47,7 +50,13 @@
 
 <script>
 export default {
-
+methods:{
+          btnback(a) {
+            this.$router.push({
+                path:"/"
+            })
+        }
+     }
 }
 </script>
 
@@ -182,5 +191,14 @@ export default {
         .other-box ul li img {
             width: 100%;
             margin: 0 15px 0px 0px;
+        }
+        .close img{
+            width: 30px;
+            height: 30px;
+        }
+        .close{
+            position: absolute;
+            top:10px;
+            left: 10px;
         }
 </style>

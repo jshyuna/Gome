@@ -39,7 +39,7 @@
                 <div class="classify-right-img">
                     <img src alt />
                 </div>
-                <div class="classify-right-fl">分类</div>
+                <div class="classify-right-fl" @click="btnclass('class')">分类</div>
             </div>
         </div>
         <component :is="stateName"></component>
@@ -492,7 +492,7 @@ import PageJx from "./PageJx.vue";
 import PageCs from "./PageCs.vue";
 import PageGj from "./PageGj.vue";
 import PageDn from "./PageDn.vue";
-
+import Class from "./Class.vue"
 
 
 // import list from "../../public/data/page.json";
@@ -599,7 +599,7 @@ export default {
          "page-cs":PageCs,
          "page-gj":PageGj,
          "page-dn":PageDn,
-
+         "class":Class
     },
     computed: {
         swiper() {
@@ -610,6 +610,13 @@ export default {
         // console.log("Current Swiper instance object", this.swiper);
         this.swiper.slideTo(1, 1000, false);
     },
+     methods:{
+          btnclass(a) {
+            this.$router.push({
+                path:"/class"
+            })
+        }
+     }
 };
 </script>
 

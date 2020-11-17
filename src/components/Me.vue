@@ -84,7 +84,15 @@
 
 <script>
 
-export default {}
+export default {
+     methods:{
+          btnback(a) {
+            this.$router.push({
+                path:"/"
+            })
+        }
+     }
+}
 
 </script>
 
