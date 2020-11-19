@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- 轮播图 -->
-        <div class="swiper">
+        <div class="swiper-jx">
             <swiper ref="mySwiper" class="swiper-item" :options="swiperOptions">
                 <swiper-slide v-for="item in listSwiper" :key="item.id">
                     <img :src="item.imgUrl" alt />
@@ -267,127 +267,98 @@
                 </div>
             </div>
         </div>
-        <!-- 懒加载部分 -->
-        <div class="lazy">
-            <div class="lazy-cons">
-                <div class="lazy-top">
-                    <!-- 懒加载 头部分 -->
-                    <div class="lazy-top-cons">
-                        <div class="lazy-top-item" v-for="item in lazyTopList" :key="item.id">
-                            <a href>
-                                <div class="lazy-top-item-title">{{item.title}}</div>
-                                <div class="lazy-top-item-subtitle">{{item.subtitle}}</div>
-                            </a>
-                        </div>
-                    </div>
+        <!-- 子目录 -->
+        <div class="classify-sub">
+            <div style="display:flex;align-items:center">
+                <div
+                    class="classify-sub-item"
+                    :class="[subName=='pagejx-qb'?'active':'']"
+                    @click="subName='pagejx-qb'"
+                >
+                    <a href="#">
+                        <p class="sub-item-title">全部</p>
+                        <p class="sub-item-body">猜你喜欢</p>
+                    </a>
                 </div>
-                <!-- 懒加载 底部分 -->
-                <div class="lazy-bot">
-                    <div class="lazy-bot-left">
-                        <div class="lazy-bot-left-cons">
-                            <div
-                                class="lazy-bot-left-item"
-                                v-for="item in lazyLeftList"
-                                :key="item.id"
-                            >
-                                <a href class="lazy-bot-left-item-con">
-                                    <div class="lazy-bot-left-item-img">
-                                        <img :src="item.imgUrl" alt />
-                                    </div>
-                                    <div class="lazy-bot-left-item-site">
-                                        <div class="lazy-bot-left-item-site-con">
-                                            <img :src="item.LogoImgUrl" alt />
-                                            <span
-                                                class="lazy-bot-left-item-site-name"
-                                            >{{item.siteName}}</span>
-                                        </div>
-                                    </div>
-                                    <div class="lazy-bot-left-item-info">
-                                        <p class="lazy-bot-left-item-desc">
-                                            <span class="lazy-bot-left-item-tag">
-                                                <span>{{item.tag}}</span>
-                                            </span>
-                                            <span class="lazy-bot-left-item-txt">{{item.txt}}</span>
-                                        </p>
-                                    </div>
-                                </a>
-                                <div class="lazy-bot-left-item-other">
-                                    <div class="lazy-bot-left-item-other-list">
-                                        <span
-                                            class="lazy-bot-left-item-other-tag"
-                                        >{{item.otherPrice}}</span>
-                                    </div>
-                                    <div class="lazy-bot-left-item-other-price">
-                                        <div class="item-other-price">
-                                            <i>￥</i>
-                                            <big>{{item.price}}</big>
-                                        </div>
-                                        <div class="alike">
-                                            <a href>找相似</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lazy-bot-right">
-                        <div class="lazy-bot-right-cons">
-                            <div
-                                class="lazy-bot-right-item"
-                                v-for="item in lazyLeftRight"
-                                :key="item.id"
-                            >
-                                <a href class="lazy-bot-right-item-con">
-                                    <div class="lazy-bot-right-item-img">
-                                        <img :src="item.imgUrl" alt />
-                                    </div>
-                                    <div class="lazy-bot-right-item-site">
-                                        <div class="lazy-bot-right-item-site-con">
-                                            <img :src="item.LogoImgUrl" alt />
-                                            <span
-                                                class="lazy-bot-right-item-site-name"
-                                            >{{item.siteName}}</span>
-                                        </div>
-                                    </div>
-                                    <div class="lazy-bot-right-item-info">
-                                        <p class="lazy-bot-right-item-desc">
-                                            <span class="lazy-bot-right-item-tag">
-                                                <span>{{item.tag}}</span>
-                                            </span>
-                                            <span class="lazy-bot-right-item-txt">{{item.txt}}</span>
-                                        </p>
-                                    </div>
-                                </a>
-                                <div class="lazy-bot-right-item-other">
-                                    <div class="lazy-bot-right-item-other-list">
-                                        <span
-                                            class="lazy-bot-right-item-other-tag"
-                                        >{{item.otherPrice}}</span>
-                                    </div>
-                                    <div class="lazy-bot-right-item-other-price">
-                                        <div class="item-other-price">
-                                            <i>￥</i>
-                                            <big>{{item.price}}</big>
-                                        </div>
-                                        <div class="alike">
-                                            <a href>找相似</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div
+                    class="classify-sub-item"
+                    :class="[subName=='pagejx-yy'?'active':'']"
+                    @click="subName='pagejx-yy'"
+                >
+                    <a href="#">
+                        <p class="sub-item-title">影音盛宴</p>
+                        <p class="sub-item-body">崭新视界</p>
+                    </a>
+                </div>
+                <div
+                    class="classify-sub-item"
+                    :class="[subName=='pagejx-dp'?'active':'']"
+                    @click="subName='pagejx-dp'"
+                >
+                    <a href="#">
+                        <p class="sub-item-title">大牌手机</p>
+                        <p class="sub-item-body">畅享5G</p>
+                    </a>
+                </div>
+                <div
+                    class="classify-sub-item"
+                    :class="[subName=='pagejx-gm'?'active':'']"
+                    @click="subName='pagejx-gm'"
+                >
+                    <a href="#">
+                        <p class="sub-item-title">国美超市</p>
+                        <p class="sub-item-body">低价好物</p>
+                    </a>
+                </div>
+                <div
+                    class="classify-sub-item"
+                    :class="[subName=='pagejx-bk'?'active':'']"
+                    @click="subName='pagejx-bk'"
+                >
+                    <a href="#">
+                        <p class="sub-item-title">爆款大家电</p>
+                        <p class="sub-item-body">真选推荐</p>
+                    </a>
+                </div>
+                <div
+                    class="classify-sub-item"
+                    :class="[subName=='pagejx-jp'?'active':'']"
+                    @click="subName='pagejx-jp'"
+                >
+                    <a href="#">
+                        <p class="sub-item-title">精品小家电</p>
+                        <p class="sub-item-body">发现好物</p>
+                    </a>
+                </div>
+                <div
+                    class="classify-sub-item"
+                    :class="[subName=='pagejx-zn'?'active':'']"
+                    @click="subName='pagejx-zn'"
+                >
+                    <a href="#">
+                        <p class="sub-item-title">智能数码</p>
+                        <p class="sub-item-body">惊喜抢购</p>
+                    </a>
                 </div>
             </div>
         </div>
+        <component :is="subName"></component>
     </div>
 </template>
 
 <script>
+import PageJxQb from "../PageSub/PageJxQb.vue";
+import PageJxYy from "../PageSub/PageJxYy.vue";
+import PageJxDp from "../PageSub/PageJxDp.vue";
+import PageJxGm from "../PageSub/PageJxGm.vue";
+import PageJxBk from "../PageSub/PageJxBk.vue";
+import PageJxJp from "../PageSub/PageJxJp.vue";
+import PageJxZn from "../PageSub/PageJxZn.vue";
 export default {
     name: "carrousel",
     data() {
         return {
+            subName: "pagejx-qb",
             // 轮播图
             listSwiper: [],
             // 返场好货 1
@@ -396,12 +367,7 @@ export default {
             fchhList2: [],
             // 返场好货 3
             fchhList3: [],
-            // 懒加载 头部分
-            lazyTopList: [],
-            // 懒加载 底 左部分
-            lazyLeftList: [],
-            // 懒加载 底 右部分
-            lazyLeftRight: [],
+
             swiperOptions: {
                 pagination: {
                     el: ".swiper-pagination",
@@ -449,33 +415,16 @@ export default {
             that.fchhList3 = JSON.parse(xhr3.response).fchhList3;
             // console.log(that.fchhList3);
         };
-        // 懒加载 头部分
-        var that = this;
-        var xhr4 = new XMLHttpRequest();
-        xhr4.open("GET", "http://localhost:8080/data/PageJx.json");
-        xhr4.send();
-        xhr4.onload = function () {
-            that.lazyTopList = JSON.parse(xhr4.response).lazyTopList;
-            // console.log(that.lazyTopList);
-        };
-        // 懒加载 底 左部分
-        var that = this;
-        var xhr5 = new XMLHttpRequest();
-        xhr5.open("GET", "http://localhost:8080/data/PageJx.json");
-        xhr5.send();
-        xhr5.onload = function () {
-            that.lazyLeftList = JSON.parse(xhr5.response).lazyLeftList;
-            // console.log(that.lazyLeftList);
-        };
-        // 懒加载 底 右部分
-        var that = this;
-        var xhr6 = new XMLHttpRequest();
-        xhr6.open("GET", "http://localhost:8080/data/PageJx.json");
-        xhr6.send();
-        xhr6.onload = function () {
-            that.lazyLeftRight = JSON.parse(xhr6.response).lazyLeftRight;
-            // console.log(that.lazyLeftRight);
-        };
+    },
+    components: {
+        // 子目录
+        "pagejx-qb": PageJxQb,
+        "pagejx-yy": PageJxYy,
+        "pagejx-dp": PageJxDp,
+        "pagejx-gm": PageJxGm,
+        "pagejx-bk": PageJxBk,
+        "pagejx-jp": PageJxJp,
+        "pagejx-zn": PageJxZn,
     },
     computed: {
         swiper() {
@@ -490,20 +439,17 @@ export default {
 </script>
 
 <style scoped>
-.swiper >>> .swiper-pagination-bullet-active {
+.swiper-jx >>> .swiper-pagination-bullet-active {
     background-color: #fff;
 }
 /* 轮播图 */
-.swiper {
+.swiper-jx {
     width: 100%;
-    height: 150px;
     display: flex;
-    padding: 10px;
+    padding: 2%;
 }
-.swiper-item {
+.swiper-jx img {
     border-radius: 10px;
-}
-.swiper img {
     width: 100%;
 }
 
@@ -549,7 +495,6 @@ export default {
 .subsidy-con {
     display: flex;
     width: 100%;
-    /* height:200px; */
     border-bottom: 1px solid #ebeced;
 }
 .subsidy-top-item,
@@ -626,7 +571,6 @@ export default {
     font-size: 10px;
     color: #ff0069;
 }
-
 .bot-item-left {
     display: flex;
     font-size: 16px;
@@ -650,13 +594,11 @@ export default {
     flex-direction: row;
     align-items: center;
 }
-
 .top-item-con,
 .bot-item-con,
 .bot-item-con {
     width: 50%;
 }
-
 .top-item-img,
 .con-item-img,
 .bot-item-img {
@@ -667,7 +609,6 @@ export default {
 .bot-item-img img {
     width: 95%;
 }
-
 .top-item-price,
 .bot-item-price {
     width: 100%;
@@ -683,7 +624,6 @@ export default {
     font-weight: 600;
     text-align: center;
 }
-
 .subsidy-bot {
     width: 100%;
     display: flex;
@@ -729,12 +669,10 @@ export default {
 /* 图标 */
 .gg {
     width: 100%;
-    /* background-color: #21daa5; */
     padding: 0 2%;
 }
 .gg-cons {
     width: 100%;
-    /* background-color: #999; */
 }
 
 .gg-img {
@@ -785,184 +723,49 @@ export default {
     width: 100%;
 }
 
-/*  懒加载部分 */
-.lazy {
+/*  子目录 */
+.classify-sub {
     width: 100%;
-    padding: 10px 2%;
-}
-.lazy-cons， .lazy-top,
-.lazy-top-cons {
-    width: 100%;
-}
-.lazy-top-cons {
     display: flex;
     flex-direction: row;
     align-items: center;
     overflow: auto;
+    flex: 1;
 }
-.lazy-top-item {
-    text-align: center;
-    flex-shrink: 0;
-    padding: 8px 16px;
-}
-.lazy-top-item a {
-    background-color: #21daa5;
-}
-.lazy-top-item-title {
-    color: #262c32;
-    padding: 0px 0px 3px;
-}
-.lazy-top-item-subtitle {
-    color: #999;
-    font-size: 12px;
+.classify-sub::-webkit-scrollbar {
+    display: none;
 }
 
-.lazy-bot {
-    width: 100%;
+.classify-sub-item {
+    width: 25%;
     display: flex;
-    padding: 2px 2%;
-}
-
-.lazy-bot-left,
-.lazy-bot-right {
-    width: 50%;
-    padding: 3px;
-}
-.lazy-bot-left-cons,
-.lazy-bot-right-cons {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.lazy-bot-left-item,
-.lazy-bot-right-item {
-    width: 100%;
-    border-radius: 6px;
-    background-color: #fff;
-    margin: 3px 0;
-}
-
-.lazy-bot-left-item a,
-.lazy-bot-right-item a {
-    width: 100%;
-}
-
-.lazy-bot-left-item-img,
-.lazy-bot-right-item-img {
-    width: 100%;
-}
-.lazy-bot-left-item-img img,
-.lazy-bot-right-item-img img {
-    width: 100%;
-    border-radius: 6px;
-}
-.lazy-bot-left-item-site,
-.lazy-bot-right-item-site {
-    width: 100%;
-    padding: 0 10px;
-}
-.lazy-bot-left-item-site-con,
-.lazy-bot-right-item-site-con {
-    width: 100%;
-    display: flex;
-    padding: 8px 0;
-    align-items: center;
-    border-bottom: 1px dashed #999;
-}
-.lazy-bot-left-item-site-con img,
-.lazy-bot-right-item-site-con img {
-    width: 10%;
-    border-radius: 50%;
-}
-.lazy-bot-left-item-site-name,
-.lazy-bot-right-item-site-name {
-    color: #7a7f85;
-    font-size: 13px;
-    padding: 0px 0px 0px 4px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.lazy-bot-left-item-info,
-.lazy-bot-right-item-info {
-    width: 100%;
-    padding: 4px 10px;
-    padding-bottom: none;
-}
-.lazy-bot-left-item-desc,
-.lazy-bot-right-item-desc {
-    width: 100%;
-    display: -webkit-box;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: wrap;
-    word-break: break-all;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    font-size: 12px;
-}
-.lazy-bot-left-item-tag,
-.lazy-bot-right-item-tag {
-    display: inline-block;
-    background-color: #f20c59;
-    text-align: center;
-    color: white;
-    border-radius: 4px;
-    padding: 0px 2px;
-}
-.lazy-bot-left-item-txt,
-.lazy-bot-right-item-txt {
-    color: #333;
-    padding-left: 4px;
-}
-.lazy-bot-left-item-other,
-.lazy-bot-right-item-other {
-    width: 100%;
-    padding: 0 10px 10px;
-    /* background-color: #21daa5; */
-}
-
-.lazy-bot-left-item-other-list,
-.lazy-bot-right-item-other-list {
-    width: 100%;
-    padding: 4px 0;
-    font-size: 12px;
-    color: #f20c59;
-}
-.lazy-bot-left-item-other-tag,
-.lazy-bot-right-item-other-tag {
-    border-radius: 2px;
-    border: 1px solid #f20c59;
-    background-color: #fff;
-}
-.lazy-bot-left-item-other-price,
-.lazy-bot-right-item-other-price {
-    width: 100%;
-    display: flex;
-    font-size: 12px;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 4px;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
 }
-.item-other-price {
-    display: inline-block;
-    color: #f20c59;
-    font-weight: 600;
+.classify-sub-item > a {
+    border-right: 1px solid #ebeced;
+}
+.sub-item-title {
+    font-size: 15px;
+    color: #262c32;
 }
 
-.item-other-price big {
-    font-size: 16px;
+.sub-item-body {
+    font-size: 12px;
+    color: #999;
 }
-.alike {
-    font-weight: 400;
-    padding: 0 4px;
-    border: 1px solid #ccc;
+
+.active .sub-item-title{
+    font-weight: 600;
+    color: #f20c59;
+}
+.active .sub-item-body{
+    color: #fff;
+    background-color: #f20c59;
     border-radius: 10px;
-}
-.alike > a {
-    color: #666;
+    padding:0 8px;
 }
 </style>

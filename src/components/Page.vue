@@ -68,17 +68,15 @@
                 </div>
             </div>
             <div class="classify-right">
-                <!-- <div class="classify-right-img"> -->
                 <img
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAMAAADW3miqAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMA7fOC11I4Ecy1PfWfi21oZTAiCOcL1HjnAAAAdElEQVQ4y+WTyQ6AIBBDQVZxX/r/vypGzCQKmbPYSw+8NKTpiC/LajmykAawRp8lXupUgs43G90joyZBCvCCSxLBbKJauaFfWKgFpItuZKbLu6cGQLjgDPVM2vNJ9Kd6xe+JljmVG6eN61LjdC3lJLq7/+oAXBYRruLDsRwAAAAASUVORK5CYII="
                     alt
                 />
-                <!-- </div> -->
                 <span class="classify-right-fl" @click="btnclass('class')">分类</span>
             </div>
         </div>
         <component :is="stateName"></component>
-
+      
         <!-- 底部文字 -->
         <div class="other">
             <div class="other-img"></div>
@@ -97,24 +95,28 @@
 </template>
 
 <script>
-import PageJx from "./PageJx.vue";
-import PageCs from "./PageCs.vue";
-import PageGj from "./PageGj.vue";
-import PageDn from "./PageDn.vue";
-import PageCj from "./PageCj.vue";
-import PageJd from "./PageJd.vue";
-import PageSsj from "./PageSsj.vue";
-import PageBh from "./PageBh.vue";
-import PageJz from "./PageJz.vue";
-import Class from "./Class.vue"
+import PageJx from "./Page/PageJx.vue";
+import PageCs from "./Page/PageCs.vue";
+import PageGj from "./Page/PageGj.vue";
+import PageDn from "./Page/PageDn.vue";
+import PageCj from "./Page/PageCj.vue";
+import PageJd from "./Page/PageJd.vue";
+import PageSsj from "./Page/PageSsj.vue";
+import PageBh from "./Page/PageBh.vue";
+import PageJz from "./Page/PageJz.vue";
+
+import Class from "./Class.vue";
+
+
 
 export default {
     data() {
         return {
-            stateName: "page-jx",
+            stateName: "page-jx"
         };
     },
     components: {
+         // 目录
         "page-jx": PageJx,
         "page-cs": PageCs,
         "page-gj": PageGj,
@@ -124,15 +126,15 @@ export default {
         "page-ssj": PageSsj,
         "page-bh": PageBh,
         "page-jz": PageJz,
-        "class":Class
+        class: Class 
     },
-     methods:{
-          btnclass(a) {
+    methods: {
+        btnclass(a) {
             this.$router.push({
-                path:"/class"
-            })
-        }
-     }
+                path: "/class",
+            });
+        },
+    },
 };
 </script>
 
@@ -198,5 +200,13 @@ export default {
     height: 15px;
     background: url(../images/other.png) no-repeat 50%;
     background-size: 285px 15px;
+}
+/* 子目录 */
+.classify-sub {
+    width: 100%;
+    padding: 2%;
+}
+.classify-sub-item {
+    width: 25%;
 }
 </style>
