@@ -9,6 +9,7 @@ import Me from "../components/Me.vue"
 import Message from "../components/Message.vue"
 import Register from "../components/Register.vue"
 import Class from "../components/Class.vue"
+import Detail from "../components/Detail.vue"
 
 
 const routes = [
@@ -40,8 +41,11 @@ const routes = [
   {
     path:'/class',
     component:Class
+  },
+  {
+    path:'/detail',
+    component:Detail
   }
- 
 ]
 
 const router = new VueRouter({

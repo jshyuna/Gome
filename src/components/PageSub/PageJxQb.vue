@@ -4,7 +4,7 @@
         <div class="lazy-bot">
             <div class="lazy-bot-left">
                 <div class="lazy-bot-left-cons">
-                    <div class="lazy-bot-left-item" v-for="item in QbLazyLeftList" :key="item.id">
+                    <div class="lazy-bot-left-item" v-for="item in QbLazyLeftList" :key="item.id" @click="btnxq('detail')">
                         <a href="#" class="lazy-bot-left-item-con">
                             <div class="lazy-bot-left-item-img">
                                 <img :src="item.imgUrl" alt />
@@ -85,6 +85,7 @@
 </template>
 
 <script>
+import Detail from "../Detail.vue";
 export default {
     data() {
         return {
@@ -94,6 +95,17 @@ export default {
             QbLazyRightList: [],
         };
     },
+    methods:{
+        btnxq(a) {
+            this.$router.push({
+                path:"/detail"
+            })
+        }
+    },
+    components:{
+         "detail":Detail
+    },
+
     created(){
         // 懒加载 底 左部分
         var that = this;

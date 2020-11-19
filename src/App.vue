@@ -38,4 +38,7 @@ a{
 i{
    font-style: normal; 
 }
+li{
+    list-style: none;
+}
 </style>
