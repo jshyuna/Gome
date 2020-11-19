@@ -65,40 +65,127 @@
          "txt":"母婴玩具"
       }
    ],
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   "fchhList2": [
-      {
-         "id": "0005",
-         "img": "//gfs8.gomein.net.cn/wireless/T19xD7BKET1RCvBVdK_281_375.png"
+   "hhList":[
+      {  "id":"001",
+         "jxhhList": [
+            {
+               "id": "0001",
+               "img": "//gfs17.gomein.net.cn/T1J3W7BK_T1RCvBVdK_400.jpg",
+               "name": "稻王府优选五常大米5kg 稻花香2号  2020年新米",
+               "yuan":"59",
+               "jiao": ".9"
+            },
+            {
+               "id": "0002",
+               "img": "//gfs17.gomein.net.cn/T1uuD7B5Kv1RCvBVdK_400.jpg",
+               "name": "哈姆宝贝婴儿手口绵柔湿纸巾80抽*3包 婴幼儿湿巾 新生儿湿巾 无香",
+               "yuan":"35",
+               "jiao": ".9"
+            },
+            {
+               "id": "0003",
+               "img": "//gfs17.gomein.net.cn/T128_KBXx_1RCvBVdK_400.jpg",
+               "name": "听语听语天然酵素除菌洗衣液2kg*1瓶 有效去渍",
+               "yuan":"16",
+               "jiao": ".9"
+            }
+         ]
       },
       {
-         "id": "0006",
-         "img": "//gfs6.gomein.net.cn/wireless/T1.Wh7ByCv1RCvBVdK_281_375.png"
+         "id":"002",
+         "jxhhList": [
+            {
+               "id": "0001",
+               "img": "//gfs17.gomein.net.cn/T1TwbKBTLv1RCvBVdK_400.jpg",
+               "name": "鲁花5S物理压榨一级花生油5L 初道原汁",
+               "yuan":"159",
+               "jiao": ".9"
+            },
+            {
+               "id": "0002",
+               "img": "//gfs17.gomein.net.cn/T1sQJ7BXh_1RCvBVdK_400.jpg",
+               "name": "惠氏启赋婴幼儿配方奶粉3段900g(12-36个月)  蓝钻启赋 官方授权 品质保证 爱尔兰原装进口",
+               "yuan":"255",
+               "jiao": ""
+            },
+            {
+               "id": "0003",
+               "img": "//gfs17.gomein.net.cn/T1beJ7BKKv1RCvBVdK_400.jpg",
+               "name": "76 人河南老烩面123g*4包 非油炸手工羊肉烩面",
+               "yuan":"36",
+               "jiao": ""
+            }
+         ]
       },
       {
-         "id": "0007",
-         "img": "//gfs9.gomein.net.cn/wireless/T1XWd7BvdT1RCvBVdK_281_375.png"
+         "id":"003",
+         "jxhhList": [
+            {
+               "id": "0001",
+               "img": "//gfs17.gomein.net.cn/T1J3W7BK_T1RCvBVdK_400.jpg",
+               "name": "宸品仙新疆阿克苏苹果9斤装单果75-80mm彩箱装 糖心苹果 香甜多汁",
+               "yuan":"47",
+               "jiao": ".9"
+            },
+            {
+               "id": "0002",
+               "img": "//gfs17.gomein.net.cn/T1ClV7BmEv1RCvBVdK_400.jpg",
+               "name": "蓝月亮机洗洗衣液5瓶套装 2kg瓶+1kg瓶+手洗500g翻盖*1+80g旅行装*2 深层洁净",
+               "yuan":"65",
+               "jiao": ".9"
+            },
+            {
+               "id": "0003",
+               "img": "//gfs17.gomein.net.cn/T1R0C5B4hT1RCvBVdK_400.jpg",
+               "name": "十月稻田长粒香大米5kg 国美超市甄选",
+               "yuan":"41",
+               "jiao": ".9"
+            }
+         ]
       },
       {
-         "id": "0008",
-         "img": "//gfs9.gomein.net.cn/wireless/T1ZqK7BmZ_1RCvBVdK_281_375.png"
+         "id":"004",
+         "jxhhList": [
+            {
+               "id": "0001",
+               "img": "//gfs17.gomein.net.cn/T1IuD7BgJv1RCvBVdK_400.jpg",
+               "name": "清风马蹄莲无芯卷筒纸112mm*150mm*3层80g*30卷 原生木浆自然纯净",
+               "yuan":"29",
+               "jiao": ".9"
+            },
+            {
+               "id": "0002",
+               "img": "//gfs17.gomein.net.cn/T1a0Z7B4Yv1RCvBVdK_400.jpg",
+               "name": "洁丽雅纯棉素色毛巾4条装72*34cm 吸水性好",
+               "yuan":"35",
+               "jiao": ""
+            },
+            {
+               "id": "0003",
+               "img": "//gfs17.gomein.net.cn/T103b7BbZT1RCvBVdK_400.jpg",
+               "name": "东顺抽纸175cm*123cm 3层100抽30包 湿水不易破",
+               "yuan":"39",
+               "jiao": ".9"
+            }
+         ]
       }
    ],
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    "fchhList3": [
       {
          "id": "0009",

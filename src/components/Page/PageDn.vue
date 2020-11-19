@@ -9,14 +9,6 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
         </div>
-        <!-- 返场降价 -->
-        <div class="fcjj">
-            <div class="fcjj-cons">
-                <a href>
-                    <img src="//gfs6.gomein.net.cn/wireless/T10tZeB5Zv1RCvBVdK_1065_284.png" alt />
-                </a>
-            </div>
-        </div>
         <!-- 品种 -->
         <div class="pzfl">
             <div class="pzfl-cons">
@@ -24,43 +16,60 @@
                     <div class="pzfl-img">
                         <img :src="item.img" alt />
                     </div>
-                    <div class="pzfl-txt">{{item.txt}}</div>
+                    <div class="pzfl-txt">{{ item.txt }}</div>
                 </div>
             </div>
         </div>
-        <!-- 精选好货 -->
-        <div class="jxhh">
-            <img src="//gfs6.gomein.net.cn/wireless/T1pnJ5BsCT1RCvBVdK_750_80.jpg" alt />
+        <!-- 广告 -->
+        <div class="gg">
+          <img src="//gfs8.gomein.net.cn/wireless/T1EyZeB7hv1RCvBVdK_1125_300.png" alt="">
         </div>
-        <!-- 精选好货==内容 -->
-        <div class="hhnr">
-            <div class="hhnr-cons">
-                <div class="hhnr-con">
-                    <div class="hhnr-con-top">
-                        <span>查看更多</span>
-                        <img src="../images/next.png" alt />
+         <!-- 品牌推荐 -->
+        <div class="hfw">
+            <div class="hfw-cons">
+                <div class="hfw-cons-top">品牌推荐</div>
+                <div class="hfw-cons-bot">
+                    <div class="hfw-cons-bot-left">
+                        <img
+                            src="//gfs6.gomein.net.cn/wireless/T18NA5BjVv1RCvBVdK_425_568.png"
+                            alt
+                        />
                     </div>
-                    <div class="hhnr-con-bot"></div>
+                    <div class="hfw-cons-bot-right">
+                        <img
+                            src="//gfs8.gomein.net.cn/wireless/T1msV7B7V_1RCvBVdK_640_284.png"
+                            alt
+                        />
+                        <div class="hfw-right-bot">
+                            <div class="hfw-right-bot-item">
+                                <img
+                                    src="//gfs8.gomein.net.cn/wireless/T15lK7BXA_1RCvBVdK_320_284.png"
+                                    alt
+                                />
+                            </div>
+                            <div class="hfw-right-bot-item">
+                                <img
+                                    src="//gfs8.gomein.net.cn/wireless/T1lYJ7BKVv1RCvBVdK_320_284.png"
+                                    alt
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- 精选好店 -->
-        <div class="jxhd">
-            <img src="//gfs5.gomein.net.cn/wireless/T1.TY5Bvhv1RCvBVdK_750_80.jpg" alt />
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: "carrousel",
+  name: "carrousel",
     data() {
         return {
             // 轮播图
             listSwiper: [],
-            // 品种
+           // 品种
             pzflList: [],
-
             swiperOptions: {
                 pagination: {
                     el: ".swiper-pagination",
@@ -75,21 +84,22 @@ export default {
         // 轮播图
         var that = this;
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "http://localhost:8080/data/PageCs.json");
+        xhr.open("GET", "http://localhost:8080/data/PageDn.json");
         xhr.send();
         xhr.onload = function () {
             that.listSwiper = JSON.parse(xhr.response).listSwiper;
             // console.log(that.listSwiper);
         };
-        // 品种
+      // 品种
         var that = this;
         var xhr1 = new XMLHttpRequest();
-        xhr1.open("GET", "http://localhost:8080/data/PageCs.json");
+        xhr1.open("GET", "http://localhost:8080/data/PageDn.json");
         xhr1.send();
         xhr1.onload = function () {
             that.pzflList = JSON.parse(xhr1.response).pzflList;
             // console.log(that.listSwiper);
         };
+       
     },
     computed: {
         swiper() {
@@ -101,6 +111,7 @@ export default {
         this.swiper.slideTo(1, 1000, false);
     },
 };
+
 </script>
 
 <style scoped>
@@ -110,26 +121,11 @@ export default {
 /* 轮播图 */
 .swiper {
     width: 100%;
-    height: 150px;
     display: flex;
-    padding: 10px;
-}
-.swiper-item {
-    border-radius: 10px;
+    padding: 2%;
 }
 .swiper img {
-    width: 100%;
-}
-
-/*  返场降价*/
-.fcjj {
-    width: 100%;
-    padding: 0 2%;
-}
-.fcjj-cons {
-    width: 100%;
-}
-.fcjj-cons img {
+    border-radius: 10px;
     width: 100%;
 }
 /* 品种 */
@@ -148,58 +144,87 @@ export default {
 }
 .pzfl-item {
     width: 25%;
+    padding: 3%;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    padding: 3%;
     justify-content: space-between;
 }
 .pzfl-img {
-    width: 100%;
+    height: 100%;
+    padding: 2%;
     overflow: hidden;
 }
 .pzfl-img img {
     width: 100%;
+    border-radius: 50%;
 }
 .pzfl-txt {
     width: 100%;
     font-size: 14px;
     text-align: center;
 }
-
-/* 精选好货 */
-/* 精选好店 */
-.jxhh,
-.jxhh img,
-.jxhd,
-.jxhd img {
-    width: 100%;
+/* 广告  */
+.gg{
+  width: 100%;
+  padding: 2%;
 }
-
-.hhnr {
+.gg img{
+  width: 100%;
+}
+/* 品牌推荐 */
+.hfw {
     width: 100%;
     padding: 2%;
 }
-.hhnr-cons,
-.hhnr-con {
+.hfw-cons {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    /* overflow: hidden; */
+}
+.hfw-cons-top {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 8px;
+}
+
+.hfw-cons-bot {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* padding-right:4%; */
+}
+.hfw-cons-bot-left {
+    width: 40%;
+}
+.hfw-cons-bot-left img {
     width: 100%;
 }
-.hhnr-con{
-  display: flex;
-  flex-direction:column;
-  justify-content:space-between;
-  background-color: #fff;
+.hfw-cons-bot-right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.hhnr-con-top{
-  display: flex;
-  flex-direction:row;
-  align-items: center;
-  justify-content:flex-end ;
-  font-size:14px;
-  color: #919599;
+
+.hfw-cons-bot-right > img {
+    width: 100%;
 }
-.hhnr-con-top img{
-  height: 60%;
-  /* color: #555; */
+.hfw-right-bot {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hfw-right-bot-item {
+    width: 50%;
+}
+
+.hfw-right-bot-item > img {
+    width: 100%;
 }
 </style>

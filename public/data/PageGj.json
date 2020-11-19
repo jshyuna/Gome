@@ -1,0 +1,254 @@
+{
+   "code": 20,
+   "status": "成功",
+   "listSwiper": [
+      {
+         "id": "001",
+         "imgUrl": "//gfs8.gomein.net.cn/wireless/T1CLZmBb_T1RCvBVdK_1053_375.jpg"
+      },
+      {
+         "id": "002",
+         "imgUrl": "//gfs6.gomein.net.cn/wireless/T1enY7BTZT1RCvBVdK_1053_375.jpg"
+      },
+      {
+         "id": "003",
+         "imgUrl": "//gfs9.gomein.net.cn/wireless/T1vgJKB_Cv1RCvBVdK_1053_375.jpg"
+      }
+   ],
+   "fwList": [
+      {
+         "id": "0001",
+         "img": "//gfs6.gomein.net.cn/wireless/T1w9E5B7VT1RCvBVdK_342_288.png",
+         "fwzList": [
+            {
+               "id": "0001",
+               "imgUrl": "//gfs9.gomein.net.cn/wireless/T1Ndd7B4bv1RCvBVdK_84_84.png",
+               "name": "地暖清洗"
+            },
+            {
+               "id": "0002",
+               "imgUrl": "//gfs9.gomein.net.cn/wireless/T1k7Y4B_Jv1RCvBVdK_84_84.png",
+               "name": "油烟机清洗"
+            },
+            {
+               "id": "0003",
+               "imgUrl": "//gfs9.gomein.net.cn/wireless/T17gh5BCbT1RCvBVdK_84_84.png",
+               "name": "冰箱清洗"
+            },
+            {
+               "id": "0004",
+               "imgUrl": "//gfs8.gomein.net.cn/wireless/T1.Sx5BKVv1RCvBVdK_84_84.png",
+               "name": "热水器清洗"
+            }
+         ]
+      },
+      {
+         "id": "0002",
+         "img": "//gfs5.gomein.net.cn/wireless/T1Geb5BsxT1RCvBVdK_342_288.png",
+         "fwzList": [
+            {
+               "id": "0001",
+               "imgUrl": "//gfs7.gomein.net.cn/wireless/T1L4b4BKJ_1RCvBVdK_84_84.png",
+               "name": "空调维修"
+            },
+            {
+               "id": "0002",
+               "imgUrl": "//gfs9.gomein.net.cn/wireless/T1RH_4BbY_1RCvBVdK_84_84.png",
+               "name": "冰箱维修"
+            },
+            {
+               "id": "0003",
+               "imgUrl": "//gfs5.gomein.net.cn/wireless/T1lEx4BT_T1RCvBVdK_84_84.png",
+               "name": "电视维修"
+            },
+            {
+               "id": "0004",
+               "imgUrl": "//gfs7.gomein.net.cn/wireless/T1xEE4BXEv1RCvBVdK_84_84.png",
+               "name": "洗衣机维修"
+            }
+         ]
+      },
+      {
+         "id": "0003",
+         "img": "//gfs7.gomein.net.cn/wireless/T1r9h5BCWT1RCvBVdK_342_288.png",
+         "fwzList": [
+            {
+               "id": "0001",
+               "imgUrl": "//gfs5.gomein.net.cn/wireless/T1T9h5BCAT1RCvBVdK_84_84.png",
+               "name": "更换电池"
+            },
+            {
+               "id": "0002",
+               "imgUrl": "//gfs9.gomein.net.cn/wireless/T1unh5BCYT1RCvBVdK_84_84.png",
+               "name": "更换屏幕"
+            },
+            {
+               "id": "0003",
+               "imgUrl": "//gfs7.gomein.net.cn/wireless/T1CwK5ByEv1RCvBVdK_84_84.png",
+               "name": "升级内存"
+            },
+            {
+               "id": "0004",
+               "imgUrl": "//gfs6.gomein.net.cn/wireless/T1YwK5BXYv1RCvBVdK_84_84.png",
+               "name": "更换配件"
+            }
+         ]
+      },
+      {
+         "id": "0004",
+         "img": "//gfs7.gomein.net.cn/wireless/T1WSY5BmZv1RCvBVdK_342_288.png",
+         "fwzList": [
+            {
+               "id": "0001",
+               "imgUrl": "//gfs8.gomein.net.cn/wireless/T15w_5ByLv1RCvBVdK_84_84.png",
+               "name": "空调加氟"
+            },
+            {
+               "id": "0002",
+               "imgUrl": "//gfs8.gomein.net.cn/wireless/T1FMh5BKKT1RCvBVdK_84_84.png",
+               "name": "空调移机"
+            },
+            {
+               "id": "0003",
+               "imgUrl": "//gfs7.gomein.net.cn/wireless/T1YTD5BKZv1RCvBVdK_84_84.png",
+               "name": "空调拆机"
+            },
+            {
+               "id": "0004",
+               "imgUrl": "//gfs7.gomein.net.cn/wireless/T1wTD5BKdv1RCvBVdK_84_84.png",
+               "name": "空调打孔"
+            }
+         ]
+      },
+      {
+         "id": "0005",
+         "img": "//gfs7.gomein.net.cn/wireless/T1WSY5BmZv1RCvBVdK_342_288.png",
+         "fwzList": [
+            {
+               "id": "0001",
+               "imgUrl": "//gfs9.gomein.net.cn/wireless/T17Zh4BQAT1RCvBVdK_84_84.png",
+               "name": "手机回收"
+            },
+            {
+               "id": "0002",
+               "imgUrl": "//gfs9.gomein.net.cn/wireless/T1cCD4BXxT1RCvBVdK_84_84.png",
+               "name": "冰箱回收"
+            },
+            {
+               "id": "0003",
+               "imgUrl": "//gfs5.gomein.net.cn/wireless/T1O4V4B5K_1RCvBVdK_84_84.png",
+               "name": "空调回收"
+            },
+            {
+               "id": "0004",
+               "imgUrl": "//gfs5.gomein.net.cn/wireless/T1YHL4BTWv1RCvBVdK_84_84.png",
+               "name": "电视回收"
+            }
+         ]
+      },
+      {
+         "id": "0006",
+         "img": "//gfs8.gomein.net.cn/wireless/T10nd5B4bT1RCvBVdK_342_288.png",
+         "fwzList": [
+            {
+               "id": "0001",
+               "imgUrl": "//gfs5.gomein.net.cn/wireless/T11Mh5BvJT1RCvBVdK_84_84.png",
+               "name": "计时保洁"
+            },
+            {
+               "id": "0002",
+               "imgUrl": "//gfs7.gomein.net.cn/wireless/T12wZ5BQdv1RCvBVdK_84_84.png",
+               "name": "擦玻璃"
+            },
+            {
+               "id": "0003",
+               "imgUrl": "//gfs9.gomein.net.cn/wireless/T1WgD5BXDT1RCvBVdK_84_84.png",
+               "name": "全屋保洁"
+            },
+            {
+               "id": "0004",
+               "imgUrl": "//gfs7.gomein.net.cn/wireless/T1FSY5Bvhv1RCvBVdK_84_84.png",
+               "name": "开荒保洁"
+            }
+         ]
+      },
+      {
+         "id": "0007",
+         "img": "//gfs5.gomein.net.cn/wireless/T10eY5BvZv1RCvBVdK_342_288.png",
+         "fwzList": [
+            {
+               "id": "0001",
+               "imgUrl": "//gfs9.gomein.net.cn/wireless/T1FwL5BbVT1RCvBVdK_84_84.png",
+               "name": "冬衣洗护"
+            },
+            {
+               "id": "0002",
+               "imgUrl": "//gfs9.gomein.net.cn/wireless/T1oSD5BTVv1RCvBVdK_84_84.png",
+               "name": "衬衫洗护"
+            },
+            {
+               "id": "0003",
+               "imgUrl": "//gfs6.gomein.net.cn/wireless/T16wb5BCCv1RCvBVdK_84_84.png",
+               "name": "西服洗护"
+            },
+            {
+               "id": "0004",
+               "imgUrl": "//gfs6.gomein.net.cn/wireless/T1Fgh5BvLT1RCvBVdK_84_84.png",
+               "name": "运动鞋洗护"
+            }
+         ]
+      },
+      {
+         "id": "0008",
+         "img": "//gfs9.gomein.net.cn/wireless/T1MTd5B_Kv1RCvBVdK_342_288.png",
+         "fwzList": [
+            {
+               "id": "0001",
+               "imgUrl": "//gfs7.gomein.net.cn/wireless/T1qeK5Bmdv1RCvBVdK_84_84.png",
+               "name": "家庭消毒"
+            },
+            {
+               "id": "0002",
+               "imgUrl": "//gfs9.gomein.net.cn/wireless/T1fMd5BCAT1RCvBVdK_84_84.png",
+               "name": "办公消毒"
+            },
+            {
+               "id": "0003",
+               "imgUrl": "//gfs7.gomein.net.cn/wireless/T10Sx5Bshv1RCvBVdK_84_84.png",
+               "name": "沙发除螨"
+            },
+            {
+               "id": "0004",
+               "imgUrl": "//gfs7.gomein.net.cn/wireless/T129x5BvVT1RCvBVdK_84_84.png",
+               "name": "普通床除螨"
+            }
+         ]
+      },
+      {
+         "id": "0009",
+         "img": "//gfs8.gomein.net.cn/wireless/T1g9L5BsET1RCvBVdK_342_288.png",
+         "fwzList": [
+            {
+               "id": "0001",
+               "imgUrl": "//gfs9.gomein.net.cn/wireless/T1O_d5B4ET1RCvBVdK_84_84.png",
+               "name": "马桶疏通"
+            },
+            {
+               "id": "0002",
+               "imgUrl": "//gfs6.gomein.net.cn/wireless/T1fLh5B7JT1RCvBVdK_84_84.png",
+               "name": "管道疏通"
+            },
+            {
+               "id": "0003",
+               "imgUrl": "//gfs7.gomein.net.cn/wireless/T1VLx5BmJT1RCvBVdK_84_84.png",
+               "name": "地板养护"
+            },
+            {
+               "id": "0004",
+               "imgUrl": "//gfs7.gomein.net.cn/wireless/T10n_5B7Dv1RCvBVdK_84_84.png",
+               "name": "更换油烟机软管"
+            }
+         ]
+      }
+   ]
+}
