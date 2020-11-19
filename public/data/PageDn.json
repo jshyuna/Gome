@@ -1,0 +1,64 @@
+{
+    "code": 20,
+   "status": "成功",
+   "listSwiper": [
+      {
+         "id": "001",
+         "imgUrl": "//gfs5.gomein.net.cn/wireless/T1lqV7B4K_1RCvBVdK_1065_390.jpg"
+      },
+      {
+         "id": "002",
+         "imgUrl": "//gfs9.gomein.net.cn/wireless/T1iWZ7B5Av1RCvBVdK_1065_391.jpg"
+      },
+      {
+         "id": "003",
+         "imgUrl": "//gfs5.gomein.net.cn/wireless/T1QRheB5KT1RCvBVdK_1065_390.jpg"
+      },
+      {
+        "id": "004",
+        "imgUrl": "//gfs7.gomein.net.cn/wireless/T12BA7Bsdv1RCvBVdK_1638_600.jpg"
+     }
+   ],
+   "pzflList": [
+      {
+         "id": "0001",
+         "img": "//gfs8.gomein.net.cn/wireless/T1nxxmBjCT1RCvBVdK_215_150.png",
+         "txt":"手机"
+      },
+      {
+         "id": "0002",
+         "img": "//gfs5.gomein.net.cn/wireless/T1QXx4BvKT1RCvBVdK_215_150.png",
+         "txt":"平板电脑"
+      },
+      {
+         "id": "0003",
+         "img": "//gfs9.gomein.net.cn/wireless/T1jUK7BQVT1RCvBVdK_215_150.png",
+         "txt":"智能音箱"
+      },
+      {
+         "id": "0004",
+         "img": "//gfs8.gomein.net.cn/wireless/T1rrZmBmbv1RCvBVdK_215_150.png",
+         "txt":"耳机耳麦"
+      },
+      {
+         "id": "0005",
+         "img": "//gfs9.gomein.net.cn/wireless/T16xhmBC_T1RCvBVdK_215_150.png",
+         "txt":"笔记本"
+      },
+      {
+         "id": "0006",
+         "img": "//gfs7.gomein.net.cn/wireless/T1XpL5BTJv1RCvBVdK_215_150.png",
+         "txt":"台式机"
+      },
+      {
+         "id": "0007",
+         "img": "//gfs9.gomein.net.cn/wireless/T1dtb4B7Kg1RCvBVdK_215_150.png",
+         "txt":"智能家居"
+      },
+      {
+         "id": "0008",
+         "img": "//gfs7.gomein.net.cn/wireless/T1oUD7BCYv1RCvBVdK_215_150.png",
+         "txt":"话费充值"
+      }
+   ]
+}
