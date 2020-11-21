@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- 轮播图 -->
-        <div class="swiper-jx">
+        <div class="swiper-jx" id="top">
             <swiper ref="mySwiper" class="swiper-item" :options="swiperOptions">
                 <swiper-slide v-for="item in listSwiper" :key="item.id">
                     <img :src="item.imgUrl" alt />
@@ -342,6 +342,11 @@
                 </div>
             </div>
         </div>
+         <div class="go-top">
+            <a href="#top">
+                 <img src="https://js.gomein.net.cn/ssr/statics/images/return-top.ae68c0e.png" alt="">
+            </a>
+        </div>
         <component :is="subName"></component>
     </div>
 </template>
@@ -428,6 +433,7 @@ export default {
     },
     computed: {
         swiper() {
+           
             return this.$refs.mySwiper.$swiper;
         },
     },
@@ -767,5 +773,14 @@ export default {
     background-color: #f20c59;
     border-radius: 10px;
     padding:0 8px;
+}
+.go-top img{
+    width: 44px;
+    height: 44px;
+}
+.go-top{
+    position: fixed;
+    right: 1px;
+    bottom: 80px;
 }
 </style>

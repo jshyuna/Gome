@@ -15,7 +15,7 @@
             <div>
                 <img src="../images/shopdefault.jpg" alt class="toux" />
             </div>
-            <a href>登录/注册</a>
+            <span @click="btndl('denglu')">登录/注册</span>
             <div class="right">
                 <img src="../images/re-03.gif" alt class="gift" />
                 <img src="../images/re-04.png" alt class="qipao" />
@@ -79,6 +79,178 @@
                 <span class="text1">你可能喜欢</span>
             </div>
         </div>
+        <div class="guesslike-con">
+                <ul class="guesslike-list">
+                    <li class="guesslike-item">
+                        <div class="shop-tp">
+                            <img src="//gfs17.gomein.net.cn/T1O7A_BvJv1RCvBVdK" alt />
+                        </div>
+
+                        <div class="guesslike-content">
+                            <div class="info-box">
+                                <div class="shop-name">
+                                    <div class="shop-name-cont">
+                                        <img src="//gfs14.gomein.net.cn/T1tLKbBCZT1RCvBVdK.jpg" alt />
+                                        <p>仕伟手机专营店</p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="xiangqing"
+                                >vivo Y81s 刘海全面屏 3GB+32GB/64G 全网通4G 八核 6.22英寸 双卡双待 智能手机(磨砂黑 官方标配)</p>
+                                <div class="price-box">
+                                    <p class="price">
+                                        ¥
+                                        <strong class="price2">878</strong>
+                                        .00
+                                    </p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="guesslike-item">
+                        <div class="shop-tp">
+                            <img src="//gfs17.gomein.net.cn/T1vLbbBXh_1RCvBVdK" alt />
+                        </div>
+
+                        <div class="guesslike-content">
+                            <div class="info-box">
+                                <div class="shop-name">
+                                    <div class="shop-name-cont">
+                                        <img src="//gfs14.gomein.net.cn/T1tLKbBCZT1RCvBVdK.jpg" alt />
+                                        <p>仕伟手机专营店</p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="xiangqing"
+                                >华为（HUAWEI）畅玩8A 全网通4G 3G+32G/64G 全面屏手机 双卡双待 智能手机(极光蓝 官方标配)</p>
+                                <div class="price-box">
+                                    <p class="price">
+                                        ¥
+                                        <strong class="price2">848</strong>
+                                        .00
+                                    </p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="guesslike-item">
+                        <div class="shop-tp">
+                            <img src="//gfs17.gomein.net.cn/T1OFYsBjCv1RCvBVdK" alt />
+                        </div>
+
+                        <div class="guesslike-content">
+                            <div class="info-box">
+                                <div class="shop-name">
+                                    <div class="shop-name-cont">
+                                        <img
+                                            src="//img10.gomein.net.cn/image/bbcimg/2015/6/5/279/787/1433486837186.jpg"
+                                            alt
+                                        />
+                                        <p>斑马龙配件专营店</p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="xiangqing"
+                                >VIVO X50全屏钢化膜X27防爆玻璃膜步步高IQOONEO3手机保护膜X23高清贴膜(黑色-2片装 NEX标准版)</p>
+                                <div class="price-box">
+                                    <p class="price">
+                                        ¥
+                                        <strong class="price2">19</strong>
+                                        .80
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="guesslike-item">
+                        <div class="shop-tp">
+                            <img src="//gfs17.gomein.net.cn/T18RhjB5d_1RCvBVdK" alt />
+                        </div>
+
+                        <div class="guesslike-content">
+                            <div class="info-box">
+                                <div class="shop-name">
+                                    <div class="shop-name-cont">
+                                        <img
+                                            src="//img10.gomein.net.cn/image/bbcimg/2015/6/5/279/787/1433486837186.jpg"
+                                            alt
+                                        />
+                                        <p>斑马龙配件专营店</p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="xiangqing"
+                                >VIVOX27pro手机壳麋鹿布纹步步高x27pro保护套防摔全包X27PRO硅胶轻薄个性男女后盖(灰色)</p>
+                                <div class="price-box">
+                                    <p class="price">
+                                        ¥
+                                        <strong class="price2">26</strong>
+                                        .00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="guesslike-item">
+                        <div class="shop-tp">
+                            <img src="//gfs17.gomein.net.cn/T1FAC_B__T1RCvBVdK" alt />
+                        </div>
+
+                        <div class="guesslike-content">
+                            <div class="info-box">
+                                <div class="shop-name">
+                                    <div class="shop-name-cont">
+                                        <img src="//gfs14.gomein.net.cn/T1tLKbBCZT1RCvBVdK.jpg" alt />
+                                        <p>仕伟手机专营店</p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="xiangqing"
+                                >Huawei/华为 G9 Plus 全网通4G/移动4G 八核 5.5英寸 3+32G 双卡 智能手机(金色 官方标配)</p>
+                                <div class="price-box">
+                                    <p class="price">
+                                        ¥
+                                        <strong class="price2">748</strong>
+                                        .00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="guesslike-item">
+                        <div class="shop-tp">
+                            <img src="//gfs17.gomein.net.cn/T1cdWsBXJT1RCvBVdK" alt />
+                        </div>
+
+                        <div class="guesslike-content">
+                            <div class="info-box">
+                                <div class="shop-name">
+                                    <div class="shop-name-cont">
+                                        <img
+                                            src="//img10.gomein.net.cn/image/bbcimg/2015/6/5/279/787/1433486837186.jpg"
+                                            alt
+                                        />
+                                        <p>斑马龙配件专营店</p>
+                                    </div>
+                                </div>
+                                <p
+                                    class="xiangqing"
+                                >VIVOX27pro手机壳麋鹿布纹步步高x27pro保护套防摔全包X27PRO硅胶轻薄个性男女后盖(灰色)</p>
+                                <div class="price-box">
+                                    <p class="price">
+                                        ¥
+                                        <strong class="price2">26</strong>
+                                        .00
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
     </div>
 </template>
 
@@ -90,6 +262,11 @@ export default {
             this.$router.push({
                 path:"/"
             })
+        },
+        btndl(a) {
+            this.$router.push({
+                path: "/register",
+            });
         }
      }
 }
@@ -147,7 +324,7 @@ export default {
     margin-left: 18px;
     margin-top: -50px;
 }
-.center a {
+.center span {
     margin-left: -70px;
     margin-top: -64px;
     text-align: left;
@@ -201,6 +378,9 @@ export default {
 .second{
     margin-top: 15px;
 }
+.maylike{
+    background: rgb(242,242,242);
+}
 .maylike-title{
     height: 50px;
     margin-top: 10px;
@@ -224,5 +404,81 @@ export default {
     display: block;
     border-bottom: 1px solid red;
     margin-top: -.14rem;
+}
+.guesslike-con{
+    background: rgb(242,242,242);
+}
+.guesslike-item img {
+    height: 193px;
+    width: 193px;
+}
+.info-box {
+    padding: 6px 0px 10px;
+    background: #fff;
+}
+.shop-name {
+    /* display: flex;
+  justify-content: space-between; */
+    font-size: 14px;
+    color: #7a7f85;
+}
+.shop-name-cont img {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.shop-name-cont {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #dcddde;
+}
+.shop-tp {
+    background-color: rgb(255, 255, 255);
+}
+.guesslike-item {
+    width: 50%;
+    padding: 2%;
+}
+.guesslike-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.xiangqing {
+    font-size: 14px;
+    color: #333;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: wrap;
+    font-weight: 400;
+    /* line-height: 16px;
+    height: 32px; */
+    padding: 1% 6%;
+}
+.price-box img {
+    height: 29px;
+    width: 29px;
+}
+.price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.price {
+    color: #f20c59;
+    font-size: 18px;
+    font-weight:400;
+}
+.price2 {
+     font-weight:400;
 }
 </style>

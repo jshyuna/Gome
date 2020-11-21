@@ -5,7 +5,7 @@
                 <div class="h-left" @click="btnback('page')">
                     <img src="../images/back.png" alt />
                 </div>
-                <div class="h-center">
+                <div class="h-center" @click="btnsearch('search')">
                     <span>iPhone12 Pro Max</span>
                     <img src="../images/search_icon.png" alt class="search" />
                 </div>
@@ -224,6 +224,11 @@ export default {
         btn(a) {
         this.name = a;
         },
+        btnsearch(a){
+            this.$router.push({
+                path:"/search"
+            })
+        }
     },
 };
 </script>

@@ -1,44 +1,143 @@
 <template>
-    <div class="gouwuche">
+    <div>
         <div class="header">
             <div class="h-left" @click="btnback('page')">
                 <img src="../images/back.png" alt />
             </div>
             <div class="h-center">
-                <h1 class="h-tit">购物车</h1>
+                <h1 class="h-tit">我的国美</h1>
             </div>
             <div class="h-right">
                 <img src="../images/slh.png" alt />
             </div>
         </div>
-        <div class="Setup">
-            <p>立即登录，同步电脑和手机购物车中的商品</p>
-            <a href>
-                <i>去登录</i>
-            </a>
-        </div>
-        <div class="empty">
-            <img src="../images/bj_baobei.png" alt />
-            <p>购物车还是空的</p>
-            <div class="box1">
-                <span>
-                    <a href>逛逛首页</a>
-                </span>
-                <span>
-                    <a href>秒杀</a>
-                </span>
+        <div class="center">
+            <div>
+                <img src="../images/wangjiaer.jpg" alt class="toux" />
+            </div>
+            <a href>启东王嘉尔</a>
+            <div class="right">
+                <img src="../images/re-03.gif" alt class="gift" />
+                <img src="../images/re-04.png" alt class="qipao" />
             </div>
         </div>
-        <div class="cart-like">
-            <div class="cart-title">
-                <p class="line"></p>
-                <span class="tuijian">
-                    <i class="icon"></i>
-                    为你推荐
-                </span>
-                <p class="line"></p>
+        <div class="main">
+            <div class="first-box">
+                <ul>
+                    <li>
+                        <img src="../images/daifukuai.png" alt />
+                        <p>待付款</p>
+                    </li>
+                    <li>
+                        <img src="../images/daishouhuo.png" alt />
+                        <p>待收货</p>
+                    </li>
+                    <li>
+                        <img src="../images/daipingjia.png" alt />
+                        <p>待评价</p>
+                    </li>
+                    <li>
+                        <img src="../images/tuihou.png" alt />
+                        <p>退款/售后</p>
+                    </li>
+                    <li class="special">
+                        <img src="../images/dingdan.png" alt />
+                        <p>全部订单</p>
+                        <p style="transform: scale(0.8); color: #999999;">查看电子发票</p>
+                    </li>
+                </ul>
             </div>
-            <div class="guesslike-con">
+            <div class="first-box second">
+                <ul>
+                    <li>
+                        <i>0.00</i>
+                        <p>国美币余额</p>
+                    </li>
+                    <li>
+                        <i>0</i>
+                        <p>优惠券</p>
+                    </li>
+                    <li>
+                        <i>0</i>
+                        <p>美豆</p>
+                    </li>
+                    <li>
+                        <img src="../images/meitongka.png" alt />
+                        <p>美通卡</p>
+                    </li>
+                    <li class="special">
+                        <img src="../images/qianbao.png" alt />
+                        <p>我的钱包</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="first-box second">
+                <ul class="third">
+                    <li>
+                        <img
+                            src="//app.gomein.net.cn/plus/images/ucenter/huiyuanbu.png?v=2017092001"
+                            alt
+                        />
+                        <p>会员俱乐部</p>
+                    </li>
+                    <li>
+                        <img
+                            src="//app.gomein.net.cn/plus/images/openMembershipCard/viphuiyuanka.png?v=2017092000"
+                            alt
+                        />
+                        <p>我的会员卡</p>
+                    </li>
+                    <li>
+                        <img
+                            src="//app.gomein.net.cn/plus/images/ucenter/shoucang.png?v=2017092001"
+                            alt
+                        />
+                        <p>我的收藏</p>
+                    </li>
+                    <li>
+                        <img src="//app.gomein.net.cn/plus/images/ucenter/fapiaozhushou.png" alt />
+                        <p>发票助手</p>
+                    </li>
+                    <li>
+                        <img
+                            src="//app.gomein.net.cn/plus/images/ucenter/yijian.png?v=2017092001"
+                            alt
+                        />
+                        <p>服务规则</p>
+                    </li>
+                    <li>
+                        <img
+                            src="//app.gomein.net.cn/plus/images/ucenter/shouhuo.png?v=2017092001"
+                            alt
+                        />
+                        <p>收货地址</p>
+                    </li>
+                    <li>
+                        <img src="//app.gomein.net.cn/plus/images/ucenter/service_gift_pkg.png" alt />
+                        <p>服务礼包</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="my_share_module">
+                <h3 class="vip-module-title">我的分享活动</h3>
+                <div class="share-main">
+                    <p class="pt">
+                        <img src="../images/pg.png" alt class="pg"/>拼团
+                    </p>
+                    <p class="yh">
+                        好友拼单享优惠
+                        <img src="../images/next.png" alt class="pd" />
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 猜你喜欢 -->
+        <div class="maylike">
+            <div class="maylike-title">
+                <img src="../images/arrow-up.png" alt class="arrow" />
+                <span class="text1">你可能喜欢</span>
+            </div>
+              <div class="guesslike-con">
                 <ul class="guesslike-list">
                     <li class="guesslike-item">
                         <div class="shop-tp">
@@ -62,7 +161,7 @@
                                         <strong class="price2">878</strong>
                                         .00
                                     </p>
-                                    <img src="../images/chat3.png" alt />
+                                   
                                 </div>
                             </div>
                         </div>
@@ -89,7 +188,7 @@
                                         <strong class="price2">848</strong>
                                         .00
                                     </p>
-                                    <img src="../images/chat3.png" alt />
+                                   
                                 </div>
                             </div>
                         </div>
@@ -119,7 +218,6 @@
                                         <strong class="price2">19</strong>
                                         .80
                                     </p>
-                                    <img src="../images/chat3.png" alt />
                                 </div>
                             </div>
                         </div>
@@ -149,7 +247,6 @@
                                         <strong class="price2">26</strong>
                                         .00
                                     </p>
-                                    <img src="../images/chat3.png" alt />
                                 </div>
                             </div>
                         </div>
@@ -176,7 +273,6 @@
                                         <strong class="price2">748</strong>
                                         .00
                                     </p>
-                                    <img src="../images/chat3.png" alt />
                                 </div>
                             </div>
                         </div>
@@ -206,7 +302,7 @@
                                         <strong class="price2">26</strong>
                                         .00
                                     </p>
-                                    <img src="../images/chat3.png" alt />
+
                                 </div>
                             </div>
                         </div>
@@ -230,9 +326,6 @@ export default {
 </script>
 
 <style scoped>
-.gouwuche {
-    background-color: rgb(243, 245, 247);
-}
 .header {
     position: relative;
     display: flex;
@@ -266,97 +359,159 @@ export default {
 .h-right {
     width: 10%;
 }
-.Setup {
+.center {
     display: flex;
-    border-top: 1px solid#cacccf;
-    padding: 4px 13px;
-    height: 40px;
-    font-size: 15px;
-    color: #999;
-    margin-bottom: 5px;
     justify-content: space-between;
-    background-color: #fff;
-}
-.Setup a {
-    text-decoration: none;
-}
-.Setup p {
-    margin-top: 5px;
-}
-
-.Setup i {
-    display: block;
-    color: #5a6066;
-    width: 65px;
-    height: 24px;
-    text-align: center;
-    border: 1px solid #cacccf;
-    border-radius: 1.24em;
-    margin-top: 5px;
-    font-style: normal;
-}
-
-.empty {
-    width: 100%;
-    text-align: center;
-    margin-top: calc(140rem / 75);
-}
-
-.empty img {
-    width: 49px;
-    height: 49px;
-}
-
-.empty p {
-    color: #999;
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-
-.box1 {
-    display: flex;
-    justify-content: center;
-}
-.empty a {
-    display: block;
-    color: #333333;
-    width: 99px;
-    height: 32px;
-    background-color: rgb(243, 245, 247);
-    margin-right: 15px;
-    border: 1px solid #cacccf;
-    border-radius: 1.24em;
-    line-height: 32px;
-    text-align: center;
-    text-decoration: none;
-}
-.cart-title {
-    height: 54px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    padding: 4.57rem 1.8rem 0.57rem 0.5rem;
+    background: url("../images/mebg.png");
+    /* background-repeat: no-repeat; */
+}
+.toux {
+    width: 4.1rem;
+    height: 4.1rem;
+    border: 0.03rem solid #fff;
+    border-radius: 4.2rem;
+    margin-left: 18px;
+    margin-top: -50px;
+}
+.center a {
+    margin-left: -70px;
+    margin-top: -64px;
+    text-align: left;
+    /* font-weight: 700; */
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.right {
+    margin-top: -126px;
+}
+.gift {
+    height: 40px;
+    width: 45px;
+}
+.qipao {
+    height: 25px;
+    width: 25px;
+}
+.main {
+    background-color: #f2f2f2;
+}
+.first-box {
+    width: 100%;
+}
+.first-box ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    list-style: none;
+}
+.first-box ul li {
+    width: 25%;
+    padding: 3% 0;
+    text-align: center;
+}
+.third li {
+    border-right: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+.first-box ul li img {
+    width: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.first-box ul li p {
+    color: #666666;
+    font-size: 13px;
+}
+.second i {
+    display: block;
+    font-size: 20px;
+    color: #666666;
+    padding: 22px;
+}
+
+.first-box ul .special {
+    background-color: #fcfcfc;
+    border-left: 1px solid #eeeeee;
+}
+.second {
     margin-top: 15px;
 }
-.line {
-    height: 1px;
-    width: 24px;
-    background: -webkit-linear-gradient(left, #ff0027, #d900b4, #f0f);
+.third {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.icon {
-    display: inline-block;
-    width: 19px;
-    height: 19px;
-    background: url(../images/like.png) no-repeat;
-    background-size: 100% 100%;
-    margin-right: 2px;
-    margin-left: 6px;
-    margin-bottom: -3px;
+
+.maylike-title {
+   padding:  4% ;
+    margin-top: 10px;
+   text-align: center;
+   background: rgba(242,242,242,1);
+   z-index: 5;
 }
-.tuijian {
-    font-size: 19px;
-    color: #f20c59;
-    margin-right: 2px;
+.arrow {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.text1 {
+    color: #999;
+    font-size: 13px;
+    margin-top: 3px;
+}
+.maylike-title::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid#c2c2c2;
+    margin-top: -10px;
+}
+.my_share_module {
+    background: white;
+}
+.vip-module-title {
+    font-size: 16px;
+    color: #262c32;
+    padding: 2% 2%;
+    font-weight: 500;
+}
+.share-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pg{
+    width: 30%;
+    height: 30%;
+    margin-right: 15px;
+   
+}
+.pd{
+    height: 12px;
+    width: 12px;
+}
+.yh{
+    font-size: 13px;
+    color: #999;
+}
+.pt{
+    display: flex;
+    align-items: center;
+}
+.maylike{
+    background: rgb(242,242,242);
+}
+.guesslike-con{
+    background: rgb(242,242,242);
 }
 .guesslike-item img {
     height: 193px;
@@ -425,10 +580,10 @@ export default {
 }
 .price {
     color: #f20c59;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight:400;
 }
 .price2 {
-    font-size: 18px;
+     font-weight:400;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <div>
-      门店
+  <div class="loading">
+     <img src="../images/loading.gif" alt="">
   </div>
 </template>
 
@@ -10,6 +10,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.loading{
+ position: fixed;
+ top:36%;
+ left: 32%;
+}
 </style>

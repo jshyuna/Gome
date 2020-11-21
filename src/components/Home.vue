@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="app" >
         <!-- 广告 -->
         <!-- <div class="adevrt" v-if="ade">
             <div class="adevrt-left">
@@ -17,15 +17,15 @@
             <div class="adevrt-right">
                下载领取
             </div>
-        </div>
-        -->
+        </div> -->
+       
         <!-- 头部 -->
         <div class="header">
             <div class="head-site">
                 <img src="../images/dingwei.png" alt="">
                 北京市
             </div>
-            <div class="head-inp">
+            <div class="head-inp"  @click="btnsearch('search')">
                 <img src="../images/search.png" alt />
                 <span>电视</span>
             </div>
@@ -87,6 +87,7 @@
                 <p :class="{active:name=='me'}">我的</p>
             </div>
         </div>
+       
     </div>
 </template>
 
@@ -122,7 +123,7 @@ export default {
         },
          btn3(a) {
             this.$router.push({
-                path:"/register"
+                path:"/message"
             })
         },
         btn4(a) {
@@ -138,6 +139,11 @@ export default {
         btnlogin(a) {
             this.$router.push({
                 path:"/register"
+            })
+        },
+        btnsearch(a){
+            this.$router.push({
+                path:"/search"
             })
         }
     },
@@ -166,7 +172,7 @@ export default {
 }
 .adevrt-qu {
     width: 20%;
-    height: 100%;
+    /* height: 100%; */
     text-align: center;
 }
 .adevrt-qu img {
@@ -304,5 +310,6 @@ export default {
     text-align: center;
     color:#000000;
 }
+
 
 </style>

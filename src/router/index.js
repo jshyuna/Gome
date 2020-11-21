@@ -10,6 +10,9 @@ import Message from "../components/Message.vue"
 import Register from "../components/Register.vue"
 import Class from "../components/Class.vue"
 import Detail from "../components/Detail.vue"
+import Login from "../components/Login.vue"
+import Search from "../components/Search.vue"
+
 
 
 const routes = [
@@ -45,6 +48,14 @@ const routes = [
   {
     path:'/detail',
     component:Detail
+  },
+  {
+    path:'/login',
+    component:Login
+  },
+  {
+    path:'/search',
+    component:Search
   }
 ]
 
