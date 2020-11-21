@@ -1,20 +1,29 @@
 <template>
     <div class="gouwuche">
-        <div class="header">
+        <div class="header" id="top">
             <div class="h-left" @click="btnback('page')">
                 <img src="../images/back.png" alt />
             </div>
             <div class="h-center">
                 <h1 class="h-tit">购物车</h1>
+                <div class="bj">
+                    <img src="../images/dw.png" alt class="dw" />
+                    <span>北京市</span>
+                </div>
             </div>
             <div class="h-right">
+                <div class="h-edit">编辑</div>
                 <img src="../images/slh.png" alt />
             </div>
         </div>
         <div class="Setup">
-            <p>立即登录，同步电脑和手机购物车中的商品</p>
+            <img src="../images/laba.png" alt class="laba" />
+            <p>立即开通九九会员享受会员折扣</p>
             <a href>
-                <i>去登录</i>
+                <i>
+                    去开通
+                    <img src="../images/hjt.png" alt class="hjt" />
+                </i>
             </a>
         </div>
         <div class="empty">
@@ -29,6 +38,7 @@
                 </span>
             </div>
         </div>
+        
         <div class="cart-like">
             <div class="cart-title">
                 <p class="line"></p>
@@ -42,24 +52,24 @@
                 <ul class="guesslike-list">
                     <li class="guesslike-item">
                         <div class="shop-tp">
-                            <img src="//gfs17.gomein.net.cn/T1O7A_BvJv1RCvBVdK" alt />
+                            <img src="//gfs17.gomein.net.cn/T1jFZmBTCv1RCvBVdK" alt />
                         </div>
 
                         <div class="guesslike-content">
                             <div class="info-box">
                                 <div class="shop-name">
                                     <div class="shop-name-cont">
-                                        <img src="//gfs14.gomein.net.cn/T1tLKbBCZT1RCvBVdK.jpg" alt />
-                                        <p>仕伟手机专营店</p>
+                                        <img src="//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png" alt />
+                                        <p>国美网店</p>
                                     </div>
                                 </div>
                                 <p
                                     class="xiangqing"
-                                >vivo Y81s 刘海全面屏 3GB+32GB/64G 全网通4G 八核 6.22英寸 双卡双待 智能手机(磨砂黑 官方标配)</p>
+                                >Apple iPad Pro 平板电脑 2020年新款 11英寸 （128G Wifi版/视网膜屏/A12Z芯片/面容ID MY252CH/A）银色</p>
                                 <div class="price-box">
                                     <p class="price">
                                         ¥
-                                        <strong class="price2">878</strong>
+                                        <strong class="price2">5999</strong>
                                         .00
                                     </p>
                                     <img src="../images/chat3.png" alt />
@@ -69,24 +79,22 @@
                     </li>
                     <li class="guesslike-item">
                         <div class="shop-tp">
-                            <img src="//gfs17.gomein.net.cn/T1vLbbBXh_1RCvBVdK" alt />
+                            <img src="//gfs17.gomein.net.cn/T1E9K7B7d_1RCvBVdK" alt />
                         </div>
 
                         <div class="guesslike-content">
                             <div class="info-box">
                                 <div class="shop-name">
                                     <div class="shop-name-cont">
-                                        <img src="//gfs14.gomein.net.cn/T1tLKbBCZT1RCvBVdK.jpg" alt />
-                                        <p>仕伟手机专营店</p>
+                                        <img src="//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png" alt />
+                                        <p>国美网店</p>
                                     </div>
                                 </div>
-                                <p
-                                    class="xiangqing"
-                                >华为（HUAWEI）畅玩8A 全网通4G 3G+32G/64G 全面屏手机 双卡双待 智能手机(极光蓝 官方标配)</p>
+                                <p class="xiangqing">Apple iPhone 12 128G 蓝色 移动联通电信 5G手机</p>
                                 <div class="price-box">
                                     <p class="price">
                                         ¥
-                                        <strong class="price2">848</strong>
+                                        <strong class="price2">6799</strong>
                                         .00
                                     </p>
                                     <img src="../images/chat3.png" alt />
@@ -214,6 +222,11 @@
                 </ul>
             </div>
         </div>
+        <div class="go-top">
+            <a href="#top">
+                <img src="https://js.gomein.net.cn/ssr/statics/images/return-top.ae68c0e.png" alt />
+            </a>
+        </div>
     </div>
 </template>
 
@@ -234,11 +247,11 @@ export default {
     background-color: rgb(243, 245, 247);
 }
 .header {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50px;
+    /* padding: 2%; */
     align-items: center;
     background-color: #fff;
 }
@@ -249,53 +262,84 @@ export default {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    position: absolute;
+    /* position: absolute; */
     left: 50%;
     top: 0;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     font-weight: normal;
     margin: 14px auto;
+    color: #333;
+    font-weight: 700;
 }
 .h-left {
-    width: 10%;
+    width: 33%;
+}
+.dw {
+    height: 15px;
+    width: 15px;
+    margin-right: 3px;
 }
 .h-center {
-    width: 80%;
-    height: 100%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    /* height: 100%; */
 }
 .h-right {
-    width: 10%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.h-edit {
+    color: #333333;
+    font-size: 17px;
+    padding: 0px 6px 3px 0px;
+}
+.h-center span {
+    font-size: 13px;
+    color: #333;
+}
+.bj {
+    display: flex;
+    align-items: center;
 }
 .Setup {
     display: flex;
-    border-top: 1px solid#cacccf;
-    padding: 4px 13px;
-    height: 40px;
+    padding: 2%;
+    /* height: 40px; */
+    background: #fff7d2;
+    color: #ff8000;
+    border-radius: 35px;
     font-size: 15px;
-    color: #999;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
     justify-content: space-between;
-    background-color: #fff;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.laba {
+    height: 22px;
+    width: 22px;
+}
+.hjt {
+    width: 9px;
+    height: 12px;
 }
 .Setup a {
     text-decoration: none;
 }
-.Setup p {
-    margin-top: 5px;
-}
 
 .Setup i {
     display: block;
-    color: #5a6066;
-    width: 65px;
-    height: 24px;
+    color: #ff8000;
     text-align: center;
-    border: 1px solid #cacccf;
-    border-radius: 1.24em;
-    margin-top: 5px;
     font-style: normal;
 }
-
+.Setup p {
+    margin-left: -60px;
+}
 .empty {
     width: 100%;
     text-align: center;
@@ -430,5 +474,14 @@ export default {
 }
 .price2 {
     font-size: 18px;
+}
+.go-top img {
+    width: 44px;
+    height: 44px;
+}
+.go-top {
+    position: fixed;
+    right: 1px;
+    bottom: 80px;
 }
 </style>

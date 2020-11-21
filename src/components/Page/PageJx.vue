@@ -783,4 +783,5 @@ export default {
     right: 1px;
     bottom: 80px;
 }
+
 </style>
