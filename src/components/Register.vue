@@ -117,6 +117,7 @@ export default {
     font-size: 17px;
     color:#333;
     outline: none;
+    padding: 0 2%;
 }
 
 .phone input::-webkit-input-placeholder {
