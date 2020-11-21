@@ -96,8 +96,8 @@ export default {
 /* 头 */
 .detail-top {
     width: 100%;
-    padding: 2%;
-    height: 7%;
+    padding:0 2%;
+    /* height: 7%; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -131,9 +131,11 @@ export default {
     align-items: center;
 }
 .detail-top-left-item {
-    width: 28%;
+    width: 22%;
     font-size: 12px;
     color: #666;
+    text-align: center;
+    padding:4% 0;
     padding-right: 2%;
 }
 .detail-top-right {
@@ -149,6 +151,7 @@ export default {
 .active {
     font-size: 16px;
     color: #333;
+    border-bottom: 2px solid #F20C59;
 }
 /* 中 */
 .detail-mill {

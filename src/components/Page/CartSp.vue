@@ -248,7 +248,11 @@
                         </div>
                         <div class="guide-info">
                             <div class="guide-left">
+                                <div>
+                                    <span class="online"></span>
                                 <span class="name">{{item.name}}</span>
+                                </div>
+                                
                                 <span class="font22">{{item.dg}}</span>
                                 <div class="font20">
                                     <span>已服务</span>
@@ -267,8 +271,12 @@
             <div class="youlikebox">
                 <p class="guess-title">猜你喜欢</p>
                 <div class="guess-side">
-                    <div class="guess-side-item"  v-for="item in likeList" :key="item.id">
-                        <div class="guess-side-item-sub"  v-for="itemList in item.subLikeList" :key="itemList.id">
+                    <div class="guess-side-item" v-for="item in likeList" :key="item.id">
+                        <div
+                            class="guess-side-item-sub"
+                            v-for="itemList in item.subLikeList"
+                            :key="itemList.id"
+                        >
                             <div class="item-sub-img">
                                 <img :src="itemList.imgUrl" alt />
                             </div>
@@ -280,41 +288,50 @@
                             </div>
                         </div>
                     </div>
-                     <!-- <div class="swiper-pagination" slot="pagination"></div> -->
+                    <!-- <div class="swiper-pagination" slot="pagination"></div> -->
                 </div>
-
             </div>
-            <!-- 商品.规格.售后 -->
             <!-- </div class="description"> -->
-                <div class="description-con">
-                    
-                    <div class="description-item" :class="[cartsName=='carts-js'?'active1':'']" @click="cartsName='carts-js'">
-                        <p>商品介绍</p>
-                    </div>
-                    <div class="description-item" :class="[cartsName=='carts-gg'?'active1':'']" @click="cartsName='carts-gg'">
-                        <p>规格参数</p>
-                    </div>
-                    <div class="description-item b" :class="[cartsName=='carts-sh'?'active1':'']" @click="cartsName='carts-sh'">
-                        <p>包装售后</p>
-                    </div>
-
+            <!-- 商品.规格.售后 -->
+            <div class="description-con">
+                <div
+                    class="description-item"
+                    :class="[cartsName=='carts-js'?'active1':'']"
+                    @click="cartsName='carts-js'"
+                >
+                    <p>商品介绍</p>
                 </div>
-            <!-- <div> -->
+                <div
+                    class="description-item"
+                    :class="[cartsName=='carts-gg'?'active1':'']"
+                    @click="cartsName='carts-gg'"
+                >
+                    <p>规格参数</p>
+                </div>
+                <div
+                    class="description-item b"
+                    :class="[cartsName=='carts-sh'?'active1':'']"
+                    @click="cartsName='carts-sh'"
+                >
+                    <p>包装售后</p>
+                </div>
+            </div>
             <component :is="cartsName"></component>
+            <!-- <div> -->
         </div>
     </div>
 </template>
 
 <script>
-import CartsJs from  "../PageSub/CartsJs.vue"
-import CartsGg from  "../PageSub/CartsGg.vue"
-import CartsSh from  "../PageSub/CartsSh.vue"
+import CartsJs from "../PageSub/CartsJs.vue";
+import CartsGg from "../PageSub/CartsGg.vue";
+import CartsSh from "../PageSub/CartsSh.vue";
 
 export default {
     name: "carrousel",
     data() {
         return {
-             cartsName:'carts-js',
+            cartsName: "carts-js",
 
             // 轮播图
             listSwiper: [],
@@ -323,9 +340,9 @@ export default {
             // 导购
             guideList: [],
             // 猜你喜欢
-            likeList:[],
+            likeList: [],
             // 猜你喜欢 子列
-            subLikeList:[],
+            subLikeList: [],
 
             swiperOptions: {
                 pagination: {
@@ -338,9 +355,9 @@ export default {
         };
     },
     components: {
-        'carts-js':CartsJs,
-        'carts-gg':CartsGg,
-        'carts-sh':CartsSh
+        "carts-js": CartsJs,
+        "carts-gg": CartsGg,
+        "carts-sh": CartsSh,
     },
     created() {
         // 轮播图
@@ -368,7 +385,7 @@ export default {
         xhr2.onload = function () {
             that.guideList = JSON.parse(xhr2.response).guideList;
         };
-       // 猜你喜欢
+        // 猜你喜欢
         var that = this;
         var xhr3 = new XMLHttpRequest();
         xhr3.open("GET", "http://localhost:8080/data/CartXq.json");
@@ -377,7 +394,7 @@ export default {
             that.likeList = JSON.parse(xhr3.response).likeList;
             //  console.log(that.likeList);
         };
-         // 猜你喜欢 子列
+        // 猜你喜欢 子列
         var that = this;
         var xhr4 = new XMLHttpRequest();
         xhr4.open("GET", "http://localhost:8080/data/CartXq.json");
@@ -828,15 +845,17 @@ export default {
     background-color: #fff;
     flex-shrink: 0;
 }
-.comment-wrap-item img {
+.comment-wrap-item>img {
     width: 95%;
+    height: 90px;
 }
 .c-content {
     width: 100%;
     display: flex;
     flex-direction: row;
+    padding: 2%;
     /* align-items: center; */
-    justify-content: center;
+    /* justify-content: center; */
     /* text-align: center; */
 }
 .user-name {
@@ -850,10 +869,11 @@ export default {
 .pic-num {
     font-size: 12px;
     position: absolute;
-    top: 70%;
-    left: 10px;
+    top: 62%;
+    left: 3px;
     padding: 0 2%;
-    background-color: #999;
+    color: #fff;
+    background-color:  rgba(0,0,0,.5);
 }
 .serve_dibu {
     width: 100%;
@@ -1037,7 +1057,7 @@ export default {
 
 .guess-side-item {
     width: 100%;
-    padding:2%;
+    padding: 2%;
     flex-shrink: 0;
     display: flex;
     flex-direction: row;
@@ -1049,7 +1069,7 @@ export default {
     margin: 0.6%;
     position: relative;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     /* align-items: center; */
     flex-shrink: 0;
 }
@@ -1095,8 +1115,12 @@ export default {
     border-radius: 50%;
 }
 .item-sub-dw span {
+    /* width: 90%; */
     font-size: 12px;
     color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 /* 商品.规格.售后 */
 /* .description{
@@ -1104,7 +1128,7 @@ export default {
     padding:2%;
     background-color: #197fe7;
 } */
-.description-con{
+.description-con {
     width: 100%;
     padding: 2%;
     display: flex;
@@ -1114,19 +1138,26 @@ export default {
     background-color: #fff;
     border-top: 1px solid #d0d3d3;
     border-bottom: 1px solid #d0d3d3;
-
 }
-.description-item{
+.description-item {
     width: 33.33%;
     flex-shrink: 0;
     font-size: 14px;
     color: #919599;
     border-right: 1px solid #d0d3d3;
 }
-.description-item.b{
-    border-right:none;
+.description-item.b {
+    border-right: none;
 }
-.active1{
-color: #00051a;
+.active1 {
+    color: #00051a;
+}
+.online {
+    display: inline-block;
+    background-color: #09bb07;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 7px;
 }
 </style>
