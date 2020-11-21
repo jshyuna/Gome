@@ -162,7 +162,7 @@
                     <ul>
                         <li>
                             <a href>
-                                <img src="//img10.gomein.net.cn/image/prodimg/promimg/topics/201705/201705041426060764.gif" alt />
+                                <img src="//img13.gomein.net.cn/image/prodimg/promimg/topics/201705/201705041429000942.gif" alt />
                             </a>
                         </li>
                         <li>
@@ -201,7 +201,7 @@
                         </li>
                         <li>
                             <a href>
-                                <img src="////img12.gomein.net.cn/image/prodimg/promimg/topics/201705/201705041441470533.gif" alt />
+                                <img src="//img12.gomein.net.cn/image/prodimg/promimg/topics/201705/201705041441470533.gif" alt />
                             </a>
                         </li>
                         <li>

@@ -180,7 +180,7 @@
                     <ul>
                         <li>
                             <a href>
-                                <img src="../images/df.png" alt />
+                                <img src="../../images/df.png" alt />
                             </a>
                             <span>单反镜头</span>
                         </li>

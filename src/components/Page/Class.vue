@@ -3,14 +3,14 @@
         <div class="pageClass">
             <div class="header">
                 <div class="h-left" @click="btnback('page')">
-                    <img src="../images/back.png" alt />
+                    <img src="../../images/back.png" alt />
                 </div>
                 <div class="h-center" @click="btnsearch('search')">
                     <span>iPhone12 Pro Max</span>
-                    <img src="../images/search_icon.png" alt class="search" />
+                    <img src="../../images/search_icon.png" alt class="search" />
                 </div>
                 <div class="h-right">
-                    <img src="../images/slh.png" alt />
+                    <img src="../../images/slh.png" alt />
                 </div>
             </div>
             <div class="aside">
@@ -49,19 +49,19 @@
                             <ul>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-01.png" alt />
+                                        <img src="../../images/classes-01.png" alt />
                                     </a>
                                     <span>平板电视</span>
                                 </li>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-02.png" alt />
+                                        <img src="../../images/classes-02.png" alt />
                                     </a>
                                     <span>冰箱</span>
                                 </li>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-03.png" alt />
+                                        <img src="../../images/classes-03.png" alt />
                                     </a>
                                     <span>壁柜式空调</span>
                                 </li>
@@ -72,19 +72,19 @@
                             <ul>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-04.png" alt />
+                                        <img src="../../images/classes-04.png" alt />
                                     </a>
                                     <span>手机</span>
                                 </li>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-05.png" alt />
+                                        <img src="../../images/classes-05.png" alt />
                                     </a>
                                     <span>笔记本电脑</span>
                                 </li>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-06.png" alt />
+                                        <img src="../../images/classes-06.png" alt />
                                     </a>
                                     <span>单反相机</span>
                                 </li>
@@ -95,19 +95,19 @@
                             <ul>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-07.png" alt />
+                                        <img src="../../images/classes-07.png" alt />
                                     </a>
                                     <span>电风扇</span>
                                 </li>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-08.png" alt />
+                                        <img src="../../images/classes-08.png" alt />
                                     </a>
                                     <span>空气净化器</span>
                                 </li>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-09.png" alt />
+                                        <img src="../../images/classes-09.png" alt />
                                     </a>
                                     <span>微波炉</span>
                                 </li>
@@ -118,13 +118,13 @@
                             <ul>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-11.png" alt />
+                                        <img src="../../images/classes-11.png" alt />
                                     </a>
                                     <span>品牌纸尿裤</span>
                                 </li>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-12.png" alt />
+                                        <img src="../../images/classes-12.png" alt />
                                     </a>
                                     <span>床品件套</span>
                                 </li>
@@ -135,51 +135,51 @@
                             <ul>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-13.png" alt />
+                                        <img src="../../images/classes-13.png" alt />
                                     </a>
                                 </li>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-14.png" alt />
+                                        <img src="../../images/classes-14.png" alt />
                                     </a>
                                 </li>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-15.png" alt />
-                                    </a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <a href>
-                                        <img src="../images/classes-16.png" alt />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href>
-                                        <img src="../images/classes-17.png" alt />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href>
-                                        <img src="../images/classes-18.png" alt />
+                                        <img src="../../images/classes-15.png" alt />
                                     </a>
                                 </li>
                             </ul>
                             <ul>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-19.png" alt />
+                                        <img src="../../images/classes-16.png" alt />
                                     </a>
                                 </li>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-20.png" alt />
+                                        <img src="../../images/classes-17.png" alt />
                                     </a>
                                 </li>
                                 <li>
                                     <a href>
-                                        <img src="../images/classes-21.png" alt />
+                                        <img src="../../images/classes-18.png" alt />
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href>
+                                        <img src="../../images/classes-19.png" alt />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href>
+                                        <img src="../../images/classes-20.png" alt />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href>
+                                        <img src="../../images/classes-21.png" alt />
                                     </a>
                                 </li>
                             </ul>
@@ -193,12 +193,12 @@
 </template>
 
 <script>
-import FenSjsm from "./FenSjsm.vue";
-import FenRm from "./FenRm.vue";
-import FenDnbg from "./FenDnbg.vue";
-import FenDsyy from "./FenDsyy.vue";
-import FenKtbx from "./FenKtbx.vue";
-import FenCfwy from "./FenCfwy.vue";
+import FenSjsm from "../PageSub/FenSjsm.vue";
+import FenRm from "../PageSub/FenRm.vue";
+import FenDnbg from "../PageSub/FenDnbg.vue";
+import FenDsyy from "../PageSub/FenDsyy.vue";
+import FenKtbx from "../PageSub/FenKtbx.vue";
+import FenCfwy from "../PageSub/FenCfwy.vue";
 export default {
     data(){
         return {
@@ -251,6 +251,7 @@ body,
 .header {
     display: flex;
     flex-shrink: 0;
+    padding:0 2%;
     border-bottom: 1px solid #ccc;
     justify-content: space-between;
     /* width: 145px; */
@@ -262,23 +263,22 @@ body,
     border-radius: 24px;
     background-color: #f6f6f6;
     margin-left: 29px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 .h-center span {
     font-size: 12px;
     color: #999;
-    margin-left: 10px;
+    padding-left: 10px;
 }
 .search {
     width: 16px;
     height: 16px;
-    margin-left: 146px;
+    margin-left: 136px;
 }
 .h-left img {
     width: 80%;
     margin-top: 5px;
-    margin-left: 6px;
 }
 .h-right img {
     margin-left: 12px;
@@ -292,7 +292,6 @@ body,
     justify-content: space-between;
 }
 .side {
-    /* display: flex; */
     margin-top: 7px;
     width: 20%;
     height: 100%;
@@ -323,14 +322,6 @@ body,
     width: 80%;
     border-bottom: 1px solid #dddddd;
 }
-/* .side li:nth-child(1) {
-    border-left: 2px solid red;
-    background-color: #fff;
-}
-
-.side li:nth-child(1)  {
-    color: #f20c59;
-} */
 .bside {
     width: 80%;
     flex: 1;
