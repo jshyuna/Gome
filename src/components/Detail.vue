@@ -3,7 +3,7 @@
         <!-- 头 -->
         <div class="detail-top">
             <div class="detail-top-left">
-                <div class="detail-top-left-img">
+                <div class="detail-top-left-img"  @click="btnback('page')">
                     <img src="../images/back.png" alt class="back" />
                 </div>
                 <div class="detail-top-left-con">
@@ -82,6 +82,13 @@ export default {
         "cart-xq": CartXq,
         "cart-pj": CartPj,
     },
+     methods: {
+        btnback(a) {
+            this.$router.push({
+                path: "/",
+            });
+        }
+    }
 };
 </script>
 
