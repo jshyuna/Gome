@@ -282,16 +282,40 @@
                     </div>
                      <!-- <div class="swiper-pagination" slot="pagination"></div> -->
                 </div>
+
             </div>
+            <!-- 商品.规格.售后 -->
+            <!-- </div class="description"> -->
+                <div class="description-con">
+                    
+                    <div class="description-item" :class="[cartsName=='carts-js'?'active1':'']" @click="cartsName='carts-js'">
+                        <p>商品介绍</p>
+                    </div>
+                    <div class="description-item" :class="[cartsName=='carts-gg'?'active1':'']" @click="cartsName='carts-gg'">
+                        <p>规格参数</p>
+                    </div>
+                    <div class="description-item b" :class="[cartsName=='carts-sh'?'active1':'']" @click="cartsName='carts-sh'">
+                        <p>包装售后</p>
+                    </div>
+
+                </div>
+            <!-- <div> -->
+            <component :is="cartsName"></component>
         </div>
     </div>
 </template>
 
 <script>
+import CartsJs from  "../PageSub/CartsJs.vue"
+import CartsGg from  "../PageSub/CartsGg.vue"
+import CartsSh from  "../PageSub/CartsSh.vue"
+
 export default {
     name: "carrousel",
     data() {
         return {
+             cartsName:'carts-js',
+
             // 轮播图
             listSwiper: [],
             // 商品页
@@ -312,6 +336,11 @@ export default {
                 // Some Swiper option/callback...
             },
         };
+    },
+    components: {
+        'carts-js':CartsJs,
+        'carts-gg':CartsGg,
+        'carts-sh':CartsSh
     },
     created() {
         // 轮播图
@@ -1068,5 +1097,36 @@ export default {
 .item-sub-dw span {
     font-size: 12px;
     color: #fff;
+}
+/* 商品.规格.售后 */
+/* .description{
+    width: 100%;
+    padding:2%;
+    background-color: #197fe7;
+} */
+.description-con{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #d0d3d3;
+    border-bottom: 1px solid #d0d3d3;
+
+}
+.description-item{
+    width: 33.33%;
+    flex-shrink: 0;
+    font-size: 14px;
+    color: #919599;
+    border-right: 1px solid #d0d3d3;
+}
+.description-item.b{
+    border-right:none;
+}
+.active1{
+color: #00051a;
 }
 </style>
