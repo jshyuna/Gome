@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- 轮播图 -->
-        <div class="swiper-jx">
+        <div class="swiper">
             <swiper ref="mySwiper" class="swiper-item" :options="swiperOptions">
                 <swiper-slide v-for="item in listSwiper" :key="item.id">
                     <img :src="item.imgUrl" alt />
@@ -433,22 +433,22 @@ export default {
     },
     mounted() {
         // console.log("Current Swiper instance object", this.swiper);
-        this.swiper.slideTo(1, 1000, false);
+        // this.swiper.slideTo(1, 1000, false);
     },
 };
 </script>
 
 <style scoped>
-.swiper-jx >>> .swiper-pagination-bullet-active {
+.swiper >>> .swiper-pagination-bullet-active {
     background-color: #fff;
 }
 /* 轮播图 */
-.swiper-jx {
+.swiper {
     width: 100%;
     display: flex;
     padding: 2%;
 }
-.swiper-jx img {
+.swiper img {
     border-radius: 10px;
     width: 100%;
 }

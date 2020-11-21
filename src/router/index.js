@@ -8,7 +8,7 @@ import Mall from "../components/Mall.vue"
 import Me from "../components/Me.vue"
 import Message from "../components/Message.vue"
 import Register from "../components/Register.vue"
-import Class from "../components/Class.vue"
+import Class from "../components/Page/Class.vue"
 import Detail from "../components/Detail.vue"
 
 

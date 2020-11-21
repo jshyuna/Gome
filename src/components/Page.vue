@@ -105,7 +105,7 @@ import PageSsj from "./Page/PageSsj.vue";
 import PageBh from "./Page/PageBh.vue";
 import PageJz from "./Page/PageJz.vue";
 
-import Class from "./Class.vue";
+import Class from "./Page/Class.vue";
 
 
 

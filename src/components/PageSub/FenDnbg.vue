@@ -195,7 +195,7 @@
                         <li>
                             <a href>
                                 <img
-                                    src="../images/sd.png"
+                                    src="../../images/sd.png"
                                     alt
                                 />
                             </a>
@@ -305,7 +305,7 @@
                         </li>
                         <li>
                             <a href>
-                                <img src="../images/lenovo.png" alt />
+                                <img src="../../images/lenovo.png" alt />
                             </a>
                         </li>
                         <li>
