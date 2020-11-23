@@ -87,7 +87,7 @@
                                         <big>{{item.price}}</big>
                                     </div>
                                     <div class="alike">
-                                        <a href>找相似</a>
+                                       <img src="../images/chat3.png" alt="" class="gwc">
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@
                         <div
                             class="lazy-bot-right-item"
                             v-for="item in QbLazyRightList"
-                            :key="item.id"
+                            :key="item.id"  @click="btnxq('detail')"
                         >
                             <a href="#" class="lazy-bot-right-item-con">
                                 <div class="lazy-bot-right-item-img">
@@ -132,7 +132,7 @@
                                         <big>{{item.price}}</big>
                                     </div>
                                     <div class="alike">
-                                        <a href>找相似</a>
+                                       <img src="../images/chat3.png" alt="" class="gwc">
                                     </div>
                                 </div>
                             </div>
@@ -199,6 +199,10 @@ export default {
 </script>
 
 <style scoped>
+.gwc{
+    height: 27px;
+    width: 27px;
+}
 .gouwuche {
     background-color: rgb(243, 245, 247);
 }
@@ -492,14 +496,11 @@ export default {
     font-size: 16px;
 }
 .alike {
-    font-weight: 400;
+
     padding: 0 4px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+
 }
-.alike > a {
-    color: #666;
-}
+
 .go-top img {
     width: 44px;
     height: 44px;

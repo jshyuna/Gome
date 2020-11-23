@@ -250,9 +250,9 @@
                             <div class="guide-left">
                                 <div>
                                     <span class="online"></span>
-                                <span class="name">{{item.name}}</span>
+                                    <span class="name">{{item.name}}</span>
                                 </div>
-                                
+
                                 <span class="font22">{{item.dg}}</span>
                                 <div class="font20">
                                     <span>已服务</span>
@@ -418,6 +418,7 @@ export default {
 </script>
 
 <style scoped>
+
 /* .swiper >>> .swiper-pagination-bullet-active {
     background-color: #fff;
 } */
@@ -845,7 +846,7 @@ export default {
     background-color: #fff;
     flex-shrink: 0;
 }
-.comment-wrap-item>img {
+.comment-wrap-item > img {
     width: 95%;
     height: 90px;
 }
@@ -873,7 +874,7 @@ export default {
     left: 3px;
     padding: 0 2%;
     color: #fff;
-    background-color:  rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .serve_dibu {
     width: 100%;
