@@ -1,160 +1,174 @@
 <template>
-    <div class="gouwuche">
-        <div class="header" id="top">
-            <div class="h-left" @click="btnback('page')">
-                <img src="../images/back.png" alt />
-            </div>
-            <div class="h-center">
-                <h1 class="h-tit">购物车</h1>
-                <div class="bj">
-                    <img src="../images/dw.png" alt class="dw" />
-                    <span>北京市</span>
+   
+        <div class="gouwuche">
+            <div class="header">
+                <div class="h-left" @click="btnback('page')">
+                    <img src="../images/back.png" alt />
+                </div>
+                <div class="h-center">
+                    <h1 class="h-tit">购物车</h1>
+                    <div class="bj">
+                        <img src="../images/dw.png" alt class="dw" />
+                        <span>北京市</span>
+                    </div>
+                </div>
+                <div class="h-right">
+                    <div class="h-edit">编辑</div>
+                    <img src="../images/slh.png" alt />
                 </div>
             </div>
-            <div class="h-right">
-                <div class="h-edit">编辑</div>
-                <img src="../images/slh.png" alt />
-            </div>
-        </div>
-        <div class="Setup">
-            <img src="../images/laba.png" alt class="laba" />
-            <p>立即开通九九会员享受会员折扣</p>
-            <a href>
-                <i>
-                    去开通
-                    <img src="../images/hjt.png" alt class="hjt" />
-                </i>
-            </a>
-        </div>
-        <div class="empty">
-            <img src="../images/bj_baobei.png" alt />
-            <p>购物车还是空的</p>
-            <div class="box1">
-                <span>
-                    <a href>逛逛首页</a>
-                </span>
-                <span>
-                    <a href>秒杀</a>
-                </span>
-            </div>
-        </div>
+            <div class="con">
+                <div class="Setup" id="top">
+                    <img src="../images/laba.png" alt class="laba" />
+                    <p>立即开通九九会员享受会员折扣</p>
+                    <a href>
+                        <i>
+                            去开通
+                            <img src="../images/hjt.png" alt class="hjt" />
+                        </i>
+                    </a>
+                </div>
+                <div class="empty">
+                    <img src="../images/bj_baobei.png" alt />
+                    <p>购物车还是空的</p>
+                    <div class="box1">
+                        <span>
+                            <a href>逛逛首页</a>
+                        </span>
+                        <span>
+                            <a href>秒杀</a>
+                        </span>
+                    </div>
+                </div>
 
-        <div class="cart-like">
-            <div class="cart-title">
-                <p class="line"></p>
-                <span class="tuijian">
-                    <i class="icon"></i>
-                    为你推荐
-                </span>
-                <p class="line"></p>
-            </div>
-            <!-- 懒加载 底部分 -->
-            <div class="lazy-bot">
-                <div class="lazy-bot-left">
-                    <div class="lazy-bot-left-cons">
-                        <div
-                            class="lazy-bot-left-item"
-                            v-for="item in QbLazyLeftList"
-                            :key="item.id"
-                            
-                        >
-                            <a href="#" class="lazy-bot-left-item-con">
-                                <div class="lazy-bot-left-item-img"  @click="btnxq('detail')">
-                                    <img :src="item.imgUrl" alt />
-                                </div>
-                                <div class="lazy-bot-left-item-site">
-                                    <div class="lazy-bot-left-item-site-con">
-                                        <img :src="item.LogoImgUrl" alt />
-                                        <span class="lazy-bot-left-item-site-name">{{item.siteName}}</span>
+                <div class="cart-like">
+                    <div class="cart-title">
+                        <p class="line"></p>
+                        <span class="tuijian">
+                            <i class="icon"></i>
+                            为你推荐
+                        </span>
+                        <p class="line"></p>
+                    </div>
+                    <!-- 懒加载 底部分 -->
+                    <div class="lazy-bot">
+                        <div class="lazy-bot-left">
+                            <div class="lazy-bot-left-cons">
+                                <div
+                                    class="lazy-bot-left-item"
+                                    v-for="item in QbLazyLeftList"
+                                    :key="item.id"
+                                   
+                                >
+                                    <a href="#" class="lazy-bot-left-item-con">
+                                        <div class="lazy-bot-left-item-img"  @click="btnxq('detail')">
+                                            <img :src="item.imgUrl" alt />
+                                        </div>
+                                        <div class="lazy-bot-left-item-site">
+                                            <div class="lazy-bot-left-item-site-con">
+                                                <img :src="item.LogoImgUrl" alt />
+                                                <span
+                                                    class="lazy-bot-left-item-site-name"
+                                                >{{item.siteName}}</span>
+                                            </div>
+                                        </div>
+                                        <div class="lazy-bot-left-item-info">
+                                            <p class="lazy-bot-left-item-desc">
+                                                <span class="lazy-bot-left-item-tag">
+                                                    <span>{{item.tag}}</span>
+                                                </span>
+                                                <span class="lazy-bot-left-item-txt">{{item.txt}}</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <div class="lazy-bot-left-item-other">
+                                        <div class="lazy-bot-left-item-other-list">
+                                            <span
+                                                class="lazy-bot-left-item-other-tag"
+                                            >{{item.otherPrice}}</span>
+                                        </div>
+                                        <div class="lazy-bot-left-item-other-price">
+                                            <div class="item-other-price">
+                                                <i>￥</i>
+                                                <big>{{item.price}}</big>
+                                            </div>
+                                            <div class="alike">
+                                                <img src="../images/chat3.png" alt class="gwc" />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="lazy-bot-left-item-info">
-                                    <p class="lazy-bot-left-item-desc">
-                                        <span class="lazy-bot-left-item-tag">
-                                            <span>{{item.tag}}</span>
-                                        </span>
-                                        <span class="lazy-bot-left-item-txt">{{item.txt}}</span>
-                                    </p>
-                                </div>
-                            </a>
-                            <div class="lazy-bot-left-item-other">
-                                <div class="lazy-bot-left-item-other-list">
-                                    <span class="lazy-bot-left-item-other-tag">{{item.otherPrice}}</span>
-                                </div>
-                                <div class="lazy-bot-left-item-other-price">
-                                    <div class="item-other-price">
-                                        <i>￥</i>
-                                        <big>{{item.price}}</big>
-                                    </div>
-                                    <div class="alike">
-                                       <img src="../images/chat3.png" alt="" class="gwc">
+                            </div>
+                        </div>
+                        <div class="lazy-bot-right">
+                            <div class="lazy-bot-right-cons">
+                                <div
+                                    class="lazy-bot-right-item"
+                                    v-for="item in QbLazyRightList"
+                                    :key="item.id"
+                                  
+                                >
+                                    <a href="#" class="lazy-bot-right-item-con">
+                                        <div class="lazy-bot-right-item-img"  @click="btnxq('detail')">
+                                            <img :src="item.imgUrl" alt />
+                                        </div>
+                                        <div class="lazy-bot-right-item-site">
+                                            <div class="lazy-bot-right-item-site-con">
+                                                <img :src="item.LogoImgUrl" alt />
+                                                <span
+                                                    class="lazy-bot-right-item-site-name"
+                                                >{{item.siteName}}</span>
+                                            </div>
+                                        </div>
+                                        <div class="lazy-bot-right-item-info">
+                                            <p class="lazy-bot-right-item-desc">
+                                                <span class="lazy-bot-right-item-tag">
+                                                    <span>{{item.tag}}</span>
+                                                </span>
+                                                <span class="lazy-bot-right-item-txt">{{item.txt}}</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <div class="lazy-bot-right-item-other">
+                                        <div class="lazy-bot-right-item-other-list">
+                                            <span
+                                                class="lazy-bot-right-item-other-tag"
+                                            >{{item.otherPrice}}</span>
+                                        </div>
+                                        <div class="lazy-bot-right-item-other-price">
+                                            <div class="item-other-price">
+                                                <i>￥</i>
+                                                <big>{{item.price}}</big>
+                                            </div>
+                                            <div class="alike">
+                                                <img src="../images/chat3.png" alt class="gwc" />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="lazy-bot-right">
-                    <div class="lazy-bot-right-cons">
-                        <div
-                            class="lazy-bot-right-item"
-                            v-for="item in QbLazyRightList"
-                            :key="item.id" 
-                        >
-                            <a href="#" class="lazy-bot-right-item-con">
-                                <div class="lazy-bot-right-item-img"  @click="btnxq('detail')">
-                                    <img :src="item.imgUrl" alt />
-                                </div>
-                                <div class="lazy-bot-right-item-site">
-                                    <div class="lazy-bot-right-item-site-con">
-                                        <img :src="item.LogoImgUrl" alt />
-                                        <span
-                                            class="lazy-bot-right-item-site-name"
-                                        >{{item.siteName}}</span>
-                                    </div>
-                                </div>
-                                <div class="lazy-bot-right-item-info">
-                                    <p class="lazy-bot-right-item-desc">
-                                        <span class="lazy-bot-right-item-tag">
-                                            <span>{{item.tag}}</span>
-                                        </span>
-                                        <span class="lazy-bot-right-item-txt">{{item.txt}}</span>
-                                    </p>
-                                </div>
-                            </a>
-                            <div class="lazy-bot-right-item-other">
-                                <div class="lazy-bot-right-item-other-list">
-                                    <span class="lazy-bot-right-item-other-tag">{{item.otherPrice}}</span>
-                                </div>
-                                <div class="lazy-bot-right-item-other-price">
-                                    <div class="item-other-price">
-                                        <i>￥</i>
-                                        <big>{{item.price}}</big>
-                                    </div>
-                                    <div class="alike">
-                                       <img src="../images/chat3.png" alt="" class="gwc">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="go-top">
+                    <a href="#top">
+                        <img
+                            src="https://js.gomein.net.cn/ssr/statics/images/return-top.ae68c0e.png"
+                            alt
+                        />
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="go-top">
-            <a href="#top">
-                <img src="https://js.gomein.net.cn/ssr/statics/images/return-top.ae68c0e.png" alt />
-            </a>
-        </div>
-    </div>
+  
 </template>
 
 <script>
 import Detail from "./Detail.vue";
 export default {
-     data() {
+    data() {
         return {
-             // 懒加载 底 左部分
+            // 懒加载 底 左部分
             QbLazyLeftList: [],
             // 懒加载 底 右部分
             QbLazyRightList: [],
@@ -166,16 +180,16 @@ export default {
                 path: "/",
             });
         },
-         btnxq(a) {
+        btnxq(a) {
             this.$router.push({
-                path:"/detail"
-            })
-        }
+                path: "/detail",
+            });
+        },
     },
-    components:{
-         "detail":Detail
+    components: {
+        detail: Detail,
     },
-      created(){
+    created() {
         // 懒加载 底 左部分
         var that = this;
         var xhr = new XMLHttpRequest();
@@ -193,24 +207,29 @@ export default {
         xhr1.onload = function () {
             that.QbLazyRightList = JSON.parse(xhr1.response).QbLazyRightList;
             // console.log(that.lazyLeftRight);
-        }
-    }
+        };
+    },
 };
 </script>
 
 <style scoped>
-.gwc{
+.gwc {
     height: 27px;
     width: 27px;
 }
 .gouwuche {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(243, 245, 247);
 }
 .header {
+    height: 8%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
     background-color: #fff;
 }
 .h-tit {
@@ -220,10 +239,8 @@ export default {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    /* position: absolute; */
     left: 50%;
     top: 0;
-    /* transform: translateX(-50%); */
     font-weight: normal;
     margin: 14px auto;
     color: #333;
@@ -241,7 +258,6 @@ export default {
     width: 33%;
     display: flex;
     align-items: center;
-    /* height: 100%; */
 }
 .h-right {
     width: 33%;
@@ -262,20 +278,26 @@ export default {
     display: flex;
     align-items: center;
 }
+
+.con {
+    width: 100%;
+    height: 92%;
+    display: flex;
+    flex-shrink: 0;
+    flex: 1;
+    overflow: auto;
+    flex-direction: column;
+}
+
 .Setup {
     display: flex;
     padding: 2%;
-    /* height: 40px; */
     background: #fff7d2;
     color: #ff8000;
     border-radius: 35px;
     font-size: 15px;
-    /* margin-bottom: 5px; */
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 .laba {
     height: 22px;
@@ -496,9 +518,7 @@ export default {
     font-size: 16px;
 }
 .alike {
-
     padding: 0 4px;
-
 }
 
 .go-top img {
