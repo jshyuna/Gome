@@ -232,7 +232,6 @@ export default {
     /* border-bottom: 1px solid #ebeced; */
 }
 .online {
-    display: inline-block;
     background-color: #09bb07;
     width: 8.54px;
     height: 8.5px;
