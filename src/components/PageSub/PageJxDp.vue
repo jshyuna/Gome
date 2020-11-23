@@ -4,7 +4,7 @@
         <div class="lazy-bot">
             <div class="lazy-bot-left">
                 <div class="lazy-bot-left-cons">
-                    <div class="lazy-bot-left-item" v-for="item in DpLazyLeftList" :key="item.id">
+                    <div class="lazy-bot-left-item" v-for="item in DpLazyLeftList" :key="item.id"  @click="btnxq('detail')">
                         <a href="#" class="lazy-bot-left-item-con">
                             <div class="lazy-bot-left-item-img">
                                 <img :src="item.imgUrl" alt />
@@ -43,7 +43,7 @@
             </div>
             <div class="lazy-bot-right">
                 <div class="lazy-bot-right-cons">
-                    <div class="lazy-bot-right-item" v-for="item in DpLazyRightList" :key="item.id">
+                    <div class="lazy-bot-right-item" v-for="item in DpLazyRightList" :key="item.id"  @click="btnxq('detail')">
                         <a href="#" class="lazy-bot-right-item-con">
                             <div class="lazy-bot-right-item-img">
                                 <img :src="item.imgUrl" alt />
@@ -112,6 +112,13 @@ export default {
         xhr1.onload = function () {
             that.DpLazyRightList = JSON.parse(xhr1.response).DpLazyRightList;
             // console.log(that.lazyLeftRight);
+        }
+    },
+    methods:{
+        btnxq(a) {
+            this.$router.push({
+                path:"/detail"
+            })
         }
     }
 }

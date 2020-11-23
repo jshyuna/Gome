@@ -3,7 +3,7 @@
         <!-- 头 -->
         <div class="detail-top">
             <div class="detail-top-left">
-                <div class="detail-top-left-img"  @click="btnback('page')">
+                <div class="detail-top-left-img" @click="btnback('page')">
                     <img src="../images/back.png" alt class="back" />
                 </div>
                 <div class="detail-top-left-con">
@@ -34,7 +34,7 @@
                 <span>
                     <img src="../images/heart.png" alt />
                 </span>
-                <span>
+                <span @click="btngwc('cart')">
                     <img src="../images/gwc.png" alt />
                 </span>
                 <span>
@@ -44,7 +44,9 @@
         </div>
         <!-- 中 -->
         <div class="detail-mill">
-            <component :is="cartName"></component>
+            <transition :name="transitionName">
+                <component :is="cartName"></component>
+            </transition>
         </div>
         <!-- 底 -->
         <div class="detail-bot">
@@ -75,6 +77,8 @@ export default {
     data() {
         return {
             cartName: "cart-sp",
+            transitionName: "right-left",
+            pageIndex: 0,
         };
     },
     components: {
@@ -82,22 +86,69 @@ export default {
         "cart-xq": CartXq,
         "cart-pj": CartPj,
     },
-     methods: {
+    methods: {
         btnback(a) {
             this.$router.push({
                 path: "/",
             });
-        }
+        },
+        btngwc(a) {
+            this.$router.push({
+                path: "/cart",
+            });
+        },
+    },
+    watch: {
+        pageIndex(newVal, oldVal) {
+            switch (newVal) {
+                case 0:
+                    this.componentName = "cart-sp";
+                    break;
+                case 1:
+                    this.componentName = "cart-xq";
+                    break;
+                case 2:
+                    this.componentName = "cart-pj";
+                    break;
+            }
+
+            if (newVal > oldVal) {
+                this.transitionName = "right-left";
+            } else {
+                this.transitionName = "left-right";
+            }
+        },
     }
 };
 </script>
 
 <style scoped>
- 
+.right-left-enter {
+    transform: translateX(100%);
+}
+
+.right-left-leave-to {
+    transform: translateX(-100%);
+}
+
+.right-left-enter-active,
+.right-left-leave-active,
+.left-right-enter-active,
+.left-right-leave-active {
+    transition: all 0.3s;
+}
+
+.left-right-enter {
+    transform: translateX(-100%);
+}
+
+.left-right-leave-to {
+    transform: translateX(100%);
+}
 /* 头 */
 .detail-top {
     width: 100%;
-    padding:0 2%;
+    padding: 0 2%;
     /* height: 7%; */
     display: flex;
     flex-direction: row;
@@ -132,11 +183,11 @@ export default {
     align-items: center;
 }
 .detail-top-left-item {
-    width: 22%;
+    width: 28%;
     font-size: 12px;
     color: #666;
     text-align: center;
-    padding:4% 0;
+    padding: 4% 0;
     padding-right: 2%;
 }
 .detail-top-right {
@@ -152,7 +203,7 @@ export default {
 .active {
     font-size: 16px;
     color: #333;
-    border-bottom: 2px solid #F20C59;
+    border-bottom: 2px solid #f20c59;
 }
 /* 中 */
 .detail-mill {

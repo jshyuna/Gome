@@ -43,7 +43,7 @@
             </div>
             <div class="lazy-bot-right">
                 <div class="lazy-bot-right-cons">
-                    <div class="lazy-bot-right-item" v-for="item in QbLazyRightList" :key="item.id">
+                    <div class="lazy-bot-right-item" v-for="item in QbLazyRightList" :key="item.id" @click="btnxq('detail')">
                         <a href="#" class="lazy-bot-right-item-con">
                             <div class="lazy-bot-right-item-img">
                                 <img :src="item.imgUrl" alt />

@@ -66,16 +66,7 @@ export default {
 </script>
 
 <style scoped>
-   .v-enter,
-    .v-leave-to {
-      opacity: 0;
-      transform: translateX(150px);
-    }
 
-    .v-enter-active,
-    .v-leave-active {
-      transition: all 0.5s ease;
-    }
 .xq {
     background: white;
 }
