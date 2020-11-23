@@ -1,14 +1,14 @@
 <template>
     <div>
         <!-- 轮播图 -->
-        <!-- <div class="swiper">
+        <div class="swiper">
             <swiper ref="mySwiper" class="swiper-item" :options="swiperOptions">
                 <swiper-slide v-for="item in listSwiper" :key="item.id">
                     <img :src="item.imgUrl" alt />
                 </swiper-slide>
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
-        </div> -->
+        </div>
         <!-- 好服务 -->
         <div class="hfw">
             <div class="hfw-cons">

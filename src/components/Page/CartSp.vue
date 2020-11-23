@@ -1097,6 +1097,9 @@ export default {
 .item-sub-dw span {
     font-size: 12px;
     color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 /* 商品.规格.售后 */
 /* .description{

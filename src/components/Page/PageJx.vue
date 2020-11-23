@@ -133,13 +133,13 @@
                             <div class="bot-item-title">
                                 <div class="bot-item-left">国美秒杀</div>
                                 <div class="bot-item-right djs">
-                                    <div class="cc">16点场</div>
+                                    <div class="cc">{{cc}}点场</div>
                                     <div class="qjsq">
-                                        <span class="hour">00</span>
+                                        <span class="hour">{{hour}}</span>
                                         <i>:</i>
-                                        <span class="min">00</span>
+                                        <span class="min">{{min}}</span>
                                         <i>:</i>
-                                        <span class="sec">00</span>
+                                        <span class="sec">{{sec}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -342,9 +342,9 @@
                 </div>
             </div>
         </div>
-         <div class="go-top">
+        <div class="go-top">
             <a href="#top">
-                 <img src="https://js.gomein.net.cn/ssr/statics/images/return-top.ae68c0e.png" alt="">
+                <img src="https://js.gomein.net.cn/ssr/statics/images/return-top.ae68c0e.png" alt />
             </a>
         </div>
         <component :is="subName"></component>
@@ -363,7 +363,12 @@ export default {
     name: "carrousel",
     data() {
         return {
+            cc:0,
+            hour: 0,
+            min: 0,
+            sec: 0,
             subName: "pagejx-qb",
+            // "hour":hour,
             // 轮播图
             listSwiper: [],
             // 返场好货 1
@@ -386,6 +391,8 @@ export default {
     created() {
         // 轮播图
         var that = this;
+
+        that.time();
         var xhr = new XMLHttpRequest();
         xhr.open("GET", "http://localhost:8080/data/PageJx.json");
         xhr.send();
@@ -421,6 +428,39 @@ export default {
             // console.log(that.fchhList3);
         };
     },
+    methods: {
+        time() {
+            var that = this;
+            var interval = setInterval(function toTime() {
+                var date = new Date("2020-12-30 00:00:00") - new Date();
+                if (date > 0) {
+                    let time = date / 1000;
+                    that.hour =
+                        parseInt((time % (60 * 60 * 24)) / 3600) < 10
+                            ? "0" + parseInt((time % (60 * 60 * 24)) / 3600)
+                            : parseInt((time % (60 * 60 * 24)) / 3600);
+                    that.min =
+                        parseInt(((time % (60 * 60 * 3600)) % 3600) / 60) < 10
+                            ? "0" +
+                              parseInt((time % (60 * 60 * 3600)) / 3600 / 60)
+                            : parseInt((time % (60 * 60 * 3600)) / 3600 / 60);
+                    that.sec =
+                        parseInt(((time % (60 * 60 * 3600)) % 3600) % 60) < 10
+                            ? "0" +
+                              parseInt(((time % (60 * 60 * 3600)) % 3600) % 60)
+                            : parseInt(((time % (60 * 60 * 24)) % 3600) % 60);
+                    that.cc =
+                        parseInt(((date % (60 * 60 * 24))/3600)/24 ) % 4;
+                } else {
+                    (that.cc = "00"),
+                        (that.hour = "00"),
+                        (that.min = "00"),
+                        (that.sec = "00");
+                }
+            }, 1000);
+            
+        },
+    },
     components: {
         // 子目录
         "pagejx-qb": PageJxQb,
@@ -433,7 +473,6 @@ export default {
     },
     computed: {
         swiper() {
-           
             return this.$refs.mySwiper.$swiper;
         },
     },
@@ -764,24 +803,23 @@ export default {
     color: #999;
 }
 
-.active .sub-item-title{
+.active .sub-item-title {
     font-weight: 600;
     color: #f20c59;
 }
-.active .sub-item-body{
+.active .sub-item-body {
     color: #fff;
     background-color: #f20c59;
     border-radius: 10px;
-    padding:0 8px;
+    padding: 0 8px;
 }
-.go-top img{
+.go-top img {
     width: 44px;
     height: 44px;
 }
-.go-top{
+.go-top {
     position: fixed;
     right: 1px;
     bottom: 80px;
 }
-
 </style>

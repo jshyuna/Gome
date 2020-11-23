@@ -38,7 +38,7 @@
                 </span>
             </div>
         </div>
-        
+
         <div class="cart-like">
             <div class="cart-title">
                 <p class="line"></p>
@@ -48,178 +48,97 @@
                 </span>
                 <p class="line"></p>
             </div>
-            <div class="guesslike-con">
-                <ul class="guesslike-list">
-                    <li class="guesslike-item">
-                        <div class="shop-tp">
-                            <img src="//gfs17.gomein.net.cn/T1jFZmBTCv1RCvBVdK" alt />
-                        </div>
-
-                        <div class="guesslike-content">
-                            <div class="info-box">
-                                <div class="shop-name">
-                                    <div class="shop-name-cont">
-                                        <img src="//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png" alt />
-                                        <p>国美网店</p>
+            <!-- 懒加载 底部分 -->
+            <div class="lazy-bot">
+                <div class="lazy-bot-left">
+                    <div class="lazy-bot-left-cons">
+                        <div
+                            class="lazy-bot-left-item"
+                            v-for="item in QbLazyLeftList"
+                            :key="item.id"
+                            @click="btnxq('detail')"
+                        >
+                            <a href="#" class="lazy-bot-left-item-con">
+                                <div class="lazy-bot-left-item-img">
+                                    <img :src="item.imgUrl" alt />
+                                </div>
+                                <div class="lazy-bot-left-item-site">
+                                    <div class="lazy-bot-left-item-site-con">
+                                        <img :src="item.LogoImgUrl" alt />
+                                        <span class="lazy-bot-left-item-site-name">{{item.siteName}}</span>
                                     </div>
                                 </div>
-                                <p
-                                    class="xiangqing"
-                                >Apple iPad Pro 平板电脑 2020年新款 11英寸 （128G Wifi版/视网膜屏/A12Z芯片/面容ID MY252CH/A）银色</p>
-                                <div class="price-box">
-                                    <p class="price">
-                                        ¥
-                                        <strong class="price2">5999</strong>
-                                        .00
+                                <div class="lazy-bot-left-item-info">
+                                    <p class="lazy-bot-left-item-desc">
+                                        <span class="lazy-bot-left-item-tag">
+                                            <span>{{item.tag}}</span>
+                                        </span>
+                                        <span class="lazy-bot-left-item-txt">{{item.txt}}</span>
                                     </p>
-                                    <img src="../images/chat3.png" alt />
+                                </div>
+                            </a>
+                            <div class="lazy-bot-left-item-other">
+                                <div class="lazy-bot-left-item-other-list">
+                                    <span class="lazy-bot-left-item-other-tag">{{item.otherPrice}}</span>
+                                </div>
+                                <div class="lazy-bot-left-item-other-price">
+                                    <div class="item-other-price">
+                                        <i>￥</i>
+                                        <big>{{item.price}}</big>
+                                    </div>
+                                    <div class="alike">
+                                        <a href>找相似</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="guesslike-item">
-                        <div class="shop-tp">
-                            <img src="//gfs17.gomein.net.cn/T1E9K7B7d_1RCvBVdK" alt />
-                        </div>
-
-                        <div class="guesslike-content">
-                            <div class="info-box">
-                                <div class="shop-name">
-                                    <div class="shop-name-cont">
-                                        <img src="//gfs10.gomein.net.cn/T1kXb4BCZg1RCvBVdK.png" alt />
-                                        <p>国美网店</p>
+                    </div>
+                </div>
+                <div class="lazy-bot-right">
+                    <div class="lazy-bot-right-cons">
+                        <div
+                            class="lazy-bot-right-item"
+                            v-for="item in QbLazyRightList"
+                            :key="item.id"
+                        >
+                            <a href="#" class="lazy-bot-right-item-con">
+                                <div class="lazy-bot-right-item-img">
+                                    <img :src="item.imgUrl" alt />
+                                </div>
+                                <div class="lazy-bot-right-item-site">
+                                    <div class="lazy-bot-right-item-site-con">
+                                        <img :src="item.LogoImgUrl" alt />
+                                        <span
+                                            class="lazy-bot-right-item-site-name"
+                                        >{{item.siteName}}</span>
                                     </div>
                                 </div>
-                                <p class="xiangqing">Apple iPhone 12 128G 蓝色 移动联通电信 5G手机</p>
-                                <div class="price-box">
-                                    <p class="price">
-                                        ¥
-                                        <strong class="price2">6799</strong>
-                                        .00
+                                <div class="lazy-bot-right-item-info">
+                                    <p class="lazy-bot-right-item-desc">
+                                        <span class="lazy-bot-right-item-tag">
+                                            <span>{{item.tag}}</span>
+                                        </span>
+                                        <span class="lazy-bot-right-item-txt">{{item.txt}}</span>
                                     </p>
-                                    <img src="../images/chat3.png" alt />
+                                </div>
+                            </a>
+                            <div class="lazy-bot-right-item-other">
+                                <div class="lazy-bot-right-item-other-list">
+                                    <span class="lazy-bot-right-item-other-tag">{{item.otherPrice}}</span>
+                                </div>
+                                <div class="lazy-bot-right-item-other-price">
+                                    <div class="item-other-price">
+                                        <i>￥</i>
+                                        <big>{{item.price}}</big>
+                                    </div>
+                                    <div class="alike">
+                                        <a href>找相似</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="guesslike-item">
-                        <div class="shop-tp">
-                            <img src="//gfs17.gomein.net.cn/T1OFYsBjCv1RCvBVdK" alt />
-                        </div>
-
-                        <div class="guesslike-content">
-                            <div class="info-box">
-                                <div class="shop-name">
-                                    <div class="shop-name-cont">
-                                        <img
-                                            src="//img10.gomein.net.cn/image/bbcimg/2015/6/5/279/787/1433486837186.jpg"
-                                            alt
-                                        />
-                                        <p>斑马龙配件专营店</p>
-                                    </div>
-                                </div>
-                                <p
-                                    class="xiangqing"
-                                >VIVO X50全屏钢化膜X27防爆玻璃膜步步高IQOONEO3手机保护膜X23高清贴膜(黑色-2片装 NEX标准版)</p>
-                                <div class="price-box">
-                                    <p class="price">
-                                        ¥
-                                        <strong class="price2">19</strong>
-                                        .80
-                                    </p>
-                                    <img src="../images/chat3.png" alt />
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="guesslike-item">
-                        <div class="shop-tp">
-                            <img src="//gfs17.gomein.net.cn/T18RhjB5d_1RCvBVdK" alt />
-                        </div>
-
-                        <div class="guesslike-content">
-                            <div class="info-box">
-                                <div class="shop-name">
-                                    <div class="shop-name-cont">
-                                        <img
-                                            src="//img10.gomein.net.cn/image/bbcimg/2015/6/5/279/787/1433486837186.jpg"
-                                            alt
-                                        />
-                                        <p>斑马龙配件专营店</p>
-                                    </div>
-                                </div>
-                                <p
-                                    class="xiangqing"
-                                >VIVOX27pro手机壳麋鹿布纹步步高x27pro保护套防摔全包X27PRO硅胶轻薄个性男女后盖(灰色)</p>
-                                <div class="price-box">
-                                    <p class="price">
-                                        ¥
-                                        <strong class="price2">26</strong>
-                                        .00
-                                    </p>
-                                    <img src="../images/chat3.png" alt />
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="guesslike-item">
-                        <div class="shop-tp">
-                            <img src="//gfs17.gomein.net.cn/T1FAC_B__T1RCvBVdK" alt />
-                        </div>
-
-                        <div class="guesslike-content">
-                            <div class="info-box">
-                                <div class="shop-name">
-                                    <div class="shop-name-cont">
-                                        <img src="//gfs14.gomein.net.cn/T1tLKbBCZT1RCvBVdK.jpg" alt />
-                                        <p>仕伟手机专营店</p>
-                                    </div>
-                                </div>
-                                <p
-                                    class="xiangqing"
-                                >Huawei/华为 G9 Plus 全网通4G/移动4G 八核 5.5英寸 3+32G 双卡 智能手机(金色 官方标配)</p>
-                                <div class="price-box">
-                                    <p class="price">
-                                        ¥
-                                        <strong class="price2">748</strong>
-                                        .00
-                                    </p>
-                                    <img src="../images/chat3.png" alt />
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="guesslike-item">
-                        <div class="shop-tp">
-                            <img src="//gfs17.gomein.net.cn/T1cdWsBXJT1RCvBVdK" alt />
-                        </div>
-
-                        <div class="guesslike-content">
-                            <div class="info-box">
-                                <div class="shop-name">
-                                    <div class="shop-name-cont">
-                                        <img
-                                            src="//img10.gomein.net.cn/image/bbcimg/2015/6/5/279/787/1433486837186.jpg"
-                                            alt
-                                        />
-                                        <p>斑马龙配件专营店</p>
-                                    </div>
-                                </div>
-                                <p
-                                    class="xiangqing"
-                                >VIVOX27pro手机壳麋鹿布纹步步高x27pro保护套防摔全包X27PRO硅胶轻薄个性男女后盖(灰色)</p>
-                                <div class="price-box">
-                                    <p class="price">
-                                        ¥
-                                        <strong class="price2">26</strong>
-                                        .00
-                                    </p>
-                                    <img src="../images/chat3.png" alt />
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="go-top">
@@ -231,14 +150,51 @@
 </template>
 
 <script>
+import Detail from "./Detail.vue";
 export default {
+     data() {
+        return {
+             // 懒加载 底 左部分
+            QbLazyLeftList: [],
+            // 懒加载 底 右部分
+            QbLazyRightList: [],
+        };
+    },
     methods: {
         btnback(a) {
             this.$router.push({
                 path: "/",
             });
         },
+         btnxq(a) {
+            this.$router.push({
+                path:"/detail"
+            })
+        }
     },
+    components:{
+         "detail":Detail
+    },
+      created(){
+        // 懒加载 底 左部分
+        var that = this;
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "http://localhost:8080/data/PageJx.json");
+        xhr.send();
+        xhr.onload = function () {
+            that.QbLazyLeftList = JSON.parse(xhr.response).QbLazyLeftList;
+            // console.log(that.lazyLeftList);
+        };
+        // 懒加载 底 右部分
+        var that = this;
+        var xhr1 = new XMLHttpRequest();
+        xhr1.open("GET", "http://localhost:8080/data/PageJx.json");
+        xhr1.send();
+        xhr1.onload = function () {
+            that.QbLazyRightList = JSON.parse(xhr1.response).QbLazyRightList;
+            // console.log(that.lazyLeftRight);
+        }
+    }
 };
 </script>
 
@@ -247,11 +203,9 @@ export default {
     background-color: rgb(243, 245, 247);
 }
 .header {
-    /* position: relative; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* padding: 2%; */
     align-items: center;
     background-color: #fff;
 }
@@ -397,83 +351,154 @@ export default {
     margin-left: 6px;
     margin-bottom: -3px;
 }
-.tuijian {
-    font-size: 19px;
-    color: #f20c59;
-    margin-right: 2px;
-}
-.guesslike-item img {
-    height: 193px;
-    width: 193px;
-}
-.info-box {
-    padding: 6px 0px 10px;
-    background: #fff;
-}
-.shop-name {
-    /* display: flex;
-  justify-content: space-between; */
-    font-size: 14px;
-    color: #7a7f85;
-}
-.shop-name-cont img {
-    height: 17px;
-    width: 17px;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-.shop-name-cont {
+/*  懒加载  底部分 */
+.lazy-bot {
+    width: 100%;
     display: flex;
-    align-items: center;
-    padding-left: 20px;
-    padding-bottom: 5px;
-    border-bottom: 1px dashed #dcddde;
+    padding: 2px 2%;
 }
-.shop-tp {
-    background-color: rgb(255, 255, 255);
-}
-.guesslike-item {
+
+.lazy-bot-left,
+.lazy-bot-right {
     width: 50%;
-    padding: 2%;
+    padding: 3px;
 }
-.guesslike-list {
+.lazy-bot-left-cons,
+.lazy-bot-right-cons {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
-.xiangqing {
-    font-size: 14px;
-    color: #333;
+.lazy-bot-left-item,
+.lazy-bot-right-item {
+    width: 100%;
+    border-radius: 6px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.lazy-bot-left-item a,
+.lazy-bot-right-item a {
+    width: 100%;
+}
+
+.lazy-bot-left-item-img,
+.lazy-bot-right-item-img {
+    width: 100%;
+}
+.lazy-bot-left-item-img img,
+.lazy-bot-right-item-img img {
+    width: 100%;
+    border-radius: 6px;
+}
+.lazy-bot-left-item-site,
+.lazy-bot-right-item-site {
+    width: 100%;
+    padding: 0 10px;
+}
+.lazy-bot-left-item-site-con,
+.lazy-bot-right-item-site-con {
+    width: 100%;
+    display: flex;
+    padding: 8px 0;
+    align-items: center;
+    border-bottom: 1px dashed #999;
+}
+.lazy-bot-left-item-site-con img,
+.lazy-bot-right-item-site-con img {
+    width: 10%;
+    border-radius: 50%;
+}
+.lazy-bot-left-item-site-name,
+.lazy-bot-right-item-site-name {
+    color: #7a7f85;
+    font-size: 13px;
+    padding: 0px 0px 0px 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.lazy-bot-left-item-info,
+.lazy-bot-right-item-info {
+    width: 100%;
+    padding: 4px 10px;
+    padding-bottom: none;
+}
+.lazy-bot-left-item-desc,
+.lazy-bot-right-item-desc {
+    width: 100%;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    word-break: break-all;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: wrap;
-    font-weight: 400;
-    /* line-height: 16px;
-    height: 32px; */
-    padding: 1% 6%;
+    word-break: break-all;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 12px;
 }
-.price-box img {
-    height: 29px;
-    width: 29px;
+.lazy-bot-left-item-tag,
+.lazy-bot-right-item-tag {
+    display: inline-block;
+    background-color: #f20c59;
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+    padding: 0px 2px;
 }
-.price-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 12%;
-    padding-left: 6%;
-    padding-right: 6%;
+.lazy-bot-left-item-txt,
+.lazy-bot-right-item-txt {
+    color: #333;
+    padding-left: 4px;
 }
-.price {
+.lazy-bot-left-item-other,
+.lazy-bot-right-item-other {
+    width: 100%;
+    padding: 0 10px 10px;
+    /* background-color: #21daa5; */
+}
+
+.lazy-bot-left-item-other-list,
+.lazy-bot-right-item-other-list {
+    width: 100%;
+    padding: 4px 0;
+    font-size: 12px;
     color: #f20c59;
-    font-size: 14px;
-    font-weight: 700;
 }
-.price2 {
-    font-size: 18px;
+.lazy-bot-left-item-other-tag,
+.lazy-bot-right-item-other-tag {
+    border-radius: 2px;
+    border: 1px solid #f20c59;
+    background-color: #fff;
+}
+.lazy-bot-left-item-other-price,
+.lazy-bot-right-item-other-price {
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4px;
+}
+.item-other-price {
+    display: inline-block;
+    color: #f20c59;
+    font-weight: 600;
+}
+
+.item-other-price big {
+    font-size: 16px;
+}
+.alike {
+    font-weight: 400;
+    padding: 0 4px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.alike > a {
+    color: #666;
 }
 .go-top img {
     width: 44px;
