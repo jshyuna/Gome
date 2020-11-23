@@ -209,17 +209,27 @@ export default {
 .detail-mill {
     flex-shrink: 1;
     width: 100%;
-    /* padding: 2%; */
-    /* height: 86%; */
     display: flex;
     flex-grow: 1;
     flex: 1;
     flex-direction: column;
-    /* align-items: center; */
     flex: 1;
     overflow: auto;
     background-color: #f2f2f2;
 }
+
+.v-enter{
+    transform: translateX(100%);
+}
+
+.v-leave-to{
+    transform: translateX(-100%);
+}
+.v-enter-active,
+.v-leave-active{
+    transition:all 0.5s ease;
+}
+
 
 /* 底 */
 .detail-bot {

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="con">
         <div class="header">
             <div class="h-left" @click="btnback('page')">
                 <img src="../images/back.png" alt />
@@ -11,75 +11,76 @@
                 <img src="../images/slh.png" alt />
             </div>
         </div>
-        <div class="center">
-            <div>
-                <img src="../images/shopdefault.jpg" alt class="toux" />
+        <div class="me-con">
+            <div class="center">
+                <div>
+                    <img src="../images/shopdefault.jpg" alt class="toux" />
+                </div>
+                <span @click="btndl('denglu')">登录/注册</span>
+                <div class="right">
+                    <img src="../images/re-03.gif" alt class="gift" />
+                    <img src="../images/re-04.png" alt class="qipao" />
+                </div>
             </div>
-            <span @click="btndl('denglu')">登录/注册</span>
-            <div class="right">
-                <img src="../images/re-03.gif" alt class="gift" />
-                <img src="../images/re-04.png" alt class="qipao" />
+            <div class="main">
+                <div class="first-box">
+                    <ul>
+                        <li>
+                            <img src="../images/daifukuai.png" alt />
+                            <p>待付款</p>
+                        </li>
+                        <li>
+                            <img src="../images/daishouhuo.png" alt />
+                            <p>待收货</p>
+                        </li>
+                        <li>
+                            <img src="../images/daipingjia.png" alt />
+                            <p>待评价</p>
+                        </li>
+                        <li>
+                            <img src="../images/tuihou.png" alt />
+                            <p>退款/售后</p>
+                        </li>
+                        <li class="special">
+                            <img src="../images/dingdan.png" alt />
+                            <p>全部订单</p>
+                            <p style="transform: scale(0.8); color: #999999;">查看电子发票</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="first-box second">
+                    <ul>
+                        <li>
+                            <img src="../images/gmb.png" alt />
+                            <p>国美币余额</p>
+                        </li>
+                        <li>
+                            <img src="../images/youhuiquan.png" alt />
+                            <p>优惠券</p>
+                        </li>
+                        <li>
+                            <img src="../images/meidou.png" alt />
+                            <p>美豆</p>
+                        </li>
+                        <li>
+                            <img src="../images/meitongka.png" alt />
+                            <p>美通卡</p>
+                        </li>
+                        <li class="special">
+                            <img src="../images/qianbao.png" alt />
+                            <p>我的钱包</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="main">
-            <div class="first-box">
-                <ul>
-                    <li>
-                        <img src="../images/daifukuai.png" alt />
-                        <p>待付款</p>
-                    </li>
-                    <li>
-                        <img src="../images/daishouhuo.png" alt />
-                        <p>待收货</p>
-                    </li>
-                    <li>
-                        <img src="../images/daipingjia.png" alt />
-                        <p>待评价</p>
-                    </li>
-                    <li>
-                        <img src="../images/tuihou.png" alt />
-                        <p>退款/售后</p>
-                    </li>
-                    <li class="special">
-                        <img src="../images/dingdan.png" alt />
-                        <p>全部订单</p>
-                        <p style="transform: scale(0.8); color: #999999;">查看电子发票</p>
-                    </li>
-                </ul>
+            <!-- 猜你喜欢 -->
+            <div class="maylike">
+                <div class="maylike-title">
+                    <img src="../images/arrow-up.png" alt class="arrow" />
+                    <span class="text1">你可能喜欢</span>
+                </div>
             </div>
-            <div class="first-box second">
-                <ul>
-                    <li>
-                        <img src="../images/gmb.png" alt />
-                        <p>国美币余额</p>
-                    </li>
-                    <li>
-                        <img src="../images/youhuiquan.png" alt />
-                        <p>优惠券</p>
-                    </li>
-                    <li>
-                        <img src="../images/meidou.png" alt />
-                        <p>美豆</p>
-                    </li>
-                    <li>
-                        <img src="../images/meitongka.png" alt />
-                        <p>美通卡</p>
-                    </li>
-                    <li class="special">
-                        <img src="../images/qianbao.png" alt />
-                        <p>我的钱包</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- 猜你喜欢 -->
-        <div class="maylike">
-            <div class="maylike-title">
-                <img src="../images/arrow-up.png" alt="" class="arrow">
-                <span class="text1">你可能喜欢</span>
-            </div>
-        </div>
-        <div class="guesslike-con">
+            <div class="guesslike-con">
                 <ul class="guesslike-list">
                     <li class="guesslike-item">
                         <div class="shop-tp">
@@ -103,7 +104,6 @@
                                         <strong class="price2">878</strong>
                                         .00
                                     </p>
-                                   
                                 </div>
                             </div>
                         </div>
@@ -130,7 +130,6 @@
                                         <strong class="price2">848</strong>
                                         .00
                                     </p>
-                                   
                                 </div>
                             </div>
                         </div>
@@ -244,43 +243,49 @@
                                         <strong class="price2">26</strong>
                                         .00
                                     </p>
-
                                 </div>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
+        </div>
     </div>
 </template>
 
 <script>
-
 export default {
-     methods:{
-          btnback(a) {
+    methods: {
+        btnback(a) {
             this.$router.push({
-                path:"/"
-            })
+                path: "/",
+            });
         },
         btndl(a) {
             this.$router.push({
                 path: "/register",
             });
-        }
-     }
-}
-
+        },
+    },
+};
 </script>
 
 <style scoped>
+.con{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction:column;
+}
 .header {
+    height: 8%;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 50px;
     align-items: center;
+    flex-shrink: 0;
     background-color: #fff;
 }
 .h-tit {
@@ -307,6 +312,19 @@ export default {
 .h-right {
     width: 10%;
 }
+
+.me-con{
+    height: 92%;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+    flex-shrink: 0;
+    overflow:auto;
+}
+
+
+
 .center {
     display: flex;
     justify-content: space-between;
@@ -375,42 +393,42 @@ export default {
     background-color: #fcfcfc;
     border-left: 1px solid #eeeeee;
 }
-.second{
+.second {
     margin-top: 15px;
 }
-.maylike{
-    background: rgb(242,242,242);
+.maylike {
+    background: rgb(242, 242, 242);
 }
-.maylike-title{
+.maylike-title {
     height: 50px;
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.arrow{
+.arrow {
     height: 15px;
     width: 15px;
     margin-right: 5px;
     margin-top: 5px;
 }
-.text1{
+.text1 {
     color: #999;
     font-size: 13px;
-    margin-top:3px;
+    margin-top: 3px;
 }
-.text1::after{
-    content: '';
+.text1::after {
+    content: "";
     display: block;
     border-bottom: 1px solid red;
-    margin-top: -.14rem;
+    margin-top: -0.14rem;
 }
-.guesslike-con{
-    background: rgb(242,242,242);
+.guesslike-con {
+    background: rgb(242, 242, 242);
 }
 .guesslike-item img {
-    height: 193px;
-    width: 193px;
+    /* height: 193px; */
+    width: 100%;
 }
 .info-box {
     padding: 6px 0px 10px;
@@ -441,6 +459,7 @@ export default {
 .guesslike-item {
     width: 50%;
     padding: 2%;
+    border-radius:10px;
 }
 .guesslike-list {
     display: flex;
@@ -476,9 +495,9 @@ export default {
 .price {
     color: #f20c59;
     font-size: 18px;
-    font-weight:400;
+    font-weight: 400;
 }
 .price2 {
-     font-weight:400;
+    font-weight: 400;
 }
 </style>
