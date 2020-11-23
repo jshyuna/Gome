@@ -56,10 +56,10 @@
                             class="lazy-bot-left-item"
                             v-for="item in QbLazyLeftList"
                             :key="item.id"
-                            @click="btnxq('detail')"
+                            
                         >
                             <a href="#" class="lazy-bot-left-item-con">
-                                <div class="lazy-bot-left-item-img">
+                                <div class="lazy-bot-left-item-img"  @click="btnxq('detail')">
                                     <img :src="item.imgUrl" alt />
                                 </div>
                                 <div class="lazy-bot-left-item-site">
@@ -99,10 +99,10 @@
                         <div
                             class="lazy-bot-right-item"
                             v-for="item in QbLazyRightList"
-                            :key="item.id"  @click="btnxq('detail')"
+                            :key="item.id" 
                         >
                             <a href="#" class="lazy-bot-right-item-con">
-                                <div class="lazy-bot-right-item-img">
+                                <div class="lazy-bot-right-item-img"  @click="btnxq('detail')">
                                     <img :src="item.imgUrl" alt />
                                 </div>
                                 <div class="lazy-bot-right-item-site">
