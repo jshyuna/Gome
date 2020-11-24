@@ -67,7 +67,7 @@
                         </div>
                         <div class="item-bot">
                             <span class="ys">移入收藏</span>
-                            <span class="del" @click="del(index)">删除</span>
+                            <span class="del" @click="btnback('cart')">删除</span>
                         </div>
                     </div>
                 </div>
@@ -243,32 +243,8 @@ export default {
             isbianji: true,
         };
     },
-    // computed:{
-    //   shoplist(){
-    //      return this.$store.state.shoplist
-    //   },
-    // },
     methods: {
-        open() {
-            this.$confirm("此操作将永久删除该文件, 是否继续?", "提示", {
-                confirmButtonText: "确定",
-                cancelButtonText: "取消",
-                type: "warning",
-                center: true,
-            })
-                .then(() => {
-                    this.$message({
-                        type: "success",
-                        message: "删除成功!",
-                    });
-                })
-                .catch(() => {
-                    this.$message({
-                        type: "info",
-                        message: "已取消删除",
-                    });
-                });
-        },
+
         btnback(a) {
             this.$router.push({
                 path: "/",
@@ -322,6 +298,11 @@ export default {
             this.check = !this.check;
             // this.isActive = true;
         },
+         btnback(a) {
+            this.$router.push({
+                path: "/cart",
+            });
+        }
     },
     components: {
         detail: Detail,
@@ -832,7 +813,7 @@ export default {
     font-size: 15px;
 }
 .qjs {
-    width: 40%;
+    width: 33%;
     padding: 5% 0;
     margin-left: 2%;
     font-size: 18px;
@@ -851,9 +832,9 @@ export default {
     font-size: 17px;
 }
 .qjs2 {
-    width: 40%;
+    width: 33%;
     padding: 5% 0;
-    margin-left: 2%;
+    margin-left: 6%;
     font-size: 18px;
     color: #fff;
     text-align: center;

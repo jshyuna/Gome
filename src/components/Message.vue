@@ -232,10 +232,12 @@ export default {
     /* border-bottom: 1px solid #ebeced; */
 }
 .online {
+    display: inline-block;
     background-color: #09bb07;
-    width: 8.54px;
-    height: 8.5px;
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
+   
 }
 .name {
     display: inline-block;
