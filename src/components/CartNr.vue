@@ -12,7 +12,8 @@
                 </div>
             </div>
             <div class="h-right">
-                <div class="h-edit">编辑</div>
+                <div v-if="isbianji" class="h-edit" @click="bianji">编辑</div>
+                <div v-else class="h-edit" @click="bianji">完成</div>
                 <img src="../images/slh.png" alt />
             </div>
         </div>
@@ -187,7 +188,7 @@
                 </a>
             </div>
         </div>
-        <div class="foot">
+        <div class="foot" v-if="isbianji">
             <div class="foot-left">
                 <input type="checkbox" @click="select" :checked="check" />
                 <span @click="quanxuan">全选</span>
@@ -198,10 +199,10 @@
                     <i>￥</i>
                     <span class="hjp">{{message3}}</span>
                 </div>
-                
+
                 <div class="qjs" @click="qhj">
                     <a href="https://cart.m.gome.com.cn/shopping_cart.html" class="jiesuan">去结算</a>
-                    
+
                     <span>
                         <span v-if="message2">(</span>
                         {{message2}}
@@ -209,6 +210,16 @@
                     <span v-if="message2">)</span>
                 </div>
                
+            </div>
+        </div>
+        <div class="foot" v-else>
+            <div class="foot-left">
+                <input type="checkbox" @click="select" :checked="check" />
+                <span @click="quanxuan">全选</span>
+            </div>
+            <div class="foot-right">
+                <div class="hjs2">移入收藏</div>
+                <div class="qjs2" @click="del()">删除</div>
             </div>
         </div>
     </div>
@@ -230,6 +241,7 @@ export default {
             danjia: 6799,
             check: false,
             message3: 0.0,
+            isbianji: true,
         };
     },
     // computed:{
@@ -238,6 +250,26 @@ export default {
     //   },
     // },
     methods: {
+        open() {
+            this.$confirm("此操作将永久删除该文件, 是否继续?", "提示", {
+                confirmButtonText: "确定",
+                cancelButtonText: "取消",
+                type: "warning",
+                center: true,
+            })
+                .then(() => {
+                    this.$message({
+                        type: "success",
+                        message: "删除成功!",
+                    });
+                })
+                .catch(() => {
+                    this.$message({
+                        type: "info",
+                        message: "已取消删除",
+                    });
+                });
+        },
         btnback(a) {
             this.$router.push({
                 path: "/",
@@ -286,6 +318,11 @@ export default {
         },
         //  总件
         qhj() {},
+        bianji() {
+            this.isbianji = !this.isbianji;
+            this.check = !this.check;
+            // this.isActive = true;
+        },
     },
     components: {
         detail: Detail,
@@ -797,7 +834,7 @@ export default {
 }
 .qjs {
     width: 40%;
-    padding:5% 0;
+    padding: 5% 0;
     margin-left: 2%;
     font-size: 18px;
     color: #fff;
@@ -810,7 +847,24 @@ export default {
     font-size: 17px;
     font-weight: 600;
 }
-.jiesuan{
+.hjs2 {
+    color: #b3b8bd;
+    font-size: 17px;
+}
+.qjs2 {
+    width: 40%;
+    padding: 5% 0;
+    margin-left: 2%;
+    font-size: 18px;
     color: #fff;
+    text-align: center;
+    background-color: #d7d8d9;
+}
+.jiesuan {
+    color: #fff;
+}
+.sc {
+    color: #fff;
+    font-size: 20px;
 }
 </style>

@@ -466,12 +466,7 @@ export default {
     font-size: 13px;
     margin-top: 3px;
 }
-.maylike-title::after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid#c2c2c2;
-    margin-top: -10px;
-}
+
 .my_share_module {
     background: white;
 }
