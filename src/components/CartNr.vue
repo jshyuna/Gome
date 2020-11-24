@@ -27,19 +27,50 @@
                     </i>
                 </a>
             </div>
-            <div class="empty">
-                <img src="../images/bj_baobei.png" alt />
-                <p>购物车还是空的</p>
-                <div class="box1">
-                    <span>
-                        <a href>逛逛首页</a>
-                    </span>
-                    <span>
-                        <a href>秒杀</a>
-                    </span>
+
+            <!-- 购物车 -->
+            <div class="carts">
+                <div class="cart-list">
+                    <div class="cart-item" v-for="(item,index) in shoplist" :key="item.index">
+                        <div class="item-top">
+                            <div class="item-left">
+                                <span>
+                                    <input type="checkbox" @click="select"  :checked="check"/>
+                                </span>
+                            </div>
+                            <div class="item-right">
+                                <div class="item-right-img">
+                                    <img
+                                        src="//gfs17.gomein.net.cn/T1E9K7B7d_1RCvBVdK_250.jpg?v=2"
+                                        alt
+                                    />
+                                </div>
+                                <div class="item-right-con">
+                                    <div class="item-right-con-txt">
+                                        <p>Apple iPhone 12 128G 蓝色 移动联通电信 5G手机</p>
+                                    </div>
+                                    <span class="item-right-con-xg">限购99件</span>
+                                    <div class="item-right-con-prices">
+                                        <div class="item-right-con-price">
+                                            <i>￥</i>
+                                            <span>{{danjia}}</span>
+                                        </div>
+                                        <div class="item-right-con-inp">
+                                            <span class="jian" @click="jian(index)">-</span>
+                                            <input class="inp" type="number" :value="message" />
+                                            <span class="add" @click="add(index)">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-bot">
+                            <span class="ys">移入收藏</span>
+                            <span class="del" @click="del(index)">删除</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-
             <div class="cart-like">
                 <div class="cart-title">
                     <p class="line"></p>
@@ -91,7 +122,7 @@
                                             <big>{{item.price}}</big>
                                         </div>
                                         <div class="alike">
-                                            <img src="../images/chat3.png" alt class="gwc" @click="btnnr('cartnr')"/>
+                                            <img src="../images/chat3.png" alt class="gwc" />
                                         </div>
                                     </div>
                                 </div>
@@ -138,7 +169,7 @@
                                             <big>{{item.price}}</big>
                                         </div>
                                         <div class="alike">
-                                            <img src="../images/chat3.png" alt class="gwc" @click="btnnr('cartnr')"/>
+                                            <img src="../images/chat3.png" alt class="gwc" />
                                         </div>
                                     </div>
                                 </div>
@@ -156,12 +187,31 @@
                 </a>
             </div>
         </div>
-      
+        <div class="foot">
+            <div class="foot-left">
+                <input type="checkbox" @click="select"  :checked="check"/>
+                <span @click="quanxuan">全选</span>
+            </div>
+            <div class="foot-right">
+                <div class="hjs">
+                    <span class="hj">合计:</span>
+                    <i>￥</i>
+                    <span class="hjp">{{message3}}</span>
+                </div>
+                <div class="qjs" @click="qhj">
+                    去结算
+                    <span>
+                        <span v-if="message2">(</span>{{message2}}</span>
+                        <span  v-if="message2">)</span>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
 import Detail from "./Detail.vue";
+import store from "../store/index.js";
 export default {
     data() {
         return {
@@ -169,8 +219,19 @@ export default {
             QbLazyLeftList: [],
             // 懒加载 底 右部分
             QbLazyRightList: [],
+            shoplist: [1],
+            message:1,
+            message2:"",
+            danjia:6799,
+            check:false,
+            message3:0.00,
         };
     },
+    // computed:{
+    //   shoplist(){
+    //      return this.$store.state.shoplist
+    //   },
+    // },
     methods: {
         btnback(a) {
             this.$router.push({
@@ -181,12 +242,52 @@ export default {
             this.$router.push({
                 path: "/detail",
             });
-        }, 
-        btnnr(a) {
-            this.$router.push({
-                path: "cartnr",
-            });
-    }
+        },
+
+        // 加
+        add(index) {
+            this.message++;
+             this.message2=this.message;
+             this.message3=this.message*this.danjia
+        },
+
+        // 减
+        jian(index) {
+            this.message--;
+            this.message2=this.message;
+            this.message3=this.message*this.danjia
+            if (this.message < 1) {
+                alert("商品数量不能少于1");
+                this.message = 1;
+            }
+            // 删除
+        },
+        del(index) {
+            this.shoplist.splice(index, 1);
+        },
+        // 全选
+        quanxuan() {
+
+        },
+         select(){
+          
+          this.check=!this.check;
+          if (this.check==true){
+              this.message2=this.message;
+              this.message3=this.message*this.danjia
+          }else{
+               this.message2="";
+                this.message3=0.00;
+          }
+                // this.$refs.kuang1.isCheck = true
+                // this.$refs.inputs.isCheck = true
+          
+           
+        },
+        //  总件
+        qhj() {
+
+        },
     },
     components: {
         detail: Detail,
@@ -665,47 +766,48 @@ export default {
     bottom: 80px;
 }
 /* 底部 */
-.foot{
+.foot {
     width: 100%;
 }
-.foot-left{
+.foot-left {
     width: 20%;
     padding: 0 2%;
-display: flex;
-flex-direction: row;
-align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.foot-left input{
+.foot-left input {
     width: 20px;
     height: 20px;
 }
-.foot-left span{
+.foot-left span {
     color: #666;
     font-size: 16px;
     padding-left: 10%;
 }
-.foot-right{
+.foot-right {
     width: 80%;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
-.hj{
+.hj {
     color: #333;
     font-size: 15px;
 }
-.qjs{
+.qjs {
     width: 35%;
-    padding: 4%;
-    margin-left: 2% ;
+    padding: 5%;
+    margin-left: 2%;
     font-size: 18px;
     color: #fff;
     text-align: center;
     background-color: #fa1e8c;
 }
-.hjs i,.hjp{
+.hjs i,
+.hjp {
     color: #f20c59;
     font-size: 17px;
     font-weight: 600;
