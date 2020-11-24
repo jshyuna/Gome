@@ -35,7 +35,10 @@
                     <img src="../images/heart.png" alt />
                 </span>
                 <span @click="btngwc('cart')">
-                    <img src="../images/gwc.png" alt />
+                    <el-badge :value="gwcsl" class="yuandian" v-if="gwcsl!=0">
+                        <img src="../images/gwc.png" alt class="gwctp" />
+                    </el-badge>
+                     <img src="../images/gwc.png" alt class="gwctp"  v-else>
                 </span>
                 <span>
                     <img src="../images/slh.png" alt />
@@ -58,7 +61,7 @@
                 <img src="//gfs11.gomein.net.cn/T1LoW7BTx_1RCvBVdK_60_60.jpg" alt />
                 <p>全程导购</p>
             </div>
-            <div class="detail-bot-gwc">
+            <div class="detail-bot-gwc"  @click="btnplus">
                 <p>加入购物车</p>
             </div>
             <div class="detail-bot-gm">
@@ -79,6 +82,7 @@ export default {
             cartName: "cart-sp",
             transitionName: "right-left",
             pageIndex: 0,
+            gwcsl:0,
         };
     },
     components: {
@@ -94,9 +98,12 @@ export default {
         },
         btngwc(a) {
             this.$router.push({
-                path: "/cart",
+                path: "/cartnr",
             });
         },
+        btnplus(){
+            this.gwcsl++
+        }
     },
     watch: {
         pageIndex(newVal, oldVal) {
@@ -176,6 +183,19 @@ export default {
     width: 50%;
     color: #333;
 }
+.yuandian{
+    width: 20px;
+}
+.gwctp {
+    width: 20px;
+    height: 20px;
+}
+.el-badge__content.is-fixed {
+    position: absolute;
+    top: -1px;
+    right: 29px;
+    transform: translateY(-50%) translateX(100%);
+}
 .detail-top-left-con {
     width: 100%;
     display: flex;
@@ -218,18 +238,17 @@ export default {
     background-color: #f2f2f2;
 }
 
-.v-enter{
+.v-enter {
     transform: translateX(100%);
 }
 
-.v-leave-to{
+.v-leave-to {
     transform: translateX(-100%);
 }
 .v-enter-active,
-.v-leave-active{
-    transition:all 0.5s ease;
+.v-leave-active {
+    transition: all 0.5s ease;
 }
-
 
 /* 底 */
 .detail-bot {

@@ -12,6 +12,8 @@ import Class from "../components/Page/Class.vue"
 import Detail from "../components/Detail.vue"
 import Login from "../components/Login.vue"
 import Search from "../components/Search.vue"
+import CartNr from "../components/CartNr.vue"
+
 
 
 
@@ -56,6 +58,10 @@ const routes = [
   {
     path:'/search',
     component:Search
+  },
+  {
+    path:'/cartnr',
+    component:CartNr
   }
 ]
 
