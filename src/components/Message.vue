@@ -236,6 +236,7 @@ export default {
     width: 9px;
     height: 9px;
     border-radius: 50%;
+   
 }
 .name {
     display: inline-block;
