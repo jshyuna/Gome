@@ -35,7 +35,7 @@
                         <div class="item-top">
                             <div class="item-left">
                                 <span>
-                                    <input type="checkbox" @click="select"  :checked="check"/>
+                                    <input type="checkbox" @click="select" :checked="check" />
                                 </span>
                             </div>
                             <div class="item-right">
@@ -189,7 +189,7 @@
         </div>
         <div class="foot">
             <div class="foot-left">
-                <input type="checkbox" @click="select"  :checked="check"/>
+                <input type="checkbox" @click="select" :checked="check" />
                 <span @click="quanxuan">全选</span>
             </div>
             <div class="foot-right">
@@ -198,12 +198,17 @@
                     <i>￥</i>
                     <span class="hjp">{{message3}}</span>
                 </div>
+                
                 <div class="qjs" @click="qhj">
-                    去结算
+                    <a href="https://cart.m.gome.com.cn/shopping_cart.html" class="jiesuan">去结算</a>
+                    
                     <span>
-                        <span v-if="message2">(</span>{{message2}}</span>
-                        <span  v-if="message2">)</span>
+                        <span v-if="message2">(</span>
+                        {{message2}}
+                    </span>
+                    <span v-if="message2">)</span>
                 </div>
+               
             </div>
         </div>
     </div>
@@ -220,11 +225,11 @@ export default {
             // 懒加载 底 右部分
             QbLazyRightList: [],
             shoplist: [1],
-            message:1,
-            message2:"",
-            danjia:6799,
-            check:false,
-            message3:0.00,
+            message: 1,
+            message2: "",
+            danjia: 6799,
+            check: false,
+            message3: 0.0,
         };
     },
     // computed:{
@@ -247,15 +252,15 @@ export default {
         // 加
         add(index) {
             this.message++;
-             this.message2=this.message;
-             this.message3=this.message*this.danjia
+            this.message2 = this.message;
+            this.message3 = this.message * this.danjia;
         },
 
         // 减
         jian(index) {
             this.message--;
-            this.message2=this.message;
-            this.message3=this.message*this.danjia
+            this.message2 = this.message;
+            this.message3 = this.message * this.danjia;
             if (this.message < 1) {
                 alert("商品数量不能少于1");
                 this.message = 1;
@@ -266,28 +271,21 @@ export default {
             this.shoplist.splice(index, 1);
         },
         // 全选
-        quanxuan() {
-
-        },
-         select(){
-          
-          this.check=!this.check;
-          if (this.check==true){
-              this.message2=this.message;
-              this.message3=this.message*this.danjia
-          }else{
-               this.message2="";
-                this.message3=0.00;
-          }
-                // this.$refs.kuang1.isCheck = true
-                // this.$refs.inputs.isCheck = true
-          
-           
+        quanxuan() {},
+        select() {
+            this.check = !this.check;
+            if (this.check == true) {
+                this.message2 = this.message;
+                this.message3 = this.message * this.danjia;
+            } else {
+                this.message2 = "";
+                this.message3 = 0.0;
+            }
+            // this.$refs.kuang1.isCheck = true
+            // this.$refs.inputs.isCheck = true
         },
         //  总件
-        qhj() {
-
-        },
+        qhj() {},
     },
     components: {
         detail: Detail,
@@ -798,8 +796,8 @@ export default {
     font-size: 15px;
 }
 .qjs {
-    width: 35%;
-    padding: 5%;
+    width: 40%;
+    padding:5% 0;
     margin-left: 2%;
     font-size: 18px;
     color: #fff;
@@ -811,5 +809,8 @@ export default {
     color: #f20c59;
     font-size: 17px;
     font-weight: 600;
+}
+.jiesuan{
+    color: #fff;
 }
 </style>
