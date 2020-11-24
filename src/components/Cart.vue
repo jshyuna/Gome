@@ -1,5 +1,5 @@
 <template>
-    <div>
+    
         <div class="gouwuche">
             <div class="header">
                 <div class="h-left" @click="btnback('page')">
@@ -17,8 +17,8 @@
                     <img src="../images/slh.png" alt />
                 </div>
             </div>
-            <div class="con" id="top">
-                <div class="Setup">
+            <div class="con">
+                <div class="Setup"  id="top">
                     <img src="../images/laba.png" alt class="laba" />
                     <p>立即开通九九会员享受会员折扣</p>
                     <a href>
@@ -28,7 +28,8 @@
                         </i>
                     </a>
                 </div>
-                <div class="empty">
+
+                <div class="empty" >
                     <img src="../images/bj_baobei.png" alt />
                     <p>购物车还是空的</p>
                     <div class="box1">
@@ -40,6 +41,14 @@
                         </span>
                     </div>
                 </div>
+                <!-- 购物车内容 -->
+                <!-- <div class="carts">
+                    <div class="cart-list">
+                        <div class="cart-item">
+
+                        </div>
+                    </div>
+                </div> -->
 
                 <div class="cart-like">
                     <div class="cart-title">
@@ -159,8 +168,9 @@
                     </a>
                 </div>
             </div>
+           
         </div>
-    </div>
+  
 </template>
 
 <script>
