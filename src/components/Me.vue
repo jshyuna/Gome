@@ -417,12 +417,6 @@ export default {
     font-size: 13px;
     margin-top: 3px;
 }
-.text1::after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid red;
-    margin-top: -0.14rem;
-}
 .guesslike-con {
     background: rgb(242, 242, 242);
 }
